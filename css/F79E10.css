@@ -1,0 +1,43 @@
+body {
+	width: 750px;
+	left: calc((100% - 770px) / 2);
+	position: absolute;
+	margin: 0;
+	padding: 10px;
+	text-justify: inter-character;
+	font-family: 'Ubuntu Mono';
+}
+
+p, li {
+	text-align: justify;
+}
+
+h2, h3, ruby {
+    color: #464453;
+}
+
+em {
+    color: #F79E10;
+}
+
+/* unvisited link */
+a:link {
+    color: #F79E10;
+}
+
+/* visited link */
+a:visited {
+    color: #F79E10;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    background-color: #F79E10;
+}
+
+/* selected link */
+a:active {
+    color: black;
+    background-color: #F79E10;
+}
