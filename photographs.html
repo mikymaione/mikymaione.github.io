@@ -7,10 +7,107 @@
 
 	<link rel="stylesheet" type="text/css" href="css/F79E10.css">
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
-	
+
 	<meta charset="UTF-8">
 	<meta name="date" content="2018-11-17" scheme="YYYY-MM-DD">
 	<meta name="author" content="[MAIONE MIKY]">
+
+	<style>
+		body {
+			margin: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		img {
+			vertical-align: middle;
+		}
+
+		/* Position the image container (needed to position the left and right arrows) */
+		.container {
+			position: relative;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+		/* Add a pointer when hovering over the thumbnail images */
+		.cursor {
+			cursor: pointer;
+		}
+
+		/* Next & previous buttons */
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 40%;
+			width: auto;
+			padding: 16px;
+			margin-top: -50px;
+			color: white;
+			font-weight: bold;
+			font-size: 20px;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+			-webkit-user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover,
+		.next:hover {
+			background-color: #F79E10;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* Container for image text */
+		.caption-container {
+			text-align: center;
+			background-color: #222;
+			padding: 2px 16px;
+			color: white;
+		}
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		/* Six columns side by side */
+		.column {
+			float: left;
+			width: 20%;
+		}
+
+		/* Add a transparency effect for thumnbail images */
+		.demo {
+			opacity: 0.6;
+		}
+
+		.active,
+		.demo:hover {
+			opacity: 1;
+		}
+	</style>
 </head>
 
 <body>
@@ -29,28 +126,132 @@
 
 	<p>Some photographs taken during my life:</p>
 
-	<section>
-		<figure>
-			<img src="photographs/IMG_20170820_125028.jpg">
-			<figcaption>Cave of Tiberius - Sperlonga</figcaption>
-		</figure>
-		<figure>
-			<img src="photographs/Puglia 08 2017 (612).jpg">
-			<figcaption>Sassi di Matera - Matera</figcaption>
-		</figure>
-		<figure>
-			<img src="photographs/Madrid (351).JPG">
-			<figcaption>Temple of Debod - Madrid</figcaption>
-		</figure>
-		<figure>
-			<img src="photographs/Puglia 08 2017 (226).jpg">
-			<figcaption>Lama Monachile beach - Polignano a Mare</figcaption>
-		</figure>
-		<figure>
-			<img src="photographs/IMG_20170409_175605.jpg">
-			<figcaption>Marechiaro - Naples</figcaption>
-		</figure>
-	</section>
+	<div class="container">
+		<div id="the_container"></div>
+
+		<a class="prev" onclick="plusSlides(-1, true)">❮</a>
+		<a class="next" onclick="plusSlides(1, true)">❯</a>
+
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+
+		<div id="slideshowRow" class="row"></div>
+	</div>
+
+	<script>
+		var TheTimer;
+		var slideIndex = 1;
+		LoadImages();
+
+		function LoadImages() {
+			let alts = [
+				"Acropolis - Lindos",
+				"Almudena Cathedral - Madrid",
+				"Altare della Patria - Rome",
+				"Cave of Tiberius - Sperlonga",
+				"Colosseum - Rome",
+				"Cyclopean Isles - Catania",
+				"Jovanotti",
+				"Lama Monachile beach - Polignano a Mare",
+				"Marechiaro - Naples",
+				"Nisida - Naples",
+				"Paestum",
+				"Praia",
+				"Riserva naturale dello Zingaro - Trapani",
+				"Santander",
+				"Sassi di Matera - Matera",
+				"Serapo beach - Gaeta",
+				"Taranto",
+				"Temple of Debod - Madrid",
+				"Yokohama"
+			];
+
+			let the_container = document.getElementById("the_container");
+			let slideshowRow = document.getElementById("slideshowRow");
+
+			for (let y = 0; y < alts.length; y++) {
+				let x = y + 1;
+				let imgPath = "photographs/" + alts[y] + ".jpg";
+
+				let mySlides = document.createElement("div");
+				mySlides.className = "mySlides";
+
+				let numbertext = document.createElement("div");
+				numbertext.className = "numbertext";
+				numbertext.innerHTML = x + "/" + alts.length;
+
+				let imgB = document.createElement("img");
+				imgB.style.width = "100%";
+				imgB.src = imgPath;
+
+				let column = document.createElement("div");
+				column.className = "column";
+
+				let img = document.createElement("img");
+				img.className = "demo cursor";
+				img.style.width = "100%";
+				img.src = imgPath;
+				img.alt = alts[y];
+				img.onclick = function () { currentSlide(x) };
+
+				mySlides.appendChild(numbertext);
+				mySlides.appendChild(imgB);
+				the_container.appendChild(mySlides);
+
+				column.appendChild(img);
+				slideshowRow.appendChild(column);
+			}
+
+			showSlides(slideIndex, true);
+		}
+
+		function activateTimer(active) {
+			clearTimeout(TheTimer);
+
+			if (active)
+				TheTimer = setTimeout(function () {
+					plusSlides(1, false);
+				}, 3000);
+		}
+
+		function plusSlides(n, block_it) {
+			if (block_it)
+				activateTimer(false);
+
+			showSlides(slideIndex += n, !block_it);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n, true);
+		}
+
+		function showSlides(n, activateTheTimer) {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("demo");
+			let captionText = document.getElementById("caption");
+
+			if (n > slides.length)
+				slideIndex = 1;
+
+			if (n < 1)
+				slideIndex = slides.length;
+
+			for (i = 0; i < slides.length; i++)
+				slides[i].style.display = "none";
+
+			for (i = 0; i < dots.length; i++)
+				dots[i].className = dots[i].className.replace(" active", "");
+
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			captionText.innerHTML = dots[slideIndex - 1].alt;
+
+			if (activateTheTimer)
+				activateTimer(true);
+		}
+	</script>
 
 	<hr>
 	<ruby>© 2004-2018, maionemiky.it</ruby>
