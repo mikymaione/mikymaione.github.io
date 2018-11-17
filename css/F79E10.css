@@ -1,9 +1,6 @@
 body {
 	width: 770px;
-	left: calc((100% - 790px) / 2);
-	position: absolute;
-	margin: 0;
-	padding: 10px;
+	margin: auto;
 	text-justify: inter-character;
 	font-family: 'Ubuntu Mono';
 	overflow-y: scroll;
