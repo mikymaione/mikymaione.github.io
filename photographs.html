@@ -11,103 +11,6 @@
 	<meta charset="UTF-8">
 	<meta name="date" content="2018-11-17" scheme="YYYY-MM-DD">
 	<meta name="author" content="[MAIONE MIKY]">
-
-	<style>
-		body {
-			margin: 0;
-		}
-
-		* {
-			box-sizing: border-box;
-		}
-
-		img {
-			vertical-align: middle;
-		}
-
-		/* Position the image container (needed to position the left and right arrows) */
-		.container {
-			position: relative;
-		}
-
-		/* Hide the images by default */
-		.mySlides {
-			display: none;
-		}
-
-		/* Add a pointer when hovering over the thumbnail images */
-		.cursor {
-			cursor: pointer;
-		}
-
-		/* Next & previous buttons */
-		.prev,
-		.next {
-			cursor: pointer;
-			position: absolute;
-			top: 40%;
-			width: auto;
-			padding: 16px;
-			margin-top: -50px;
-			color: white;
-			font-weight: bold;
-			font-size: 20px;
-			border-radius: 0 3px 3px 0;
-			user-select: none;
-			-webkit-user-select: none;
-		}
-
-		/* Position the "next button" to the right */
-		.next {
-			right: 0;
-			border-radius: 3px 0 0 3px;
-		}
-
-		/* On hover, add a black background color with a little bit see-through */
-		.prev:hover,
-		.next:hover {
-			background-color: #F79E10;
-		}
-
-		/* Number text (1/3 etc) */
-		.numbertext {
-			color: #f2f2f2;
-			font-size: 12px;
-			padding: 8px 12px;
-			position: absolute;
-			top: 0;
-		}
-
-		/* Container for image text */
-		.caption-container {
-			text-align: center;
-			background-color: #222;
-			padding: 2px 16px;
-			color: white;
-		}
-
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		/* Six columns side by side */
-		.column {
-			float: left;
-			width: 20%;
-		}
-
-		/* Add a transparency effect for thumnbail images */
-		.demo {
-			opacity: 0.6;
-		}
-
-		.active,
-		.demo:hover {
-			opacity: 1;
-		}
-	</style>
 </head>
 
 <body>
@@ -123,133 +26,121 @@
 	<hr>
 
 	<h2>Photographs</h2>
-
 	<p>Some photographs taken during my life:</p>
 
-	<div class="container">
-		<div id="the_container"></div>
+	<section>
+		<figure>
+			<img id="the_image">
+			<figcaption id="the_caption"></figcaption>
+		</figure>
+	</section>
 
-		<a class="prev" onclick="plusSlides(-1, true)">❮</a>
-		<a class="next" onclick="plusSlides(1, true)">❯</a>
-
-		<div class="caption-container">
-			<p id="caption"></p>
-		</div>
-
-		<div id="slideshowRow" class="row"></div>
-	</div>
+	<table id="the_grid"></table>
 
 	<script>
+		const images = [
+			"Acropolis - Lindos",
+			"Almudena Cathedral - Madrid",
+			"Altare della Patria - Rome",
+			"Cave of Tiberius - Sperlonga",
+			"Colosseum - Rome",
+			"Cyclopean Isles - Catania",
+			"Jovanotti",
+			"Lama Monachile beach - Polignano a Mare",
+			"Marechiaro - Naples",
+			"Nisida - Naples",
+			"Paestum",
+			"Praia",
+			"Riserva naturale dello Zingaro - Trapani",
+			"Santander",
+			"Sassi di Matera - Matera",
+			"Serapo beach - Gaeta",
+			"Taranto",
+			"Temple of Debod - Madrid",
+			"Yokohama"
+		];
+
 		var TheTimer;
-		var slideIndex = 1;
+		var cur_img = -1;
+
 		LoadImages();
 
 		function LoadImages() {
-			let alts = [
-				"Acropolis - Lindos",
-				"Almudena Cathedral - Madrid",
-				"Altare della Patria - Rome",
-				"Cave of Tiberius - Sperlonga",
-				"Colosseum - Rome",
-				"Cyclopean Isles - Catania",
-				"Jovanotti",
-				"Lama Monachile beach - Polignano a Mare",
-				"Marechiaro - Naples",
-				"Nisida - Naples",
-				"Paestum",
-				"Praia",
-				"Riserva naturale dello Zingaro - Trapani",
-				"Santander",
-				"Sassi di Matera - Matera",
-				"Serapo beach - Gaeta",
-				"Taranto",
-				"Temple of Debod - Madrid",
-				"Yokohama"
-			];
+			const nX = 5;
+			const nY = images.length / nX;
+			const maxWidth = (750 / nX) + "px";
 
-			let the_container = document.getElementById("the_container");
-			let slideshowRow = document.getElementById("slideshowRow");
+			let the_grid = document.getElementById("the_grid");
+			let imgC = -1;
 
-			for (let y = 0; y < alts.length; y++) {
-				let x = y + 1;
-				let imgPath = "photographs/" + alts[y] + ".jpg";
+			for (let y = 0; y < nY; y++) {
+				if (imgC + 1 == images.length)
+					break;
 
-				let mySlides = document.createElement("div");
-				mySlides.className = "mySlides";
+				let tr = document.createElement("tr");
 
-				let numbertext = document.createElement("div");
-				numbertext.className = "numbertext";
-				numbertext.innerHTML = x + "/" + alts.length;
+				for (let x = 0; x < 5; x++) {
+					if (imgC + 1 == images.length)
+						break;
 
-				let imgB = document.createElement("img");
-				imgB.style.width = "100%";
-				imgB.src = imgPath;
+					const imgPath = "photographs/" + images[imgC += 1] + ".jpg";
 
-				let column = document.createElement("div");
-				column.className = "column";
+					let td = document.createElement("td");
 
-				let img = document.createElement("img");
-				img.className = "demo cursor";
-				img.style.width = "100%";
-				img.src = imgPath;
-				img.alt = alts[y];
-				img.onclick = function () { currentSlide(x) };
+					let img = document.createElement("img");
+					img.style.maxWidth = maxWidth;
+					img.style.cursor = "pointer";
+					img.src = imgPath;
+					img.mynum = imgC;
 
-				mySlides.appendChild(numbertext);
-				mySlides.appendChild(imgB);
-				the_container.appendChild(mySlides);
+					img.onclick = function (e) {
+						cur_img = e.currentTarget.mynum;
+						selectImg(10);
+					};
 
-				column.appendChild(img);
-				slideshowRow.appendChild(column);
+					td.appendChild(img);
+					tr.appendChild(td);
+				}
+
+				the_grid.appendChild(tr);
 			}
 
-			showSlides(slideIndex, true);
+			nextImg(true);
 		}
 
-		function activateTimer(active) {
+		function selectImg(delay) {
+			const imgPath = "photographs/" + images[cur_img] + ".jpg";
+
+			let the_caption = document.getElementById("the_caption");
+			let the_image = document.getElementById("the_image");
+
+			the_image.src = imgPath;
+			the_caption.innerHTML = images[cur_img];
+
+			activateTimer(delay);
+		}
+
+		function nextImg(rnd) {
+			if (rnd)
+				cur_img = Math.floor(Math.random() * images.length);
+			else
+				cur_img++;
+
+			if (cur_img < 0)
+				cur_img = images.length - 1;
+
+			if (cur_img > images.length - 1)
+				cur_img = 0;
+
+			selectImg(3);
+		}
+
+		function activateTimer(delay) {
 			clearTimeout(TheTimer);
 
-			if (active)
-				TheTimer = setTimeout(function () {
-					plusSlides(1, false);
-				}, 3000);
-		}
-
-		function plusSlides(n, block_it) {
-			if (block_it)
-				activateTimer(false);
-
-			showSlides(slideIndex += n, !block_it);
-		}
-
-		function currentSlide(n) {
-			showSlides(slideIndex = n, true);
-		}
-
-		function showSlides(n, activateTheTimer) {
-			let i;
-			let slides = document.getElementsByClassName("mySlides");
-			let dots = document.getElementsByClassName("demo");
-			let captionText = document.getElementById("caption");
-
-			if (n > slides.length)
-				slideIndex = 1;
-
-			if (n < 1)
-				slideIndex = slides.length;
-
-			for (i = 0; i < slides.length; i++)
-				slides[i].style.display = "none";
-
-			for (i = 0; i < dots.length; i++)
-				dots[i].className = dots[i].className.replace(" active", "");
-
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
-			captionText.innerHTML = dots[slideIndex - 1].alt;
-
-			if (activateTheTimer)
-				activateTimer(true);
+			TheTimer = setTimeout(function () {
+				nextImg();
+			}, delay * 1000);
 		}
 	</script>
 
