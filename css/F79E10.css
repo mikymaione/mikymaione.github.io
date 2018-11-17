@@ -1,11 +1,12 @@
 body {
-	width: 750px;
-	left: calc((100% - 770px) / 2);
+	width: 770px;
+	left: calc((100% - 790px) / 2);
 	position: absolute;
 	margin: 0;
 	padding: 10px;
 	text-justify: inter-character;
 	font-family: 'Ubuntu Mono';
+	overflow-y: scroll;
 }
 
 p, li {
