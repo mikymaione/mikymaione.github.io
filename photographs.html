@@ -9,7 +9,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
 
 	<meta charset="UTF-8">
-	<meta name="date" content="2018-11-17" scheme="YYYY-MM-DD">
+	<meta name="date" content="2018-11-19" scheme="YYYY-MM-DD">
 	<meta name="author" content="[MAIONE MIKY]">
 </head>
 
@@ -68,7 +68,6 @@
 		function LoadImages() {
 			const nX = 5;
 			const nY = images.length / nX;
-			const maxWidth = (750 / nX) + "px";
 
 			let the_grid = document.getElementById("the_grid");
 			let imgC = -1;
@@ -85,10 +84,8 @@
 
 					const imgPath = "photographs/" + images[imgC += 1] + ".jpg";
 
-					let td = document.createElement("td");
-
 					let img = document.createElement("img");
-					img.style.maxWidth = maxWidth;
+					img.style.maxWidth = "100%";
 					img.style.cursor = "pointer";
 					img.src = imgPath;
 					img.mynum = imgC;
@@ -98,6 +95,7 @@
 						selectImg(10);
 					};
 
+					let td = document.createElement("td");
 					td.appendChild(img);
 					tr.appendChild(td);
 				}

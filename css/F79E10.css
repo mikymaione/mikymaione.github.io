@@ -1,9 +1,11 @@
 body {
-	width: 770px;
+	max-width: 745px;
 	margin: auto;
-	text-justify: inter-character;
-	font-family: 'Ubuntu Mono';
+	overflow-x: hidden;
 	overflow-y: scroll;
+	
+	font-family: 'Ubuntu Mono';
+	text-justify: inter-character;
 }
 
 p, li {
