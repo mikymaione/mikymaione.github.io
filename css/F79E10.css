@@ -6,9 +6,6 @@ body {
 	
 	font-family: 'Ubuntu Mono';
 	text-justify: inter-character;
-}
-
-p, li {
 	text-align: justify;
 }
 
