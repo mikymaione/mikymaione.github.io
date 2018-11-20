@@ -5,8 +5,11 @@ body {
 	overflow-y: scroll;
 	
 	font-family: 'Ubuntu Mono';
-	text-justify: inter-character;
+}
+
+.giustificato {
 	text-align: justify;
+	text-justify: inter-character;
 }
 
 h2, h3, ruby {
