@@ -1,7 +1,6 @@
 body {
-	max-width: 745px;
+	width: 745px;
 	margin: auto;
-	overflow-x: hidden;
 	overflow-y: scroll;
 	
 	font-family: 'Ubuntu Mono';
