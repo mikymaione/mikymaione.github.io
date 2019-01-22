@@ -1,15 +1,16 @@
-Paola D'Avino
-Francesca Maddaluno
-Adriana Ascione
-Ilaria Lovato
-Federica Piccolo
-Cristina De Filippo
-Letizia Abete
-Giulia Cusumano
-Ilaria Barba
-Federica Capuano
-Lucia Andolfi
-Rosa Ilaria Castaldo
-Chiara Federico
-Inna Mysyuk
-Raffaella Buonocore
+Io	Lei	Nome
+18	17	Paola D'Avino
+19	17	Francesca Maddaluno
+21	17	Adriana Ascione
+21	19	Ilaria Lovato
+21	19	Federica Piccolo
+26	23	Cristina De Filippo
+27	20	Letizia Abete
+28	25	Giulia Cusumano
+29	24	Ilaria Barba
+29	19	Federica Capuano
+30	29	Lucia Andolfi
+30	27	Rosa Ilaria Castaldo
+31	26	Chiara Federico
+31	18	Inna Mysyuk
+32	21	Raffaella Buonocore
