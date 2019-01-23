@@ -1,17 +1,24 @@
-Δy	Nome
-01	Paola D'Avino
-02	Francesca Maddaluno
-05	Ilaria De Luca Bosso
-03	Adriana Ascione
-01	Ilaria Lovato
-02	Federica Piccolo
-02	Cristina De Filippo
-07	Letizia Abete
-02	Giulia Cusumano
-04	Ilaria Barba
-10	Federica Capuano
-01	Lucia Andolfi
-03	Rosa Ilaria Castaldo
-05	Chiara Federico
-12	Inna Mysyuk
-11	Raffaella Buonocore
+24	1	Paola D'Avino
+18	2	Francesca Maddaluno
+1	3	Laura Minichini
+1	5	Ilaria De Luca Bosso
+¼	3	Adriana Ascione
+¼	1	Ilaria Lovato
+42	2	Federica Piccolo
+3	2	Cristina De Filippo
+6	7	Letizia Abete
+6	2	Giulia Cusumano
+1	4	Ilaria Barba
+1	10	Federica Capuano
+1	1	Lucia Andolfi
+1	3	Rosa Ilaria Castaldo
+6	5	Chiara Federico
+1	12	Inna Mysyuk
+9	11	Raffaella Buonocore
+=============================
+Δt	Δy	Nome
+
+
+Legenda:
+Δt: mesi insieme
+Δy: anni di differenza d'età
