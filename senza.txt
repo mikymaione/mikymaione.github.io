@@ -7,9 +7,9 @@
 42	2	Federica Piccolo
 3	2	Cristina De Filippo
 6	7	Letizia Abete
-6	2	Giulia Cusumano
-1	4	Ilaria Barba
 1	10	Federica Capuano
+3	2	Giulia Cusumano
+1	4	Ilaria Barba
 1	1	Lucia Andolfi
 1	3	Rosa Ilaria Castaldo
 6	5	Chiara Federico
