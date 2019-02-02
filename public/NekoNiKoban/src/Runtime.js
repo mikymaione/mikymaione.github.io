@@ -2394,7 +2394,6 @@ function Ad()
 {
 	var a = window.df;
 	a.aw++;
-
 	if (a.aw > a.vM)
 	{
 		var b = (new Bd(a.Jw.Lf, "content")).file("Application.ccj").WD();
@@ -2406,7 +2405,6 @@ function Ad()
 	}
 	else
 	{
-		debugger;
 		var parti = a.path.split('/');
 		var filePath = parti[0] + '/' + a.aw + parti[1];
 
@@ -2519,7 +2517,6 @@ Ed.prototype = {
 		this.Jw = new Pa;
 		var a = F(this.file);
 
-		debugger;
 		var parti = this.path.split('/');
 		var filePath = parti[0] + '/' + this.aw + parti[1];
 
