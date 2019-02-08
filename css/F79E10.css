@@ -12,32 +12,15 @@ body {
 	text-justify: inter-character;
 }
 
-h2, h3, ruby {
+figcaption, h2, h3, ruby {
     color: #464453;
 }
 
-em {
+em, a:link, a:visited {
     color: #F79E10;
 }
 
-/* unvisited link */
-a:link {
-    color: #F79E10;
-}
-
-/* visited link */
-a:visited {
-    color: #F79E10;
-}
-
-/* mouse over link */
-a:hover {
-    color: black;
-    background-color: #F79E10;
-}
-
-/* selected link */
-a:active {
+a:active, a:hover {
     color: black;
     background-color: #F79E10;
 }
