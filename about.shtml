@@ -8,41 +8,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <html>
 
 <head>
-	<title>maionemiky.it</title>
-	<link rel="icon" href="favicon.ico">
-
-	<link rel="stylesheet" type="text/css" href="css/F79E10.css">
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
-
-	<meta charset="UTF-8">
-	<meta name="date" content="2019-02-08" scheme="YYYY-MM-DD">
-	<meta name="author" content="[MAIONE MIKY]">
+	<title>maionemiky.it - About</title>
+	<!--#include file="head.shtml" -->
 </head>
 
 <body>
-	<h1>♆ maionemiky.it</h1>
+	<!--#include file="navigator.shtml" -->
 
-	<nav>
-		<b>Home</b> |
-		<a href="projects.html">Open-source software</a> |
-		<a href="about.html">About</a> |
-		<a href="contacts.html">Contacts</a> |
-		<a href="photographs.html">Photographs</a>
-	</nav>
-	<hr>
+	<h2>About</h2>
 
-	<h2>Maione Michele</h2>
-	<p class="giustificato">a young computer scientist not so young.</p>
-	<a href="curriculum.pdf">Curriculum vitae</a>
+	<figure>
+		<img src="assets/img/kage.jpg">
+		<figcaption>Me performing the shadow clone technique</figcaption>
+	</figure>
 
-	<section>
-		<h3>Regarding this website</h3>
-		<p class="giustificato">In this website you can find: useful information about me, my curriculum vitae, my contact details, some
-			photographs and all the open-source software that I have developed.</p>
-	</section>
-	
-	<hr>
-	<ruby>© 2004-2019, [MAIONE MIKY]</ruby>
+	<p class="giustificato">
+		I was born in Naples in 1986, on a cold winter morning. I'm a computer scientist specialized in desktop applications for Windows and Linux. Since childhood I have always had a huge passion for science, physics and math, I'm also fond of European literature of the 19th and 20th centuries. I practice volleyball, swimming, bodybuilding, running and cycling at amateur level. I'm very competitive and I never give up. <em>My dream is to become a video game developer.</em>
+	</p>
+
+	<!--#include file="footer.shtml" -->
 </body>
 
 </html>

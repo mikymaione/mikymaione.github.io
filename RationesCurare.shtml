@@ -9,27 +9,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <head>
 	<title>maionemiky.it - RationesCurare</title>
-	<link rel="icon" href="favicon.ico">
-
-	<link rel="stylesheet" type="text/css" href="css/F79E10.css">
-	<link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
-	
-	<meta charset="UTF-8">
-	<meta name="date" content="2019-02-08" scheme="YYYY-MM-DD">
-	<meta name="author" content="[MAIONE MIKY]">
+	<!--#include file="head.shtml" -->
 </head>
 
 <body>
-	<h1>♆ maionemiky.it</h1>
-
-	<nav>
-		<a href="index.html">Home</a> |
-		<a href="projects.html">Open-source software</a> > <b>RationesCurare</b> |
-		<a href="about.html">About</a> |
-		<a href="contacts.html">Contacts</a> |
-		<a href="photographs.html">Photographs</a>
-	</nav>
-	<hr>
+	<!--#include file="navigator.shtml" -->
 
 	<h2>RationesCurare</h2>
 	<p class="giustificato">It's an open-source software for the management of the personal economy.</p>
@@ -68,8 +52,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</figure>
 	</section>
 
-	<hr>
-	<ruby>© 2004-2019, [MAIONE MIKY]</ruby>
+	<!--#include file="footer.shtml" -->
 </body>
 
 </html>

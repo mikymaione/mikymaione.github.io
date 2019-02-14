@@ -24,3 +24,11 @@ a:active, a:hover {
     color: black;
     background-color: #F79E10;
 }
+
+.not-active {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: black !important;
+	font-weight: bold;
+}
