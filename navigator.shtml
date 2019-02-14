@@ -9,8 +9,7 @@
 <hr>
 
 <script>
-	function AggiungiFiglioProj(nome)
-	{
+	function AggiungiFiglioProj(nome) {
 		let A = document.createTextNode(' > ');
 		let RC = document.createElement('b');
 		RC.innerText = nome;
@@ -23,14 +22,10 @@
 	let wlp = window.location.pathname;
 	wlp = wlp.replace('/', '');
 	wlp = wlp.replace('.shtml', '');
-	
-	let all_a = document.querySelectorAll("nav > a");
-
-	for (let i = 0; i < all_a.length; i++)
-		all_a[i].className = '';
+	wlp = wlp || 'index';
 
 	let nav = document.getElementById('nav_' + wlp);
-	
+
 	if (nav)
 		nav.className = 'not-active';
 
