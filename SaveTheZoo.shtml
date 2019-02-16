@@ -34,11 +34,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Screenshots</h3>
 
 		<figure>
-			<img src="assets/img/portfolio/SaveTheZoo1.jpg">
+			<img class="img-max-size" src="assets/img/portfolio/SaveTheZoo1.jpg">
 			<figcaption>Level 1</figcaption>
 		</figure>
 		<figure>
-			<img src="assets/img/portfolio/SaveTheZoo2.jpg">
+			<img class="img-max-size" src="assets/img/portfolio/SaveTheZoo2.jpg">
 			<figcaption>Level 2</figcaption>
 		</figure>
 	</section>

@@ -32,3 +32,8 @@ a:active, a:hover {
 	color: black !important;
 	font-weight: bold;
 }
+
+.img-max-size {
+	max-width: 100%;
+	height: auto;
+}

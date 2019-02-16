@@ -39,15 +39,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Screenshots</h3>
 
 		<figure>
-			<img src="assets/img/portfolio/RationesCurare1.jpg">
+			<img class="img-max-size" src="assets/img/portfolio/RationesCurare1.jpg">
 			<figcaption>Content of a cash</figcaption>
 		</figure>
 		<figure>
-			<img src="assets/img/portfolio/RationesCurare2.jpg">
+			<img class="img-max-size" src="assets/img/portfolio/RationesCurare2.jpg">
 			<figcaption>Bar chart</figcaption>
 		</figure>
 		<figure>
-			<img src="assets/img/portfolio/RationesCurare3.jpg">
+			<img class="img-max-size" src="assets/img/portfolio/RationesCurare3.jpg">
 			<figcaption>Pie chart</figcaption>
 		</figure>
 	</section>
