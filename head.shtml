@@ -1,10 +1,12 @@
 <link rel="icon" href="favicon.ico">
 
 <link rel="stylesheet" type="text/css" href="css/F79E10.css">
-<link href='https://fonts.googleapis.com/css?family=Ubuntu Mono' rel='stylesheet'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu Mono'>
 
 <meta charset="UTF-8">
-<meta name="date" content="2019-02-16" scheme="YYYY-MM-DD">
-<meta name="author" content="[MAIONE MIKY]">
+
+<meta name="date" content="2019-02-17" scheme="YYYY-MM-DD">
+<meta name="author" content="Maione Michele">
+<meta name="description" content="Maione Michele's personal website">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
