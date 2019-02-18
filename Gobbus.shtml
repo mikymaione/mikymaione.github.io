@@ -8,37 +8,50 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <html>
 
 <head>
-	<title>maionemiky.it - Open-source software</title>
+	<title>maionemiky.it - Gobbus</title>
 	<!--#include file="head.shtml" -->
 </head>
 
 <body>
 	<!--#include file="navigator.shtml" -->
 
-	<h2>Open-source software</h2>
+	<h2>RationesCurare</h2>
+	<p class="giustificato">It's a game that I developed when I was 15.</p>
 
-	<p>I have developed the following open-source software:</p>
+	<a target="_blank" href="public/Gobbus/index.html">play it</a>
 
-	<ul class="giustificato">
-		<li>
-			<a href="RationesCurare.shtml">RationesCurare</a>, a software for the management of the personal economy.
-		</li>
-		<li>
-			<a href="SaveTheZoo.shtml">SaveTheZoo</a>, a free game for Android devices, the aim of the game is to save all the animals in danger.
-		</li>
-		<li>
-			<a href="Gobbus.shtml">Gobbus</a>, it's a game that I developed when I was 15.
-		</li>
-		<li>
-			<a target="_blank" href="public/Senmpo/index.html">Senmpo</a>, it's a non sense game created for learn.
-		</li>
-		<li>
-			<a target="_blank" href="public/Lucy/index.html">Lucy</a>, it's a game created for learn.
-		</li>
-		<li>
-			<a target="_blank" href="public/NekoNiKoban/index.html">Neko ni koban</a>, it was created during the Game Jam 2019 at Milan.
-		</li>
-	</ul>
+	<section>
+		<h3>Minimum system requirements</h3>
+		<ol>
+			<li>
+				A keyboard
+			</li>
+			<li>
+				A modern browser like: Firefox, Chrome, Edge, Opera, Safari
+			</li>
+		</ol>
+	</section>
+
+	<section>
+		<h3>Screenshots</h3>
+
+		<figure>
+			<img class="img-max-size" src="assets/img/portfolio/Gobbus1.jpg">
+			<figcaption>World 1</figcaption>
+		</figure>
+		<figure>
+			<img class="img-max-size" src="assets/img/portfolio/Gobbus2.jpg">
+			<figcaption>World 2</figcaption>
+		</figure>
+		<figure>
+			<img class="img-max-size" src="assets/img/portfolio/Gobbus3.jpg">
+			<figcaption>World 3</figcaption>
+		</figure>
+		<figure>
+			<img class="img-max-size" src="assets/img/portfolio/Gobbus4.jpg">
+			<figcaption>World 4</figcaption>
+		</figure>
+	</section>
 
 	<!--#include file="footer.shtml" -->
 </body>
