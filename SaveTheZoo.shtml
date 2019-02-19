@@ -13,6 +13,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </head>
 
 <body>
+	<script>
+		var SonoSottoProgetto = true;
+	</script>
+
 	<!--#include file="navigator.shtml" -->
 
 	<h2>SaveTheZoo</h2>

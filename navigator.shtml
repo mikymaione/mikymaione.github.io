@@ -29,6 +29,10 @@
 	if (nav)
 		nav.className = 'not-active';
 
-	if (wlp == 'RationesCurare' || wlp == 'SaveTheZoo')
-		AggiungiFiglioProj(wlp);
+	try {
+		if (SonoSottoProgetto)
+			AggiungiFiglioProj(wlp);
+	} catch (error) {
+		// no SonoSottoProgetto
+	}
 </script>
