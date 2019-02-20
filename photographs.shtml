@@ -78,7 +78,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					const imgPath = "photographs/" + images[imgC] + ".jpg";
 
 					let img = document.createElement("img");
-					img.style.maxWidth = "100%";
+					img.style.width = "100%";
 					img.style.cursor = "pointer";
 					img.src = imgPath;
 					img.mynum = imgC;
