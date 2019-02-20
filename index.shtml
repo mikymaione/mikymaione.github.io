@@ -17,7 +17,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<h2>Maione Michele</h2>
 	<p class="giustificato">a young computer scientist not so young.</p>
-	<a href="curriculum.pdf">Curriculum vitae</a>
+	<a target="_blank" href="curriculum.pdf">Curriculum vitae</a>
 
 	<section>
 		<h3>Regarding this website</h3>
