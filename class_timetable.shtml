@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<h2>Class timetable 1Y-2S</h2>
 
-	<table border="1">
+	<table border="1" width="100%">
 		<tr>
 			<td>
 				Monday
