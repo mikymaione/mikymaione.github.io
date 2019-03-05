@@ -33,11 +33,6 @@ a:active, a:hover {
 	font-weight: bold;
 }
 
-.div-img-square {
-	width: 700px;
-	height: 525px;
-}
-
 .img-max-size {
 	max-width: 100%;
 	height: auto;

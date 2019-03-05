@@ -20,9 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<section>
 		<figure>
-			<div class="div-img-square">
-				<img id="the_image" class="img-max-size">
-			</div>
+			<img id="the_image" class="img-max-size">
 			<figcaption id="the_caption"></figcaption>
 		</figure>
 	</section>
