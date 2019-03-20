@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<h2>Class timetable 1Y-2S</h2>
 
-	<table border="1" width="100%">
+	<table id="classTimeTable" border="1" width="100%">
 		<tr>
 			<td>
 				Monday
@@ -66,6 +66,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			</td>
 		</tr>
 	</table>
+	
+	<script>
+		let d = new Date();
+		let n = d.getDay();
+		n--; //now monday is 0
+
+		if (n > -1 && n < 5)
+		{
+			let classTimeTable = document.getElementById('classTimeTable');
+
+			for (let x = 0; x < 2; x++) 
+				classTimeTable.children[0].children[x].children[n].style.backgroundColor = '#F79E10';
+		}
+	</script>
 
 	<!--#include file="footer.shtml" -->
 </body>
