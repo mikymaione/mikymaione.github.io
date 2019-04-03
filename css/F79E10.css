@@ -16,6 +16,10 @@ figcaption, h2, h3, ruby {
     color: #464453;
 }
 
+.disab {
+	color: #464453;
+}
+
 em, a:link, a:visited {
     color: #F79E10;
 }

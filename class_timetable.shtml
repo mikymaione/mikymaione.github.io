@@ -12,6 +12,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!--#include file="head.shtml" -->
 
 	<style>
+		@media only screen and (max-width: 745px) {
+			table {
+				font-size: x-small;
+			}
+		}
+		
 		td {
 			vertical-align: top;
 		}
@@ -40,29 +46,51 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<td>
 				Friday
 			</td>
+			<td>
+				Saturday
+			</td>
+			<td>
+				Sunday
+			</td>
 		</tr>
 		<tr>
 			<td>
 				<p>09.30-11.30<br>O.G.D.</p>
+				<p class="disab">12.00-12.30<br>Lunch</p>
 				<p>12.30-14.30<br>O.G.D.</p>
 				<p>13.30-16.30<br>V.A.</p>
+				<p class="disab">20.30-23.00<br>Gym</p>
 			</td>
 			<td>
+				<p class="disab">08.00-08.30<br>Laundry</p>
 				<p>13.30-15.30<br>A.I.</p>
+				<p class="disab">20.30-21.30<br>Spinning</p>
 			</td>
 			<td>
 				<p>08.30-11.30<br>S.D.P.</p>
+				<p class="disab">13.30-14.00<br>Lunch</p>
 				<p>15.30-17.30<br>A.I.</p>
-				<p>18.00-19.30<br>Volley</p>
+				<p class="disab">18.00-19.30<br>Volley</p>
 			</td>
 			<td>
+				<p class="disab">08.00-08.30<br>Laundry</p>
+				<p class="disab">12.00-12.30<br>Lunch</p>
 				<p>12.30-14.30<br>O.G.D.</p>
 				<p>15.30-17.30<br>O.G.D.</p>
-				<p>18.00-19.30<br>Volley</p>
+				<p class="disab">18.00-19.30<br>Volley</p>
 			</td>
 			<td>
 				<p>08.30-11.30<br>S.D.P.</p>
+				<p class="disab">13.00-13.30<br>Lunch</p>
 				<p>13.30-16.30<br>V.A.</p>
+				<p class="disab">16.30-18.30<br>Cleaning</p>
+				<p class="disab">20.30-23.00<br>Gym</p>
+			</td>
+			<td>
+				<p class="disab">19.00-19.30<br>Spinning</p>
+			</td>
+			<td>
+				<p class="disab">18.30-19.30<br>Spinning</p>
 			</td>
 		</tr>
 	</table>
@@ -70,9 +98,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<script>
 		let d = new Date();
 		let n = d.getDay();
-		n--; //now monday is 0
+		n--;
+		/*
+		0 = Monday
+		1 = Tuesday
+		2 = Wednesday
+		3 = Thursday
+		4 = Friday
+		5 = Saturday
+		6 = Sunday
+		*/
 
-		if (n > -1 && n < 5)
+		if (n > -1 && n < 7)
 		{
 			let classTimeTable = document.getElementById('classTimeTable');
 
