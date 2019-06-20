@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<p class="giustificato">It's an open-source, online, multiplayer, game that we developed for the exam of Online Game Design.</p>
 	<p class="giustificato">Hypogeum is a shooting and racing game, where four teams of two players face each other in an enormous arena (called, in fact, Hypogeum), trying to defeat their enemies and be the last standing. Each team belongs to one of the four existing factions and is composed of two players from the same species, that represent the champions. The battles are fought on cars, with one player as driver and one as shooter, each of them equipped with a faction-specific weapon.</p>
 
-	<a target="_blank" href="public/hypogeum.zip">download it</a>
+	<a target="_blank" href="public/programmi/Hypogeum.zip">download it</a>
 
 	<section>
 		<h3>Minimum system requirements</h3>
@@ -52,6 +52,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<figcaption>In game</figcaption>
 		</figure>
 	</section>
+	<section>
+		<h3>Videos</h3>
+		
+		<figure>				
+			<iframe id="videoH" width="100%" allowfullscreen src="https://www.youtube.com/embed/wZmm6_Iji10"></iframe>
+			<script>
+				//560 x 315
+				debugger;
+				var videoH = document.getElementById('videoH');
+				videoH.height = videoH.clientWidth * 315 / 560;
+			</script>
+			<figcaption>Trailer</figcaption>
+		</figure>
+	</section>	
 
 	<!--#include file="footer.shtml" -->
 </body>
