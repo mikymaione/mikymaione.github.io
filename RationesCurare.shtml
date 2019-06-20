@@ -28,13 +28,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Minimum system requirements</h3>
 		<ol>
 			<li>
-				Microsoft Windows XP SP3
+				Microsoft Windows XP SP3;
 			</li>
 			<li>
-				Microsoft .NET Framework 3.0
+				Microsoft .NET Framework 3.0;
 			</li>
 			<li>
-				Microsoft Chart Controls
+				Microsoft Chart Controls.
 			</li>
 		</ol>
 	</section>

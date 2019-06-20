@@ -8,7 +8,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <html>
 
 <head>
-	<title>maionemiky.it - Gobbus</title>
+	<title>maionemiky.it - Hypogeum</title>
 	<!--#include file="head.shtml" -->
 </head>
 
@@ -19,19 +19,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	
 	<!--#include file="navigator.shtml" -->
 
-	<h2>Gobbus</h2>
-	<p class="giustificato">It's a game that I developed when I was 15, there are 16 playable levels!</p>
+	<h2>Hypogeum</h2>
+	<p class="giustificato">It's an open-source, online, multiplayer, game that we developed for the exam of Online Game Design.</p>
+	<p class="giustificato">Hypogeum is a shooting and racing game, where four teams of two players face each other in an enormous arena (called, in fact, Hypogeum), trying to defeat their enemies and be the last standing. Each team belongs to one of the four existing factions and is composed of two players from the same species, that represent the champions. The battles are fought on cars, with one player as driver and one as shooter, each of them equipped with a faction-specific weapon.</p>
 
-	<a target="_blank" href="public/Gobbus/index.html">play it</a>
+	<a target="_blank" href="public/hypogeum.zip">download it</a>
 
 	<section>
 		<h3>Minimum system requirements</h3>
 		<ol>
 			<li>
-				A keyboard;
+				Windows 7 SP1+;
 			</li>
 			<li>
-				A modern browser like: Firefox, Chrome, Edge, Opera, Safari.
+				Graphics card with DX10 (shader model 4.0) capabilities;
+			</li>
+			<li>
+				CPU: SSE2 instruction set support.
 			</li>
 		</ol>
 	</section>
@@ -40,20 +44,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Screenshots</h3>
 
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/Gobbus1.jpg">
-			<figcaption>World 1</figcaption>
+			<img class="img-max-size" src="public/Hypogeum/Hypogeum.png">
+			<figcaption>Characters selection</figcaption>
 		</figure>
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/Gobbus2.jpg">
-			<figcaption>World 2</figcaption>
-		</figure>
-		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/Gobbus3.jpg">
-			<figcaption>World 3</figcaption>
-		</figure>
-		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/Gobbus4.jpg">
-			<figcaption>World 4</figcaption>
+			<img class="img-max-size" src="public/Hypogeum/InGame.png">
+			<figcaption>In game</figcaption>
 		</figure>
 	</section>
 
