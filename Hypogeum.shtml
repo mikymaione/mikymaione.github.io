@@ -20,16 +20,29 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!--#include file="navigator.shtml" -->
 
 	<h2>Hypogeum</h2>
-	<p class="giustificato">It's an open-source, online, multiplayer, game that we developed for the exam of Online Game Design.</p>
-	<p class="giustificato">Hypogeum is a shooting and racing game, where four teams of two players face each other in an enormous arena (called, in fact, Hypogeum), trying to defeat their enemies and be the last standing. Each team belongs to one of the four existing factions and is composed of two players from the same species, that represent the champions. The battles are fought on cars, with one player as driver and one as shooter, each of them equipped with a faction-specific weapon.</p>
+	<p class="giustificato">It's an open-source, online, multiplayer, game that we developed for the exam of Online Game Design. The game won the “Best multiplayer game” and “EDI special award” at New Game Designer 2019 in Milan (<a target="_blank" href="http://ngd.unimi.it">ngd.unimi.it</a>).</p>
+	<section>		
+		<h3>Description</h3>
+		<p class="giustificato">Hypogeum is a shooting and racing game, where four teams of two players face each other in an enormous arena (called, in fact, Hypogeum), trying to defeat their enemies and be the last standing. Each team belongs to one of the four existing factions and is composed of two players from the same species, that represent the champions. The battles are fought on cars, with one player as driver and one as shooter, each of them equipped with a faction-specific weapon.</p>
+	</section>
 
-	<a target="_blank" href="public/programmi/Hypogeum.zip">download it</a>
+	<section>		
+		<h3>Downloads</h3>
+		<ul>
+			<li>
+				<a target="_blank" href="public/programmi/Hypogeum.zip">Windows download</a>
+			</li>
+			<li>
+				<a target="_blank" href="public/programmi/Hypogeum_macOS.zip">macOS download</a>	
+			</li>
+		</ul>		
+	</section>	
 
 	<section>
 		<h3>Minimum system requirements</h3>
 		<ol>
 			<li>
-				Windows 7 SP1+;
+				OS: Windows 7 SP1+, macOS 10.12+;
 			</li>
 			<li>
 				Graphics card with DX10 (shader model 4.0) capabilities;
