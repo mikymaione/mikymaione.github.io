@@ -71,8 +71,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<figure>				
 			<iframe id="videoH" width="100%" allowfullscreen src="https://www.youtube.com/embed/wZmm6_Iji10"></iframe>
 			<script>
-				//560 x 315
-				debugger;
+				//560 x 315				
 				var videoH = document.getElementById('videoH');
 				videoH.height = videoH.clientWidth * 315 / 560;
 			</script>
