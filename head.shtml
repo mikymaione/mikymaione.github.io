@@ -1,12 +1,13 @@
-<link rel="icon" href="favicon.ico">
 
-<link rel="stylesheet" type="text/css" href="css/F79E10.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu Mono'>
+	<link rel="icon" href="favicon.ico">
 
-<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/F79E10.css">
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu Mono'>
 
-<meta name="date" content="2019-06-28" scheme="YYYY-MM-DD">
-<meta name="author" content="Maione Michele">
-<meta name="description" content="Maione Michele's personal website">
+	<meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="date" content="2019-07-22" scheme="YYYY-MM-DD">
+	<meta name="author" content="Maione Michele">
+	<meta name="description" content="Maione Michele's personal website">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">

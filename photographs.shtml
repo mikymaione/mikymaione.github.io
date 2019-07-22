@@ -60,20 +60,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 		LoadImages();
 
-		function LoadImages() {
+		function LoadImages()
+		{
 			const nX = 4;
 			const nY = images.length / nX;
 
 			let the_grid = document.getElementById("the_grid");
 			let imgC = -1;
 
-			for (let y = 0; y < nY; y++) {
+			for (let y = 0; y < nY; y++)
+			{
 				if (imgC == images.length - 1)
 					break;
 
 				let tr = document.createElement("tr");
 
-				for (let x = 0; x < nX; x++) {
+				for (let x = 0; x < nX; x++)
+				{
 					if (imgC == images.length - 1)
 						break;
 
@@ -88,7 +91,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 					img.mynum = imgC;
 					img.title = images[imgC];
 
-					img.onclick = function (e) {
+					img.onclick = function (e)
+					{
 						cur_img = e.currentTarget.mynum;
 						selectImg(10);
 					};
@@ -104,7 +108,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			nextImg(true);
 		}
 
-		function selectImg(delay) {
+		function selectImg(delay)
+		{
 			const imgPath = "photographs/" + images[cur_img] + ".jpg";
 
 			let the_caption = document.getElementById("the_caption");
@@ -116,7 +121,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			activateTimer(delay);
 		}
 
-		function nextImg(rnd) {
+		function nextImg(rnd)
+		{
 			if (rnd)
 				cur_img = Math.floor(Math.random() * images.length);
 			else
@@ -131,15 +137,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			selectImg(3);
 		}
 
-		function activateTimer(delay) {
+		function activateTimer(delay)
+		{
 			clearTimeout(TheTimer);
 
-			TheTimer = setTimeout(function () {
+			TheTimer = setTimeout(function ()
+			{
 				nextImg();
 			}, delay * 1000);
 		}
 	</script>
-	
+
 	<!--#include file="footer.shtml" -->
 </body>
 
