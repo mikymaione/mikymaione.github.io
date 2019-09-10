@@ -27,7 +27,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <body>
 	<!--#include file="navigator.shtml" -->
 
-	<h2>Class timetable 1Y-2S</h2>
+	<h2>Class timetable 2Y-1S</h2>
 
 	<table id="classTimeTable" border="1" width="100%">
 		<tr>
@@ -55,41 +55,60 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</tr>
 		<tr>
 			<td>
-				<p>09.30-11.30<br>O.G.D.</p>
-				<p class="disab">12.00-12.30<br>Lunch</p>
-				<p>12.30-14.30<br>O.G.D.</p>
-				<p>13.30-16.30<br>V.A.</p>
-				<p class="disab">20.30-23.00<br>Gym</p>
+				<!--Monday-->
+				<p class="disab">10.30-12.30<br>Sistemi</p>
+
+				<p class="disab">13.00-14.00<br>Lunch</p>
+
+				<p class="disab">21.00-22.30<br>Volley</p>
 			</td>
 			<td>
-				<p class="disab">08.00-08.30<br>Laundry</p>
-				<p>13.30-15.30<br>A.I.</p>
+				<!--Tuesday-->				
+				<p class="disab">08.15-10.15<br>V.D.P.</p>
+				
+				<!--
+					<p class="disab">10.30-12.30<br>Comb. Opt.</p>
+					<p class="disab">13.30-15.30<br>Comb. Opt.</p>
+				-->
+				<p class="disab">13.00-14.00<br>Lunch</p>				
+				
+				<p class="disab">14.15-16.15<br>V.D.P.</p>
+				<p class="disab">16.15-18.15<br>Lab. V.D.P.</p>
+				
+				<p class="disab">20.30-23.00<br>Gym</p>				
+			</td>
+			<td>
+				<!--Wednesday-->
+				<p class="disab">08.30-10.30<br>Sistemi</p>
+
+				<p class="disab">13.00-14.00<br>Lunch</p>
+				
 				<p class="disab">20.30-21.30<br>Spinning</p>
 			</td>
 			<td>
-				<p>08.30-11.30<br>S.D.P.</p>
-				<p class="disab">13.30-14.00<br>Lunch</p>
-				<p>15.30-17.30<br>A.I.</p>
+				<!--Thursday-->				
+				<p class="disab">13.00-14.00<br>Lunch</p>
+				
+				<p class="disab">16.30-18.30<br>Metodi</p>
+
 				<p class="disab">18.00-19.30<br>Volley</p>
 			</td>
 			<td>
-				<p class="disab">08.00-08.30<br>Laundry</p>
-				<p class="disab">12.00-12.30<br>Lunch</p>
-				<p>12.30-14.30<br>O.G.D.</p>
-				<p>15.30-17.30<br>O.G.D.</p>
-				<p class="disab">18.00-19.30<br>Volley</p>
-			</td>
-			<td>
-				<p>08.30-11.30<br>S.D.P.</p>
-				<p class="disab">13.00-13.30<br>Lunch</p>
-				<p>13.30-16.30<br>V.A.</p>
-				<p class="disab">16.30-18.30<br>Cleaning</p>
+				<!--Friday-->				
+				<p class="disab">10.30-12.30<br>Metodi</p>
+
+				<p class="disab">12.30-13.30<br>Lunch</p>
+
 				<p class="disab">20.30-23.00<br>Gym</p>
 			</td>
 			<td>
+				<!--Saturday-->
+				<p class="disab">18.30-19.30<br>Cleaning</p>
 				<p class="disab">19.00-19.30<br>Spinning</p>
 			</td>
 			<td>
+				<!--Sunday-->
+				<p class="disab">09.00-10.00<br>Laundry</p>
 				<p class="disab">18.30-19.30<br>Spinning</p>
 			</td>
 		</tr>
