@@ -27,16 +27,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<a href="SaveTheZoo.shtml">SaveTheZoo</a>, a free game for Android devices, the aim of the game is to save all the animals in danger.
 		</li>
 		<li>
-			<a href="Hypogeum.shtml">Hypogeum</a>, it's an open-source, online, multiplayer, game that we developed for the exam of Online Game Design. The game won the “Best multiplayer game” and “EDI special award” at New Game Designer 2019 in Milan (ngd.unimi.it).
+			<a href="Hypogeum.shtml">Hypogeum</a>, it’s an open-source, online, multiplayer, game that we developed for the exam of Online Game Design. The game won the “Best multiplayer game” and “EDI special award” at New Game Designer 2019 in Milan (ngd.unimi.it).
 		</li>
 		<li>
-			<a href="Gobbus.shtml">Gobbus</a>, it's a game that I developed when I was 15, there are 16 playable levels!
+			<a href="Gobbus.shtml">Gobbus</a>, it’s a game that I developed when I was 15, there are 16 playable levels!
 		</li>		
 		<li>
-			<a target="_blank" href="public/Senmpo/index.html">Senmpo</a>, it's a non sense game created for learn.
+			<a target="_blank" href="public/Senmpo/index.html">Senmpo</a>, it’s a platformer created for testing a low gravity gameplay.
 		</li>
 		<li>
-			<a target="_blank" href="public/Lucy/index.html">Lucy</a>, it's a game created for learn.
+			<a target="_blank" href="public/Lucy/index.html">Lucy</a>, it’s a game created for testing an infinite side-scrolling gameplay.
 		</li>
 		<li>
 			<a target="_blank" href="public/NekoNiKoban/index.html">Neko ni koban</a>, it was created during the Game Jam 2019 at Milan.

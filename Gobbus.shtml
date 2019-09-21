@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!--#include file="navigator.shtml" -->
 
 	<h2>Gobbus</h2>
-	<p class="giustificato">It's a game that I developed when I was 15, there are 16 playable levels!</p>
+	<p class="giustificato">It’s a game that I developed when I was 15, there are 16 playable levels!</p>
 
 	<a target="_blank" href="public/Gobbus/index.html">play it</a>
 

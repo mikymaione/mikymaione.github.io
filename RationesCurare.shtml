@@ -20,7 +20,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!--#include file="navigator.shtml" -->
 
 	<h2>RationesCurare</h2>
-	<p class="giustificato">It's an open-source software for the management of the personal economy.</p>
+	<p class="giustificato">It’s an open-source software for the management of the personal economy.</p>
 
 	<a target="_blank" href="public/programmi/RationesCurare7.zip">download it</a>
 
