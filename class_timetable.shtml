@@ -65,12 +65,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<td>
 				<!--Tuesday-->				
 				<p class="disab">08.15-10.15<br>V.D.P.</p>
-				
-				<!--
-					<p class="disab">10.30-12.30<br>Comb. Opt.</p>
-					<p class="disab">13.30-15.30<br>Comb. Opt.</p>
-				-->
-				<p class="disab">13.00-14.00<br>Lunch</p>				
+								
+				<p class="disab">10.30-12.30<br>C.O.</p>
+				<p class="disab">12.30-13.30<br>Lunch</p>
+				<p class="disab">13.30-15.30<br>C.O.</p>
+			
+				<!-- <p class="disab">13.00-14.00<br>Lunch</p> -->
 				
 				<p class="disab">14.15-16.15<br>V.D.P.</p>
 				<p class="disab">16.15-18.15<br>Lab. V.D.P.</p>
