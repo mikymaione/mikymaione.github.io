@@ -56,7 +56,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<tr>
 			<td>
 				<!--Monday-->
-				<p class="disab">10.30-12.30<br>Sistemi</p>
+				<p class="disab">10.30-12.30<br>I.S.</p>
 
 				<p class="disab">13.00-14.00<br>Lunch</p>
 
@@ -73,29 +73,27 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				<!-- <p class="disab">13.00-14.00<br>Lunch</p> -->
 				
 				<p class="disab">14.15-16.15<br>V.D.P.</p>
-				<p class="disab">16.15-18.15<br>Lab. V.D.P.</p>
+				<p class="disab">16.15-18.15<br>V.D.P. Lab.</p>
 				
 				<p class="disab">20.30-23.00<br>Gym</p>				
 			</td>
 			<td>
 				<!--Wednesday-->
-				<p class="disab">08.30-10.30<br>Sistemi</p>
+				<p class="disab">08.30-10.30<br>I.S.</p>
 
-				<p class="disab">13.00-14.00<br>Lunch</p>
-				
-				<p class="disab">20.30-21.30<br>Spinning</p>
+				<p class="disab">13.00-14.00<br>Lunch</p>							
 			</td>
 			<td>
 				<!--Thursday-->				
 				<p class="disab">13.00-14.00<br>Lunch</p>
 				
-				<p class="disab">16.30-18.30<br>Metodi</p>
+				<p class="disab">16.30-18.30<br>M.M.D.</p>
 
 				<p class="disab">18.00-19.30<br>Volley</p>
 			</td>
 			<td>
 				<!--Friday-->				
-				<p class="disab">10.30-12.30<br>Metodi</p>
+				<p class="disab">10.30-12.30<br>M.M.D.</p>
 
 				<p class="disab">12.30-13.30<br>Lunch</p>
 
@@ -103,13 +101,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			</td>
 			<td>
 				<!--Saturday-->
-				<p class="disab">18.30-19.30<br>Cleaning</p>
-				<p class="disab">19.00-19.30<br>Spinning</p>
 			</td>
 			<td>
 				<!--Sunday-->
-				<p class="disab">09.00-10.00<br>Laundry</p>
-				<p class="disab">18.30-19.30<br>Spinning</p>
 			</td>
 		</tr>
 	</table>
