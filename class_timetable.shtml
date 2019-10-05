@@ -11,13 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<title>maionemiky.it - Class timetable</title>
 	<!--#include file="head.shtml" -->
 
-	<style>
-		@media only screen and (max-width: 745px) {
-			table {
-				font-size: x-small;
-			}
-		}
-		
+	<style>		
 		td {
 			vertical-align: top;
 		}
@@ -45,70 +39,40 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			</td>
 			<td>
 				Friday
-			</td>
-			<td>
-				Saturday
-			</td>
-			<td>
-				Sunday
-			</td>
+			</td>	
 		</tr>
 		<tr>
 			<td>
 				<!--Monday-->
-				<p class="disab">10.30-12.30<br>I.S.</p>
-
-				<p class="disab">13.00-14.00<br>Lunch</p>
-
-				<p class="disab">21.00-22.30<br>Volley</p>
+				<p class="disab">10.30-12.30<br>I.S.</p>	
 			</td>
 			<td>
 				<!--Tuesday-->				
 				<p class="disab">08.15-10.15<br>V.D.P.</p>
 								
-				<p class="disab">10.30-12.30<br>C.O.</p>
-				<p class="disab">12.30-13.30<br>Lunch</p>
+				<p class="disab">10.30-12.30<br>C.O.</p>				
 				<p class="disab">13.30-15.30<br>C.O.</p>
 			
-				<!-- <p class="disab">13.00-14.00<br>Lunch</p> -->
-				
 				<p class="disab">14.15-16.15<br>V.D.P.</p>
-				<p class="disab">16.15-18.15<br>V.D.P. Lab.</p>
-				
-				<p class="disab">20.30-23.00<br>Gym</p>				
+				<p class="disab">16.15-18.15<br>V.D.P. Lab.</p>				
 			</td>
 			<td>
 				<!--Wednesday-->
-				<p class="disab">08.30-10.30<br>I.S.</p>
-
-				<p class="disab">13.00-14.00<br>Lunch</p>							
+				<p class="disab">08.30-10.30<br>I.S.</p>										
 			</td>
 			<td>
 				<!--Thursday-->				
-				<p class="disab">13.00-14.00<br>Lunch</p>
-				
-				<p class="disab">16.30-18.30<br>M.M.D.</p>
-
-				<p class="disab">18.00-19.30<br>Volley</p>
+				<p class="disab">16.30-18.30<br>D.M.M.</p>				
 			</td>
 			<td>
 				<!--Friday-->				
-				<p class="disab">10.30-12.30<br>M.M.D.</p>
-
-				<p class="disab">12.30-13.30<br>Lunch</p>
-
-				<p class="disab">20.30-23.00<br>Gym</p>
-			</td>
-			<td>
-				<!--Saturday-->
-			</td>
-			<td>
-				<!--Sunday-->
-			</td>
+				<p class="disab">10.30-12.30<br>D.M.M.</p>
+			</td>			
 		</tr>
 	</table>
 	
 	<script>
+		const numberOfDaysInTable = 5;
 		let n = -1;
 		let d = new Date();
 		let b = d.getDay();
@@ -132,7 +96,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				break;
 		}
 
-		if (n > -1 && n < 7)
+		if (n > -1 && n < numberOfDaysInTable)
 		{
 			let classTimeTable = document.getElementById('classTimeTable');
 
