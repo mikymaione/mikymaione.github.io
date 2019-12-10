@@ -31,15 +31,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		</li>
 		<li>
 			<a href="Gobbus.shtml">Gobbus</a>, it’s a game that I developed when I was 15, there are 16 playable levels!
-		</li>		
-		<li>
-			<a target="_blank" href="public/Senmpo/index.html">Senmpo</a>, it’s a platformer created for testing a low gravity gameplay.
 		</li>
 		<li>
-			<a target="_blank" href="public/Lucy/index.html">Lucy</a>, it’s a game created for testing an infinite side-scrolling gameplay.
-		</li>
-		<li>
-			<a target="_blank" href="public/NekoNiKoban/index.html">Neko ni koban</a>, it was created during the Game Jam 2019 at Milan.
+			<a target="_blank" href="http://globalgamejam.org/2019/games/neko-ni-koban">Neko ni koban</a>, it was created during the Game Jam 2019 at Milan.
 		</li>
 	</ul>
 
