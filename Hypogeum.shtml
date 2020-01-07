@@ -13,13 +13,19 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </head>
 
 <body>
+	<script src="letturaProgrammi.js"></script>
+	
 	<script>
 		var SonoSottoProgetto = true;
 	</script>
 	
 	<!--#include file="navigator.shtml" -->
 
-	<h2>Hypogeum</h2>
+	<div style="display: ruby;">
+		<h2>Hypogeum</h2>
+		<p id="versione"></p>
+	</div>
+	
 	<p class="giustificato">It’s an open-source, online, multiplayer, game that we developed for the exam of Online Game Design. The game won the “Best multiplayer game” and “EDI special award” at New Game Designer 2019 in Milan (<a target="_blank" href="http://ngd.unimi.it">ngd.unimi.it</a>).</p>
 	<section>		
 		<h3>Description</h3>
@@ -78,6 +84,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<figcaption>Trailer</figcaption>
 		</figure>
 	</section>	
+
+	<script>
+		getVersione("http://www.maionemiky.it/public/programmi/versioni.txt", "Hypogeum.exe", (v) =>
+		{
+			document.getElementById("versione").innerHTML = "v." + v;
+		});
+	</script>
 
 	<!--#include file="footer.shtml" -->
 </body>
