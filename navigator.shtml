@@ -5,8 +5,8 @@
 		<a id="nav_projects" href="projects.shtml">Open-source projects</a> |
 		<a id="nav_about" href="about.shtml">About</a> |
 		<a id="nav_contacts" href="contacts.shtml">Contacts</a> |
-		<a id="nav_photographs" href="photographs.shtml">Photographs</a>
-		<!-- | <a id="nav_class_timetable" href="class_timetable.shtml">Class timetable</a> -->
+		<a id="nav_photographs" href="photographs.shtml">Photographs</a> |
+		<a id="nav_class_timetable" href="class_timetable.shtml">Class timetable</a>
 	</nav>
 	<hr>
 
