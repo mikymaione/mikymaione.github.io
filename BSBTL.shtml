@@ -64,7 +64,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<img class="img-max-size" src="public/BSBTL/Screen3.jpg">
 			<figcaption>In game</figcaption>
 		</figure>
-	</section>	
+	</section>
+	<section>
+		<h3>Videos</h3>
+		
+		<figure>				
+			<iframe id="videoH" width="100%" allowfullscreen src="https://www.youtube.com/embed/Sj8RbhSlayw"></iframe>
+			<script>
+				//560 x 315				
+				var videoH = document.getElementById('videoH');
+				videoH.height = videoH.clientWidth * 315 / 560;
+			</script>
+			<figcaption>Trailer</figcaption>
+		</figure>
+	</section>
 
 	<!--#include file="footer.shtml" -->
 </body>
