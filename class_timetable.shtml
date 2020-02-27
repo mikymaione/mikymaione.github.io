@@ -21,7 +21,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <body>
 	<!--#include file="navigator.shtml" -->
 
-	<h2>Class timetable 2Y-1S</h2>
+	<h2>Class timetable 2Y-2S</h2>
 
 	<table id="classTimeTable" border="1" width="100%">
 		<tr>
@@ -45,6 +45,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			<td>
 				<!--Monday-->
 				<p class="disab">08.30-10.30<br>M.L.</p>
+				<p class="disab">13.30-16.30<br>V.A.</p>
 			</td>
 			<td>
 				<!--Tuesday-->
@@ -58,6 +59,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			</td>
 			<td>
 				<!--Friday-->
+				<p class="disab">13.30-16.30<br>V.A.</p>
 			</td>			
 		</tr>
 	</table>
