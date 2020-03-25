@@ -28,19 +28,25 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<table id="the_grid"></table>
 
 	<script>
-		const images = [
+		const imagesUnsorted = [
 			"Acropolis - Lindos",
 			"Almudena Cathedral - Madrid",
 			"Altare della Patria - Rome",
+			"Arc de Triomphe de l'Étoile - Paris",
 			"Arcul de Triumf - Bucarest",
 			"Bulevardul Nicolae Bălcescu - Bucarest",
 			"Castle - Cassano d’Adda",
 			"Cave of Tiberius - Sperlonga",
+			"Cathedral Basilica of St Stanislaus and St Ladislaus - Vilnius",
+			"Cattedrale di Sant'Agata - Catania",
 			"Colosseum - Rome",
 			"Courtyard - Bergamo",
 			"Cyclopean Isles - Catania",
+			"Eiffel Tower - Paris",
+			"Icarus, Temple of Concordia - Agrigento",
 			"Jovanotti",
 			"Lama Monachile beach - Polignano a Mare",
+			"Lindos",
 			"Marechiaro - Naples",
 			"Naples",
 			"Nisida - Naples",
@@ -49,11 +55,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			"Riserva naturale dello Zingaro - Trapani",
 			"Santander",
 			"Sassi di Matera - Matera",
+			"Scala dei Turchi - Realmonte",
 			"Serapo beach - Gaeta",
 			"Taranto",
 			"Temple of Debod - Madrid",
+			"Vilnius University - Vilnius",
 			"Yokohama"
 		];
+
+		const images = imagesUnsorted.sort();
 
 		var TheTimer;
 		var cur_img = -1;
