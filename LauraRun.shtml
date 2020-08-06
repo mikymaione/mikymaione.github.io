@@ -8,24 +8,42 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <html>
 
 <head>
-	<title>maionemiky.it - Contacts</title>
+	<title>maionemiky.it - LauraRun</title>
 	<!--#include file="head.shtml" -->
 </head>
 
 <body>
+	<script>
+		var SonoSottoProgetto = true;
+	</script>
+	
 	<!--#include file="navigator.shtml" -->
 
-	<h2>Contacts</h2>
-	<p class="giustificato">You can contact me via email, follow me on social networks and take a look at my projects.</p>
+	<h2>LauraRun</h2>
+	<p class="giustificato">It’s a game that I developed as a present for the 22th birthday of my partner Laura.</p>
 
-	<ul>		
-		<li><a target="_blank" href="https://t.me/mikymaione">Telegram: @mikymaione</a></li>
-		<li><a target="_blank" href="skype:mikymaione">Skype: mikymaione</a></li>
-		<li><a target="_blank" href="mailto:mikymaione@hotmail.it">E-mail: mikymaione@hotmail.it</a></li>
-		<li><a target="_blank" href="http://github.com/mikymaione">GitHub repositories</a></li>		
-		<li><a target="_blank" href="http://www.linkedin.com/in/maionemiky">LinkedIn profile</a></li>
-		<li><a target="_blank" href="http://www.facebook.com/mikymaione">Facebook profile</a></li>		
-	</ul>
+	<a target="_blank" href="public/LauraRun/index.html">play it</a>
+
+	<section>
+		<h3>Minimum system requirements</h3>
+		<ol>
+			<li>
+				A keyboard;
+			</li>
+			<li>
+				A modern browser like: Firefox, Chrome, Edge, Opera, Safari.
+			</li>
+		</ol>
+	</section>
+
+	<section>
+		<h3>Screenshots</h3>
+
+		<figure>
+			<img class="img-max-size" src="assets/img/portfolio/LauraRun.jpg">
+			<figcaption>The game</figcaption>
+		</figure>		
+	</section>
 
 	<!--#include file="footer.shtml" -->
 </body>
