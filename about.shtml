@@ -23,8 +23,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</figure>
 
 	<p class="giustificato">
-		I was born in Naples in 1986, on a cold winter morning. I’m a computer scientist specialized in desktop applications for Windows and Linux. Since childhood I have always had a huge passion for science, physics and math, I’m also fond of European literature of the 19th and 20th centuries. I practice volleyball, swimming, bodybuilding, running and cycling at amateur level. I’m very competitive and I never give up. <em>My dream is to become a video game developer.</em>
+		I was born in Naples in 1986, on a cold winter morning. Since childhood I have always had a huge passion for science, physics and math, I’m also fond of European literature of the 19th and 20th centuries. I practice volleyball, swimming, bodybuilding, running and cycling at amateur level. I’m very competitive and I never give up. <em>My dream is to become a video game developer.</em>
 	</p>
+
+	<section>
+		<h3>Specializations</h3>
+		<p class="giustificato">
+			Video game design, Video game programming, Software development, Software design pattern, Database management system, Intelligent systems, Machine learning, Algorithms, Graph theory, Game theory, Operations research, Distributed computing.
+		</p>
+	</section>
 
 	<!--#include file="footer.shtml" -->
 </body>
