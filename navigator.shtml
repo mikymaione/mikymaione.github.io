@@ -4,8 +4,7 @@
 		<a id="nav_index" href="index.shtml">Home</a> |
 		<a id="nav_projects" href="projects.shtml">Open-source projects</a> |
 		<a id="nav_about" href="about.shtml">About</a> |
-		<a id="nav_contacts" href="contacts.shtml">Contacts</a> |
-		<a id="nav_photographs" href="photographs.shtml">Photographs</a>		
+		<a id="nav_contacts" href="contacts.shtml">Contacts</a>
 	</nav>
 	<hr>
 
@@ -38,6 +37,6 @@
 		}
 		catch (error)
 		{
-			// no SonoSottoProgetto
+			// non SonoSottoProgetto
 		}
 	</script>
