@@ -42,7 +42,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Minimum system requirements</h3>
 		<ol>
 			<li>
-				OS: Windows 7 SP1+, macOS 10.12+;
+				OS: Windows 7 SP1+;
 			</li>
 			<li>
 				Graphics card with DX10 (shader model 4.0) capabilities;
