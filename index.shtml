@@ -9,7 +9,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <head>
 	<title>maionemiky.it</title>
-	<!--#include file="head.shtml" -->
+	<!--#include file="head.shtml" -->	
 </head>
 
 <body>
@@ -27,6 +27,60 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Regarding this website</h3>
 		<p class="giustificato">In this website you can find: useful information about me, my curriculum vitae, my contact details and all the open-source software that I have developed.</p>
 	</section>
+
+	<img id="thePlayer">
+
+	<script>
+		var players = [
+			"ape_escape.png",
+			"assasin_creed.png",
+			"batman.png",
+			"bomberman.png",			
+			"crash.png",
+			"devil_may_cry.png",
+			"donkey_kong.png",
+			"doom.png",
+			"dragons_lair.png",
+			"duke_nukem.png",
+			"fallout.png",
+			"final_fantasy_7.png",
+			"god_of_war.png",
+			"grand_theft_auto.png",
+			"indiana_jones.png",
+			"katamari.png",
+			"kingdom_hearts.png",
+			"lemmings.png",
+			"mario_bros.png",
+			"max_payne.png",
+			"meat_boy.png",
+			"medi_evil.png",
+			"megaman.png",
+			"metal_gear_solid.png",
+			"metroid.png",
+			"monkey_island.png",
+			"mortal_kombat.png",
+			"ninja_turtles.png",
+			"odd_world.png",
+			"pokemon.png",
+			"prince_of_persia.png",
+			"punch_out.png",
+			"rayman.png",
+			"resident_evil.png",
+			"silent_hill.png",
+			"simpson.png",
+			"sonic.png",
+			"spyro.png",
+			"star_wars.png",
+			"tomb_raider.png",
+			"viewtiful_joe.png",
+			"wolfnstein.png",
+			"worms.png",
+			"zelda.png"];
+		
+		let i = Math.floor(Math.random() * players.length);
+		let thePlayer = document.getElementById("thePlayer");		
+		thePlayer.src = "images/players/" + players[i];
+	</script>
 
 	<!--#include file="footer.shtml" -->
 </body>
