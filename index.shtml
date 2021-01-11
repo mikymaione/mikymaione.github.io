@@ -28,7 +28,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<p class="giustificato">In this website you can find: useful information about me, my curriculum vitae, my contact details and all the open-source software that I have developed.</p>
 	</section>
 
-	<img id="thePlayer">
+	<img id="thePlayer" class="img-max-size">
 
 	<script>
 		var players = [
@@ -77,7 +77,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 			"worms.png",
 			"zelda.png"];
 		
-		let i = Math.floor(Math.random() * players.length);
+		const i = Math.floor(Math.random() * players.length);
 		let thePlayer = document.getElementById("thePlayer");		
 		thePlayer.src = "images/players/" + players[i];
 	</script>
