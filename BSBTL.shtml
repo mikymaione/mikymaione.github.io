@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<h2>Be strong, be the last</h2>
 	
-	<p class="giustificato">It’s an open-source, multiplayer, game that we developed for the exam of Videogame Design & Programming.</p>
+	<p class="giustificato">It’s an open-source, multiplayer, game that we developed for the exam of Videogame Design & Programming. The game ranked third in the multiplayer category at New Game Designer 2020 in Milan (<a target="_blank" href="http://ngd.unimi.it">ngd.unimi.it</a>).</p>
 	<section>		
 		<h3>Description</h3>
 		<p class="giustificato">The player is a car driver, and he has to compete on fantastic circuits with only one goal: to finish last!</p>
