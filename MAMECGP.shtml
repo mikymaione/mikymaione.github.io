@@ -21,9 +21,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<h2>MAME CGP</h2>
 
-	<p class="giustificato">It’s an open-source cloud gaming platform for arcade games based on MAME.</p>
-
-	<a target="_blank" href="mame/mame.html">Try it!</a>
+	<p class="giustificato">It’s an open-source cloud gaming platform for arcade games based on MAME.</p>	
 
 	<section>		
 		<h3>Documentation</h3>
@@ -44,6 +42,23 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				OS: Windows 10+, Fedora 34+;
 			</li>			
 		</ol>
+	</section>
+
+	<section>
+		<h3>Videos</h3>
+		
+		<figure>
+			<video id="videoH" width="745" height="419" controls>
+				<source src="public/MAME.mp4" type="video/mp4">				
+				Your browser does not support the video tag.
+			</video> 
+			<script>
+				//560 x 315				
+				var videoH = document.getElementById('videoH');
+				videoH.height = videoH.clientWidth * 315 / 560;
+			</script>
+			<figcaption>Platform in action</figcaption>
+		</figure>
 	</section>	
 
 	<!--#include file="footer.shtml" -->
