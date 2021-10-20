@@ -19,21 +19,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<!--#include file="navigator.shtml" -->
 
-	<h2>MAME CGP</h2>
+	<h2>MAME Cloud Gaming Platform</h2>
 
-	<p class="giustificato">It’s an open-source cloud gaming platform for arcade games based on MAME.</p>	
-
+	<p class="giustificato">It’s an open-source cloud gaming platform for arcade games based on MAME.</p>
+	
 	<section>		
-		<h3>Documentation</h3>
-		<ul>
-			<li>
-				<a target="_blank" href="public/PiattaformaDiCloudGamingPerGiochiArcade.pdf">Thesis</a>
-			</li>
-			<li>
-				<a target="_blank" href="public/PiattaformaDiCloudGamingPerGiochiArcade_P.pdf">Presentation</a>	
-			</li>
-		</ul>		
-	</section>	
+		<h3>Description</h3>
+		<p class="giustificato">Expanding the MAME project (GNU-GPL license) a game streaming platform was created. The game is stored and executed on the server hardware, ensuring the protection of digital rights (DRM). The client will perform a simple audio-video playback, giving the user the opportunity to start playing immediately without having to download or install anything. This platform will preserve arcade video games from the obsolescence of consoles and at the same time, thanks to the simplicity of access, will attract the new generations to games that have made history.</p>
+	</section>
 
 	<section>
 		<h3>Minimum system requirements</h3>
@@ -48,12 +41,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Videos</h3>
 		
 		<figure>
-			<video id="videoH" width="745" height="419" controls>
+			<video id="videoH" width="100%" controls>
 				<source src="public/MAME.mp4" type="video/mp4">				
 				Your browser does not support the video tag.
 			</video> 
 			<script>
-				//560 x 315				
+				//560 x 315
+				debugger;
 				var videoH = document.getElementById('videoH');
 				videoH.height = videoH.clientWidth * 315 / 560;
 			</script>
