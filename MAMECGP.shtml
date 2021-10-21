@@ -38,21 +38,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</section>
 
 	<section>
-		<h3>Videos</h3>
-		
+		<h3>Screenshots</h3>
+
 		<figure>
-			<video id="videoH" width="100%" controls>
-				<source src="public/MAME.mp4" type="video/mp4">				
-				Your browser does not support the video tag.
-			</video> 
-			<script>
-				//560 x 315				
-				var videoH = document.getElementById('videoH');
-				videoH.height = videoH.clientWidth * 315 / 560;
-			</script>
-			<figcaption>Platform in action</figcaption>
+			<img class="img-max-size" src="images/mame1.png">
+			<figcaption>Game selection</figcaption>
 		</figure>
-	</section>	
+		<figure>
+			<img class="img-max-size" src="images/mame2.png">
+			<figcaption>In game</figcaption>
+		</figure>
+	</section>
 
 	<!--#include file="footer.shtml" -->
 </body>
