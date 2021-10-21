@@ -46,8 +46,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 				Your browser does not support the video tag.
 			</video> 
 			<script>
-				//560 x 315
-				debugger;
+				//560 x 315				
 				var videoH = document.getElementById('videoH');
 				videoH.height = videoH.clientWidth * 315 / 560;
 			</script>
