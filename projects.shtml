@@ -23,16 +23,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<ul class="giustificato">
 		<li>
 			<a href="RationesCurare.shtml">RationesCurare</a>, a software for the management of the personal economy.
-		</li>		
+		</li>
+		<li>
+			<a href="MAMECGP.shtml">MAME CGP</a>, a cloud gaming platform for arcade games based on MAME.
+		</li>
 	</ul>
 
 	<h3>Games</h3>
 	<p>The following games were created for fun or as a project:</p>
 
 	<ul class="giustificato">		
-		<li>
-			<a href="MAMECGP.shtml">MAME CGP</a>, a cloud gaming platform for arcade games based on MAME.
-		</li>
 		<li>
 			<a href="SaveTheZoo.shtml">SaveTheZoo</a>, a free game for Android devices, the aim of the game is to save all the animals in danger.
 		</li>
