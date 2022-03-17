@@ -16,10 +16,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!--#include file="navigator.shtml" -->
 
 	<h2>Contacts</h2>
-	<p class="giustificato">You can contact me via email or Telegram, follow me on social networks and take a look at my projects.</p>
+	<p class="giustificato">You can contact me via email, Skype or Telegram, follow me on social networks and take a look at my projects.</p>
 
 	<ul>
 		<li>E-mail: <a target="_blank" href="mailto:mikymaione@hotmail.it">mikymaione@hotmail.it</a></li>
+		<li>Skype: <a target="_blank" href="skype:mikymaione">mikymaione</a></li>
 		<li>Telegram: <a target="_blank" href="https://t.me/mikymaione">mikymaione</a></li>
 		<li>LinkedIn profile: <a target="_blank" href="http://www.linkedin.com/in/maionemiky">maionemiky</a></li>
 		<li>Facebook profile: <a target="_blank" href="http://www.facebook.com/mikymaione">mikymaione</a></li>
