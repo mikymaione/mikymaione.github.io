@@ -9,7 +9,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <head>
 	<title>maionemiky.it - Medagliere Giurassico</title>
-	<!--#include file="head.shtml" -->	
+	<!--#include file="head.shtml" -->		
 </head>
 
 <body>
@@ -21,21 +21,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<section>
 		<h3>Dino</h3>
 		<p class="giustificato">Medaglie vinte da Dino a partire dalla stagione agonistica 2021/2022</p>
-		<ol>
-			<li>🥇 10</li>
-			<li>🥈 04</li>
-			<li>🥉 04</li>
-		</ol>
+		<table>
+			<tr>
+				<td>🏆</td>
+				<td align="right">1</td>
+			</tr>
+			<tr>
+				<td>🥇</td>
+				<td align="right">10</td>
+			</tr>
+			<tr>
+				<td>🥈</td>
+				<td align="right">5</td>
+			</tr>
+			<tr>
+				<td>🥉</td>
+				<td align="right">4</td>
+			</tr>
+		</table>
 	</section>
 
 	<section>
 		<h3>Sauro</h3>
 		<p class="giustificato">Medaglie vinte da Dino a partire dalla stagione agonistica 2014/2015</p>
-		<ol>
-			<li>🥇 05</li>
-			<li>🥈 14</li>
-			<li>🥉 06</li>
-		</ol>
+		<table>
+			<tr>
+				<td>🥇</td>
+				<td align="right">5</td>
+			</tr>
+			<tr>
+				<td>🥈</td>
+				<td align="right">14</td>
+			</tr>
+			<tr>
+				<td>🥉</td>
+				<td align="right">7</td>
+			</tr>
+		</table>		
 	</section>
 
 	<!--#include file="footer.shtml" -->
