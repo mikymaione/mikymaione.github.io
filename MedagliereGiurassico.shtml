@@ -16,11 +16,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<!--#include file="navigator.shtml" -->
 
 	<h2>Medagliere Giurassico</h2>
-	<p class="giustificato">Medagliere natatorio di Dino e Sauro</p>
+	<p class="giustificato">Medagliere natatorio di Dr. Dino e Sauro</p>
 	
 	<section>
-		<h3>Dino</h3>
-		<p class="giustificato">Medaglie vinte da Dino a partire dalla stagione agonistica 2021/2022</p>
+		<h3>Dr. Dino</h3>
+		<p class="giustificato">Medaglie vinte da Dr. Dino nelle stagioni agonistiche: 21, 22.</p>
 		<table>
 			<tr>
 				<td>🏆</td>
@@ -43,7 +43,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<section>
 		<h3>Sauro</h3>
-		<p class="giustificato">Medaglie vinte da Dino a partire dalla stagione agonistica 2014/2015</p>
+		<p class="giustificato">Medaglie vinte da Sauro nelle stagioni agonistiche: 14, 15, 16, 17, 21, 22.</p>
 		<table>
 			<tr>
 				<td>🥇</td>
