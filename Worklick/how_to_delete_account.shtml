@@ -1,0 +1,23 @@
+<!-- 
+MIT License
+Copyright (c) 2019 Michele Maione
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Worklick - Cancellazione dati</title>
+	<!--#include file="../head.shtml" -->	
+</head>
+
+<body>
+	<h2>Cancellazione dati</h2>
+	<p>Per eliminare alcuni dati mandare un email a worklicca@gmail.com utilizzando l'email usata per la registrazione, specificando quali dati eliminare tra: chat e/o MAD.</p>
+	<p>Per eliminare l'account e tutti i dati associati mandare un email a worklicca@gmail.com utilizzando l'email usata per la registrazione, specificando di voler eliminare l'account e tutti i dati associati.</p>
+
+	<!--#include file="../footer.shtml" -->
+</body>
+
+</html>
