@@ -63,7 +63,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	</section>
 
 	<script>
-		getVersione("http://www.maionemiky.it/public/programmi/versioni.txt", "RationesCurare7.exe", (v) =>
+		getVersione("https://www.maionemiky.it/public/programmi/versioni.txt", "RationesCurare7.exe", (v) =>
 		{
 			document.getElementById("versione").innerHTML = "v." + v;
 		});
