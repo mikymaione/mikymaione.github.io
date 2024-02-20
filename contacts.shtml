@@ -5,7 +5,7 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<title>maionemiky.it - Contacts</title>
@@ -19,11 +19,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	<p class="giustificato">You can contact me via email, Skype or Telegram, follow me on social networks and take a look at my projects.</p>
 
 	<ul>
-		<li>E-mail: <a target="_blank" href="mailto:mikymaione@hotmail.it">mikymaione@hotmail.it</a></li>
-		<li>Skype: <a target="_blank" href="skype:mikymaione">mikymaione</a></li>
-		<li>Telegram: <a target="_blank" href="https://t.me/mikymaione">mikymaione</a></li>
-		<li>LinkedIn profile: <a target="_blank" href="https://www.linkedin.com/in/maionemiky">maionemiky</a></li>		
-		<li>GitHub repositories: <a target="_blank" href="https://github.com/mikymaione">mikymaione</a></li>
+		<li>E-mail: <a rel="noopener" target="_blank" href="mailto:mikymaione@hotmail.it">mikymaione@hotmail.it</a></li>
+		<li>Skype: <a rel="noopener" target="_blank" href="skype:mikymaione">mikymaione</a></li>
+		<li>Telegram: <a rel="noopener" target="_blank" href="https://t.me/mikymaione">mikymaione</a></li>
+		<li>LinkedIn profile: <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/maionemiky">maionemiky</a></li>		
+		<li>GitHub repositories: <a rel="noopener" target="_blank" href="https://github.com/mikymaione">mikymaione</a></li>
+		<li>Mastodon profile: <a rel="noopener" target="_blank" href="https://mastodon.social/@mikymaione">mikymaione</a></li>
 	</ul>
 
 	<!--#include file="footer.shtml" -->

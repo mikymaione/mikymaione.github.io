@@ -5,11 +5,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>maionemiky.it - Hypogeum</title>
 	<!--#include file="head.shtml" -->
+	<title>maionemiky.it - Hypogeum</title>
 </head>
 
 <body>
@@ -21,12 +21,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	
 	<!--#include file="navigator.shtml" -->
 
-	<div style="display: ruby;">
+	<div class="rubyDiv">
 		<h2>Hypogeum</h2>
 		<p id="versione"></p>
 	</div>
 	
-	<p class="giustificato">It’s an open-source, online, multiplayer, game that we developed for the exam of Online Game Design. The game won the “Best multiplayer game” and “EDI special award” at New Game Designer 2019 in Milan (<a target="_blank" href="http://ngd.unimi.it">ngd.unimi.it</a>).</p>
+	<p class="giustificato">It’s an open-source, online, multiplayer, game that we developed for the exam of Online Game Design. The game won the “Best multiplayer game” and “EDI special award” at New Game Designer 2019 in Milan (<a rel="noopener" target="_blank" href="http://ngd.unimi.it">ngd.unimi.it</a>).</p>
 	<section>		
 		<h3>Description</h3>
 		<p class="giustificato">Hypogeum is a shooting and racing game, where four teams of two players face each other in an enormous arena (called, in fact, Hypogeum), trying to defeat their enemies and be the last standing. Each team belongs to one of the four existing factions and is composed of two players from the same species, that represent the champions. The battles are fought on cars, with one player as driver and one as shooter, each of them equipped with a faction-specific weapon.</p>
@@ -63,11 +63,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Screenshots</h3>
 
 		<figure>
-			<img class="img-max-size" src="public/Hypogeum/Hypogeum.png">
+			<img alt="Characters selection" class="img-max-size" src="public/Hypogeum/Hypogeum.png">
 			<figcaption>Characters selection</figcaption>
 		</figure>
 		<figure>
-			<img class="img-max-size" src="public/Hypogeum/InGame.png">
+			<img alt="In game" class="img-max-size" src="public/Hypogeum/InGame.png">
 			<figcaption>In game</figcaption>
 		</figure>
 	</section>
@@ -75,7 +75,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Videos</h3>
 		
 		<figure>				
-			<iframe id="videoH" width="100%" allowfullscreen src="https://www.youtube.com/embed/wZmm6_Iji10"></iframe>
+			<iframe id="videoH" width="100%" allowfullscreen title="Trailer of Hypogeum" src="https://www.youtube.com/embed/wZmm6_Iji10"></iframe>
 			<script>
 				//560 x 315				
 				var videoH = document.getElementById('videoH');

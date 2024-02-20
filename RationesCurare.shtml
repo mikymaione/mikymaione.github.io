@@ -5,11 +5,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>maionemiky.it - RationesCurare</title>
 	<!--#include file="head.shtml" -->
+	<title>maionemiky.it - RationesCurare</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<!--#include file="navigator.shtml" -->
 
-	<div style="display: ruby;">
+	<div class="rubyDiv">
 		<h2>RationesCurare</h2>
 		<p id="versione"></p>
 	</div>
@@ -49,15 +49,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Screenshots</h3>
 
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/RationesCurare1.jpg">
+			<img alt="Content of a cash" class="img-max-size" src="assets/img/portfolio/RationesCurare1.jpg">
 			<figcaption>Content of a cash</figcaption>
 		</figure>
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/RationesCurare2.jpg">
+			<img alt="Bar chart" class="img-max-size" src="assets/img/portfolio/RationesCurare2.jpg">
 			<figcaption>Bar chart</figcaption>
 		</figure>
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/RationesCurare3.jpg">
+			<img alt="Pie chart" class="img-max-size" src="assets/img/portfolio/RationesCurare3.jpg">
 			<figcaption>Pie chart</figcaption>
 		</figure>
 	</section>

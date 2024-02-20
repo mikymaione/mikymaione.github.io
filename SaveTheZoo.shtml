@@ -5,11 +5,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>maionemiky.it - SaveTheZoo</title>
 	<!--#include file="head.shtml" -->
+	<title>maionemiky.it - SaveTheZoo</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 	<p class="giustificato">It’s a free game for Android devices, the aim of the game is to save all the animals in danger.</p>
 
-	<a target="_blank" href="https://play.google.com/store/apps/details?id=it.maionemiky.savethezoo">download it from Google Play</a>
+	<a rel="noopener" target="_blank" href="https://play.google.com/store/apps/details?id=it.maionemiky.savethezoo">download it from Google Play</a>
 
 	<section>
 		<h3>Minimum system requirements</h3>
@@ -38,11 +38,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 		<h3>Screenshots</h3>
 
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/SaveTheZoo1.jpg">
+			<img alt="Level 1" class="img-max-size" src="assets/img/portfolio/SaveTheZoo1.jpg">
 			<figcaption>Level 1</figcaption>
 		</figure>
 		<figure>
-			<img class="img-max-size" src="assets/img/portfolio/SaveTheZoo2.jpg">
+			<img alt="Level 2" class="img-max-size" src="assets/img/portfolio/SaveTheZoo2.jpg">
 			<figcaption>Level 2</figcaption>
 		</figure>
 	</section>
