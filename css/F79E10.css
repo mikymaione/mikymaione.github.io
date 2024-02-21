@@ -13,6 +13,10 @@ body {
 	font-family: 'Ubuntu Mono';
 }
 
+iframe {
+	width: 100%;
+}
+
 .rubyDiv {
 	display: ruby;
 }
@@ -22,7 +26,7 @@ body {
 	text-justify: inter-character;
 }
 
-figcaption, h2, h3, ruby {
+figcaption, h2, h3, footer {
     color: #464453;
 }
 
