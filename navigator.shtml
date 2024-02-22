@@ -12,11 +12,13 @@
 		function AggiungiFiglioProj(nome)
 		{
 			let A = document.createTextNode(' > ');
+			
 			let RC = document.createElement('b');
 			RC.innerText = nome;
 
 			let nav_projects = document.getElementById('nav_projects');
 			nav_projects.parentNode.insertBefore(A, nav_projects.nextSibling);
+
 			A.parentNode.insertBefore(RC, A.nextSibling);
 		}
 
@@ -32,11 +34,12 @@
 
 		try
 		{
+			// SonoSottoProgetto maybe undeclared
 			if (SonoSottoProgetto)
 				AggiungiFiglioProj(wlp);
 		}
-		catch (error)
+		finally
 		{
-			// non SonoSottoProgetto
+			//
 		}
 	</script>

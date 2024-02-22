@@ -25,7 +25,7 @@
 	<img alt="A game character" id="thePlayer" class="img-max-size" src="images/pixel.png">
 
 	<script>
-		var players = [
+		const players = [
 			"ape_escape",
 			"assasin_creed",
 			"batman",
@@ -69,11 +69,13 @@
 			"viewtiful_joe",
 			"wolfnstein",
 			"worms",
-			"zelda"];
-		
+			"zelda"
+		];
+
 		const i = Math.floor(Math.random() * players.length);
+
 		let thePlayer = document.getElementById("thePlayer");		
-		thePlayer.src = "images/players/" + players[i] + ".png";
+		thePlayer.src = `images/players/${players[i]}.png`;
 	</script>
 
 	<!--#include file="footer.shtml" -->
