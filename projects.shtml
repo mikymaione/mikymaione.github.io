@@ -50,6 +50,51 @@
 		</li>
 	</ul>
 
+	<h3>Documentation</h3>
+	<p>These are the documentations of some projects that you can find on my <a rel="noopener" target="_blank" href="https://github.com/mikymaione">GitHub</a>:</p>
+	
+	<ul class="giustificato">
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/film_manager.pdf">Film Manager</a>, a client server system that allows multiple users to report, comment, and rate films;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/k_paths.pdf">K-path problem</a>;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/GAM.pdf">GAM#</a>, a software for managing the center “La tenda ONLUS”. A multi–purpose day center for the assistance of children in difficult situations;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/Howl_Moving_Castle__another_door.pdf">Howl’s Moving Castle: another door</a> - Level design document;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/Hypogeum.pdf">Hypogeum</a> - Game Design Document;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/Spatial_Subspace_Rotation.pdf">Spatial Subspace Rotation</a>, a Python implementation of the Spatial Subspace Rotation for remote photoplethysmography;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/Ohm_o_matic.pdf">Ohm-o-matic</a>, a distributed system for the intelligent management of the electricity produced by a complex of houses;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/Folie.pdf">Folie</a>, a library (in C++/CLI) for Unity that simulate intelligences for volleyball games;
+		</li>		
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/BSBTL.pdf">Be Strong, Be The Last</a> - Game Design Document;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/TSP.pdf">Algorithms for the resolution of the TSP</a>;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/Housing_Prices.pdf">Housing Prices</a>, Ridge and Lasso regressions for the prediction of the median house price: a machine learning implementation;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/documentazioni/CNN_for_atrial_fibrillation.pdf">Study-on-CNN-4-AF</a>, a study on the use of convolutional neural networks for the diagnosis of atrial fibrillation;
+		</li>
+		<li>
+			<a rel="noopener" target="_blank"  href="public/PiattaformaDiCloudGamingPerGiochiArcade.pdf">MAME CGP</a>, a cloud gaming platform for arcade games based on MAME.
+		</li>
+	</ul>
+
 	<!--#include file="footer.shtml" -->
 </body>
 
