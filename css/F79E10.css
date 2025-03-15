@@ -1,3 +1,7 @@
+html {
+	scrollbar-color: #F79E10 Canvas;
+}
+
 body {
 	max-width: 745px;
 	margin: auto;
@@ -11,6 +15,8 @@ body {
 	overflow-y: scroll;
 	
 	font-family: 'Ubuntu Mono';
+
+	accent-color: #F79E10;
 }
 
 iframe {
