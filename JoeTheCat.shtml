@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <!--#include file="head.shtml" -->
+
+  <title>maionemiky.it - 🐈‍⬛ Joe The Cat 🐟</title>
+
+  <style>
+    #game {
+      display: grid;
+      grid-template-columns: repeat(10, 30px);
+      justify-content: center;
+      margin: 30px auto;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .cell {
+      width: 30px;
+      height: 30px;
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #464453;
+      box-sizing: border-box;
+    }
+
+    .wall {
+      background: #F79E10;
+    }
+
+    #controls {
+      margin: 30px auto;
+    }
+
+    #controls button {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+
+    #status {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--#include file="navigator.shtml" -->
+
+  <h2>🐈‍⬛ Joe The Cat 🐟</h2>
+  <p>Usa le frecce o i pulsanti per muovere il gattino. Evita il cane!</p>
+
+  <div id="game"></div>
+
+  <table id="controls">
+    <tr>
+      <td>
+
+      </td>
+      <td>
+        <button onclick="handleMove('ArrowUp')">⬆️</button>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="handleMove('ArrowLeft')">⬅️</button>
+      </td>
+      <td>
+        <button onclick="handleMove('ArrowDown')">⬇️</button>
+      </td>
+      <td>
+        <button onclick="handleMove('ArrowRight')">➡️</button>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <button style="width: 100%;" onclick="restartGame()">🔄 Ricomincia</button>
+      </td>
+    </tr>
+  </table>
+
+  <p id="status"></p>
+
+  <script>
+    const size = 10;
+    const game = document.getElementById('game');
+    const status = document.getElementById('status');
+
+    game.style.gridTemplateColumns = `repeat(${size}, 30px)`;
+
+    let grid = [];
+    let cat = {}, dog = {}, fish = {};
+    let gameOver = false;
+
+    function randomEmptyCell() {
+      let cell;
+      do {
+        cell = {
+          x: Math.floor(Math.random() * size),
+          y: Math.floor(Math.random() * size)
+        };
+      } while (grid[cell.y][cell.x] !== '');
+      return cell;
+    }
+
+    function init() {
+      grid = Array.from({ length: size }, () =>
+        Array.from({ length: size }, () => Math.random() < 0.2 ? 'wall' : '')
+      );
+
+      cat = randomEmptyCell();
+      dog = randomEmptyCell();
+      fish = randomEmptyCell();
+      gameOver = false;
+      status.textContent = '';
+      draw();
+      document.addEventListener('keydown', handleKey);
+    }
+
+    function draw() {
+      game.innerHTML = '';
+      for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x++) {
+          const cell = document.createElement('div');
+          cell.className = 'cell';
+          if (grid[y][x] === 'wall') cell.classList.add('wall');
+          if (x === cat.x && y === cat.y) cell.textContent = '🐈‍⬛';
+          else if (x === dog.x && y === dog.y) cell.textContent = '🐕';
+          else if (x === fish.x && y === fish.y) cell.textContent = '🐟';
+          game.appendChild(cell);
+        }
+      }
+    }
+
+    function move(entity, dx, dy) {
+      const nx = entity.x + dx;
+      const ny = entity.y + dy;
+      if (nx >= 0 && ny >= 0 && nx < size && ny < size && grid[ny][nx] !== 'wall') {
+        entity.x = nx;
+        entity.y = ny;
+      }
+    }
+
+    function dogMove() {
+      const dx = cat.x - dog.x;
+      const dy = cat.y - dog.y;
+
+      if (Math.abs(dx) > Math.abs(dy)) {
+        move(dog, dx > 0 ? 1 : -1, 0); // muove in X
+      } else if (dy !== 0) {
+        move(dog, 0, dy > 0 ? 1 : -1); // muove in Y
+      }
+    }
+
+    function checkGame() {
+      if (cat.x === dog.x && cat.y === dog.y) {
+        status.textContent = '💀 Il cane ha preso il gatto! Game Over.';
+        gameOver = true;
+        document.removeEventListener('keydown', handleKey);
+      } else if (cat.x === fish.x && cat.y === fish.y) {
+        status.textContent = '🎉 Il gattino ha raggiunto il pesciolino! Vittoria!';
+        gameOver = true;
+        document.removeEventListener('keydown', handleKey);
+      }
+    }
+
+    function handleMove(key) {
+      if (gameOver) return;
+      if (key === 'ArrowUp') move(cat, 0, -1);
+      else if (key === 'ArrowDown') move(cat, 0, 1);
+      else if (key === 'ArrowLeft') move(cat, -1, 0);
+      else if (key === 'ArrowRight') move(cat, 1, 0);
+      dogMove();
+      draw();
+      checkGame();
+    }
+
+    function handleKey(e) {
+      handleMove(e.key);
+    }
+
+    function restartGame() {
+      document.removeEventListener('keydown', handleKey);
+      init();
+    }
+
+    init();
+  </script>
+
+  <!--#include file="footer.shtml" -->
+</body>
+
+</html>
+<!-- 
+MIT License
+Copyright (c) 2025 Michele Maione
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
