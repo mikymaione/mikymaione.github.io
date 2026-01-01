@@ -2,7 +2,7 @@
 <html lang="it">
 
 <head>
-	<!--#include file="../head.shtml" -->	
+	<!--#include file="../head.html" -->	
 	<title>Worklick - Politica sulla riservatezza</title>
 </head>
 
@@ -38,7 +38,7 @@
 	<p><strong>Informazioni di contatto:</strong></p>
 	<p>Per qualsiasi questione correlata ai diritti individuali o alle informazioni personali, può inviare un&#39;email a worklicca@gmail.com.</p>
 
-	<!--#include file="../footer.shtml" -->
+	<!--#include file="../footer.html" -->
 </body>
 
 </html>

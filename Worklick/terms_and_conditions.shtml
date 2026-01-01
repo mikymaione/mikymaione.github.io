@@ -2,7 +2,7 @@
 <html lang="it">
 
 <head>
-	<!--#include file="../head.shtml" -->
+	<!--#include file="../head.html" -->
 	<title>Worklick - Termini e condizioni</title>
 </head>
 
@@ -49,7 +49,7 @@
 	<p>Le limitazioni e i divieti di responsabilità indicati in questa sezione e in altre parti di questa esclusione di responsabilità: (a) sono soggetti al paragrafo precedente; (b) governano tutte le responsabilità correlate a questa esclusione di responsabilità, incluse quelle correlate a contratto, torto o violazione di obblighi normativi.</p>
 	<p>Se software, informazioni e servizi vengono forniti gratuitamente, non possiamo essere ritenuti responsabili per perdite o danni di qualsiasi natura.</p>
 
-	<!--#include file="../footer.shtml" -->
+	<!--#include file="../footer.html" -->
 </body>
 
 </html>
