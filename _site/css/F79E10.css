@@ -1,0 +1,85 @@
+html {
+	scrollbar-color: #F79E10 Canvas;
+}
+
+body {
+	max-width: 745px;
+	margin: auto;
+	
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-right: 10px;	
+	padding-left: 10px;
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
+	font-family: 'Ubuntu Mono';
+
+	accent-color: #F79E10;
+}
+
+iframe {
+	width: 100%;
+}
+
+.rubyDiv {
+	display: ruby;
+}
+
+.giustificato {
+	text-align: justify;
+	text-justify: inter-character;
+	hyphens: auto;
+}
+
+em, a:link, a:visited {
+    color: #F79E10;
+}
+
+a:active, a:hover {
+    color: black;
+    background-color: #F79E10;
+}
+
+.not-active {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.img-max-size {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+        background: white;
+        color: black;
+    }
+
+	.disab figcaption, h2, h3, footer, ruby {
+		color: #464453;
+	}
+
+	.not-active {     
+        color: #464453 !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+        background: #333;
+        color: #FFF;
+    }
+
+	.disab figcaption, h2, h3, footer, ruby {
+        color: #F2F2F2;
+    }
+
+	.not-active {        
+        color: #FFF !important;
+    }
+}
