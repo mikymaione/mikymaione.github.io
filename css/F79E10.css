@@ -19,6 +19,10 @@ body {
 	accent-color: #F79E10;
 }
 
+.xxsmall {
+	font-size: initial;
+}
+
 iframe {
 	width: 100%;
 }
