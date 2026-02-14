@@ -58,6 +58,14 @@ a:active, a:hover {
 	height: auto;
 }
 
+.mb0 {
+	margin-bottom: 0px;
+}
+
+.mt8 {
+	margin-top: 8px;
+}
+
 @media (prefers-color-scheme: light) {
 	body {
         background: white;
