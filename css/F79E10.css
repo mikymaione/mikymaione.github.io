@@ -21,6 +21,10 @@ body {
 	accent-color: #F79E10;
 }
 
+.small {
+	font-size: small;
+}
+
 .xxsmall {
 	font-size: initial;
 }
@@ -96,4 +100,35 @@ a:active, a:hover {
 	.not-active {        
         color: #FFF !important;
     }
+}
+
+table {
+	width: 100%;	
+}
+
+thead tr {
+	background-color: #F79E10;
+	color: black;
+}
+
+thead {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+td {
+	vertical-align: top;
+}
+
+@media (prefers-color-scheme: light) {
+	tr:nth-child(even) {
+		background-color: #f2f2f2;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	tr:nth-child(even) {
+		background-color: #3d3d3d;
+	}
 }
