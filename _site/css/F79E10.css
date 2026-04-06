@@ -16,13 +16,9 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	
-	font-family: 'Roboto Mono';
+	font-family: 'Ubuntu Mono';
 
 	accent-color: #F79E10;
-}
-
-.small {
-	font-size: small;
 }
 
 .sizeInitial {
