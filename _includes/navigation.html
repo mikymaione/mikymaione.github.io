@@ -1,9 +1,10 @@
-	<nav class="mt8">
+	<nav class="mt8" style="line-height: 1.6;">
 		<a href="{{ site.baseurl }}/" {% if page.url == "/" or page.url == "/index.html" %}class="not-active"{% else %}class="active"{% endif %}>Home</a> |
-		<a href="{{ site.baseurl }}/projects.html" {% if page.url == "/projects.html" %}class="not-active"{% else %}class="active"{% endif %}>Open-source projects</a>{% if page.parent == "projects" %} > <strong class="not-active">{{ page.project_name }}</strong>{% endif %} |
 		<a href="{{ site.baseurl }}/papers.html" {% if page.url == "/papers.html" %}class="not-active"{% else %}class="active"{% endif %}>Papers</a> |
-		<a href="{{ site.baseurl }}/bookshelf.html" {% if page.url == "/bookshelf.html" %}class="not-active"{% else %}class="active"{% endif %}>Bookshelf</a> |
+		<a href="{{ site.baseurl }}/projects.html" {% if page.url == "/projects.html" %}class="not-active"{% else %}class="active"{% endif %}>Open-source projects</a>{% if page.parent == "projects" %} > <strong class="not-active">{{ page.project_name }}</strong>{% endif %} |
+		<a href="{{ site.baseurl }}/opensource.html" {% if page.url == "/opensource.html" %}class="not-active"{% else %}class="active"{% endif %}>Why Open Source?</a> |
 		<a href="{{ site.baseurl }}/manifesto.html" {% if page.url == "/manifesto.html" %}class="not-active"{% else %}class="active"{% endif %}>Life Manifesto</a> |
+		<a href="{{ site.baseurl }}/bookshelf.html" {% if page.url == "/bookshelf.html" %}class="not-active"{% else %}class="active"{% endif %}>Bookshelf</a> |
 		<a href="{{ site.baseurl }}/about.html" {% if page.url == "/about.html" %}class="not-active"{% else %}class="active"{% endif %}>About</a>{% if page.parent == "about" %} > <strong class="not-active">{{ page.project_name }}</strong>{% endif %} |
 		<a href="{{ site.baseurl }}/contacts.html" {% if page.url == "/contacts.html" %}class="not-active"{% else %}class="active"{% endif %}>Contacts</a>
 	</nav>
