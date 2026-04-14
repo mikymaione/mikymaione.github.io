@@ -2,3 +2,12 @@ title: Michele Maione
 description: Michele Maione's personal website
 baseurl: "" # Lascialo vuoto per mikymaione.github.io
 url: "https://mikymaione.github.io"
+
+# Aggiungi queste righe:
+exclude:
+  - _site/
+  - temp.db
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache/
+  - .sass-cache/
