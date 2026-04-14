@@ -66,60 +66,69 @@
 		<p class="giustificato">In this website you can find: useful information about me, my curriculum vitae, my contact details and all the open-source software that I have developed.</p>
 	</section>
 
-	<img alt="A game character" id="thePlayer" class="img-max-size" src="images/pixel.png">
+	<figure>
+		<img alt="A game character" id="thePlayer" class="img-max-size" src="images/pixel.png">
+		<figcaption id="playerDescription"></figcaption>
+	</figure>
 
 	<script>
 		const players = [
-			"ape_escape",
-			"assasin_creed",
-			"batman",
-			"bomberman",			
-			"crash",
-			"devil_may_cry",
-			"donkey_kong",
-			"doom",
-			"dragons_lair",
-			"duke_nukem",
-			"fallout",
-			"final_fantasy_7",
-			"god_of_war",
-			"grand_theft_auto",
-			"indiana_jones",
-			"katamari",
-			"kingdom_hearts",
-			"lemmings",
-			"mario_bros",
-			"max_payne",
-			"meat_boy",
-			"medi_evil",
-			"megaman",
-			"metal_gear_solid",
-			"metroid",
-			"monkey_island",
-			"mortal_kombat",
-			"ninja_turtles",
-			"odd_world",
-			"pokemon",
-			"prince_of_persia",
-			"punch_out",
-			"rayman",
-			"resident_evil",
-			"silent_hill",
-			"simpson",
-			"sonic",
-			"spyro",
-			"star_wars",
-			"tomb_raider",
-			"viewtiful_joe",
-			"wolfnstein",
-			"worms",
-			"zelda"
+			{ id: "ape_escape", copyright: "Ape Escape © 1999 Sony Interactive Entertainment" },
+			{ id: "assasin_creed", copyright: "Assassin's Creed © 2007 Ubisoft" },
+			{ id: "batman", copyright: "Batman © 1939 DC Comics" },
+			{ id: "bomberman", copyright: "Bomberman © 1983 Konami" },            
+			{ id: "crash", copyright: "Crash Bandicoot © 1996 Activision" },
+			{ id: "devil_may_cry", copyright: "Devil May Cry © 2001 Capcom" },
+			{ id: "donkey_kong", copyright: "Donkey Kong © 1981 Nintendo" },
+			{ id: "doom", copyright: "DOOM © 1993 id Software" },
+			{ id: "dragons_lair", copyright: "Dragon's Lair © 1983 Digital Leisure" },
+			{ id: "duke_nukem", copyright: "Duke Nukem © 1991 Gearbox Software" },
+			{ id: "fallout", copyright: "Fallout © 1997 Bethesda Softworks" },
+			{ id: "final_fantasy_7", copyright: "Final Fantasy VII © 1997 Square Enix" },
+			{ id: "god_of_war", copyright: "God of War © 2005 Sony Interactive Entertainment" },
+			{ id: "grand_theft_auto", copyright: "Grand Theft Auto © 1997 Rockstar Games" },
+			{ id: "indiana_jones", copyright: "Indiana Jones © 1981 Lucasfilm" },
+			{ id: "katamari", copyright: "Katamari Damacy © 2004 Bandai Namco" },
+			{ id: "kingdom_hearts", copyright: "Kingdom Hearts © 2002 Disney/Square Enix" },
+			{ id: "lemmings", copyright: "Lemmings © 1991 Rockstar North" },
+			{ id: "mario_bros", copyright: "Mario Bros. © 1983 Nintendo" },
+			{ id: "max_payne", copyright: "Max Payne © 2001 Remedy Entertainment" },
+			{ id: "meat_boy", copyright: "Super Meat Boy © 2010 Team Meat" },
+			{ id: "medi_evil", copyright: "MediEvil © 1998 Sony Interactive Entertainment" },
+			{ id: "megaman", copyright: "Mega Man © 1987 Capcom" },
+			{ id: "metal_gear_solid", copyright: "Metal Gear Solid © 1998 Konami" },
+			{ id: "metroid", copyright: "Metroid © 1986 Nintendo" },
+			{ id: "monkey_island", copyright: "The Secret of Monkey Island © 1990 Lucasfilm Games" },
+			{ id: "mortal_kombat", copyright: "Mortal Kombat © 1992 Warner Bros." },
+			{ id: "ninja_turtles", copyright: "Teenage Mutant Ninja Turtles © 1984 Viacom" },
+			{ id: "odd_world", copyright: "Oddworld © 1997 Oddworld Inhabitants" },
+			{ id: "pokemon", copyright: "Pokémon © 1996 Nintendo/Creatures Inc./GAME FREAK" },
+			{ id: "prince_of_persia", copyright: "Prince of Persia © 1989 Ubisoft" },
+			{ id: "punch_out", copyright: "Punch-Out!! © 1983 Nintendo" },
+			{ id: "rayman", copyright: "Rayman © 1995 Ubisoft" },
+			{ id: "resident_evil", copyright: "Resident Evil © 1996 Capcom" },
+			{ id: "silent_hill", copyright: "Silent Hill © 1999 Konami" },
+			{ id: "simpson", copyright: "The Simpsons © 1989 20th Television" },
+			{ id: "sonic", copyright: "Sonic the Hedgehog © 1991 SEGA" },
+			{ id: "spyro", copyright: "Spyro the Dragon © 1998 Activision" },
+			{ id: "star_wars", copyright: "Star Wars © 1977 Lucasfilm" },
+			{ id: "tomb_raider", copyright: "Tomb Raider © 1996 Crystal Dynamics" },
+			{ id: "viewtiful_joe", copyright: "Viewtiful Joe © 2003 Capcom" },
+			{ id: "wolfnstein", copyright: "Wolfenstein © 1981 id Software" },
+			{ id: "worms", copyright: "Worms © 1995 Team17" },
+			{ id: "zelda", copyright: "The Legend of Zelda © 1986 Nintendo" }
 		];
 
 		const i = Math.floor(Math.random() * players.length);
+		const selectedPlayer = players[i]; // Questa variabile serviva!
 
-		let thePlayer = document.getElementById("thePlayer");		
-		thePlayer.src = `images/players/${players[i]}.png`;
+		let thePlayer = document.getElementById("thePlayer");       
+		let playerDesc = document.getElementById("playerDescription");
+
+		// Aggiorniamo tutto
+		thePlayer.src = `images/players/${selectedPlayer.id}.png`;
+		thePlayer.alt = `Pixel art of ${selectedPlayer.copyright}`;
+		playerDesc.innerText = selectedPlayer.copyright;
 	</script>
 
 	<hr>

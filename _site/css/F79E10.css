@@ -7,7 +7,7 @@ body {
 
 	max-width: 745px;
 	margin: auto;
-	
+
 	padding-top: 0px;
 	padding-bottom: 1em;
 	padding-right: 1em;
@@ -15,7 +15,7 @@ body {
 
 	overflow-x: hidden;
 	overflow-y: scroll;
-	
+
 	font-family: 'Roboto Mono';
 
 	accent-color: #F79E10;
@@ -23,6 +23,11 @@ body {
 
 .sizeInitial {
 	font-size: initial;
+}
+
+figcaption {
+	font-size: small;
+	font-style: italic;
 }
 
 iframe {
@@ -39,13 +44,16 @@ iframe {
 	hyphens: auto;
 }
 
-em, a:link, a:visited {
-    color: #F79E10;
+em,
+a:link,
+a:visited {
+	color: #F79E10;
 }
 
-a:active, a:hover {
-    color: black;
-    background-color: #F79E10;
+a:active,
+a:hover {
+	color: black;
+	background-color: #F79E10;
 }
 
 .not-active {
@@ -70,36 +78,44 @@ a:active, a:hover {
 
 @media (prefers-color-scheme: light) {
 	body {
-        background: white;
-        color: black;
-    }
+		background: white;
+		color: black;
+	}
 
-	.disab figcaption, h2, h3, footer, ruby {
+	.disab figcaption,
+	h2,
+	h3,
+	footer,
+	ruby {
 		color: #464453;
 	}
 
-	.not-active {     
-        color: #464453 !important;
-    }
+	.not-active {
+		color: #464453 !important;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
-        background: #333;
-        color: #FFF;
-    }
+		background: #333;
+		color: #FFF;
+	}
 
-	.disab figcaption, h2, h3, footer, ruby {
-        color: #F2F2F2;
-    }
+	.disab figcaption,
+	h2,
+	h3,
+	footer,
+	ruby {
+		color: #F2F2F2;
+	}
 
-	.not-active {        
-        color: #FFF !important;
-    }
+	.not-active {
+		color: #FFF !important;
+	}
 }
 
 table {
-	width: 100%;	
+	width: 100%;
 }
 
 thead tr {
