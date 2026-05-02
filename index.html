@@ -3,44 +3,65 @@ layout: default
 title: Michele Maione
 ---
 	<h2>Who am I?</h2>
-
-	<ul>
-		<li>
-			<i class="bi bi-file-pdf"></i>
-			<a target="_blank" href="coverletter.pdf">Cover letter</a>
-		</li>
-		<li>
-			<i class="bi bi-file-pdf"></i> 
-			<a target="_blank" href="curriculum.pdf">Curriculum vitae</a>
-		</li>
-	</ul>
+	
+	<div>
+		<i class="bi bi-person-vcard"></i>
+		<i class="bi bi-journal-text"></i>
+		<i class="bi bi-code-slash"></i>
+		<i class="bi bi-book"></i>
+		<i class="bi bi-envelope-at"></i>
+	</div>
+			
+	<p class="giustificato">
+		I am a software developer dedicated to technical excellence and collective progress. 
+		This website serves as a public repository of my professional journey, personal background, and open-source contributions. 
+		The site itself is <strong>open-source</strong> and hosted on 
+		<a target="_blank" href="https://github.com/mikymaione/mikymaione.github.io">GitHub</a>, 
+		where you can consult the repository for contributions.
+	</p>
 
 	<section>
-		<h3>Regarding this website</h3>
-		<p class="giustificato">In this website you can find: useful information about me, my curriculum vitae, my contact details and all the open-source software that I have developed.</p>
+		<h3>Professional assets</h3>
+		<p>
+			You can download my latest professional documentation here:
+		</p>
+
+		<ul>
+			<li>
+				<i class="bi bi-file-pdf"></i>
+				<a target="_blank" href="coverletter.pdf">Cover letter</a>
+			</li>
+			<li>
+				<i class="bi bi-file-pdf"></i> 
+				<a target="_blank" href="curriculum.pdf">Curriculum vitae</a>
+			</li>
+		</ul>
 	</section>
 
-	<figure>
-		<img alt="A game character" id="thePlayer" class="img-max-size" src="images/pixel.png">
-		<figcaption id="playerDescription"></figcaption>
-	</figure>
+	<section>
+		<strong>Enjoy your stay.</strong>
+		<figure>
+			<img alt="A game character" id="thePlayer" class="img-max-size" src="images/pixel.png">
+			<figcaption id="playerDescription"></figcaption>
+		</figure>
+	
+		<script>
+			const players = [
+				{% for p in site.data.personaggi %}
+					{ id: "{{ p.id }}", copyright: "{{ p.copyright }}" }
+				{% unless forloop.last %},{% endunless %}
+				{% endfor %}
+			];
 
-	<script>
-		const players = [
-			{% for p in site.data.personaggi %}
-				{ id: "{{ p.id }}", copyright: "{{ p.copyright }}" }
-			{% unless forloop.last %},{% endunless %}
-			{% endfor %}
-		];
+			const i = Math.floor(Math.random() * players.length);
+			const selectedPlayer = players[i]; // Questa variabile serviva!
 
-		const i = Math.floor(Math.random() * players.length);
-		const selectedPlayer = players[i]; // Questa variabile serviva!
+			let thePlayer = document.getElementById("thePlayer");       
+			let playerDesc = document.getElementById("playerDescription");
 
-		let thePlayer = document.getElementById("thePlayer");       
-		let playerDesc = document.getElementById("playerDescription");
-
-		// Aggiorniamo tutto
-		thePlayer.src = `images/players/${selectedPlayer.id}.png`;
-		thePlayer.alt = `Pixel art of ${selectedPlayer.copyright}`;
-		playerDesc.innerText = selectedPlayer.copyright;
-	</script>
+			// Aggiorniamo tutto
+			thePlayer.src = `images/players/${selectedPlayer.id}.png`;
+			thePlayer.alt = `Pixel art of ${selectedPlayer.copyright}`;
+			playerDesc.innerText = selectedPlayer.copyright;
+		</script>
+	</section>
