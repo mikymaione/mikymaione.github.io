@@ -1,5 +1,6 @@
 html {
 	scrollbar-color: #F79E10 Canvas;
+	overflow-x: hidden;
 }
 
 body {
@@ -148,4 +149,10 @@ td {
 	tr:nth-child(even) {
 		background-color: #3d3d3d;
 	}
+}
+
+.bullet {
+	text-align: center; 
+	color: #464453; 
+	margin: 32px 0;
 }
