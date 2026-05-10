@@ -1,5 +1,6 @@
 	<nav class="mt8" style="line-height: 1.6;">
 		<a href="{{ site.baseurl }}/" {% if page.url == "/" or page.url == "/index.html" %}class="not-active"{% else %}class="active"{% endif %}>Home</a> |
+		<a href="{{ site.baseurl }}/blog.html" {% if page.url == "/blog.html" %}class="not-active"{% else %}class="active"{% endif %}>Blog</a> |
 		<a href="{{ site.baseurl }}/papers.html" {% if page.url == "/papers.html" %}class="not-active"{% else %}class="active"{% endif %}>Research & Papers</a> |
 		<a href="{{ site.baseurl }}/projects.html" {% if page.url == "/projects.html" %}class="not-active"{% else %}class="active"{% endif %}>Open-source projects</a>{% if page.parent == "projects" %} > <strong class="not-active">{{ page.project_name }}</strong>{% endif %} |
 		<a href="{{ site.baseurl }}/opensource.html" {% if page.url == "/opensource.html" %}class="not-active"{% else %}class="active"{% endif %}>Why Open Source?</a> |

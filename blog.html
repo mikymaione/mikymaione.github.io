@@ -1,0 +1,68 @@
+---
+layout: default
+title: Blog - Michele Maione
+---
+	<h2>Blog</h2>
+	<p class="giustificato">The posts below are automatically retrieved from my <a rel="me" target="_blank" href="https://mastodon.social/@mikymaione/">Mastodon profile</a>:</p>
+	
+	<div id="mastodon-feed">
+		<p>Loading posts...</p>
+	</div>
+
+	<script>
+		async function loadMastodon() {
+			const userId = "111868368356423372"; // Il tuo ID su mastodon.social
+			const url = `https://mastodon.social/api/v1/accounts/${userId}/statuses?exclude_replies=true&exclude_reblogs=true&limit=40`;
+			
+			try {
+				const response = await fetch(url);
+				const posts = await response.json();
+				const container = document.getElementById('mastodon-feed');
+				
+				container.innerHTML = ''; // Svuota il caricamento
+
+				posts.forEach(post => {
+					const date = new Date(post.created_at).toLocaleDateString('it-IT', {
+						year: 'numeric',
+						month: 'long',
+						day: 'numeric'
+					});
+
+					const article = document.createElement('article');
+					article.className = 'mastodon-post';
+					
+					const media = post.media_attachments[0];
+
+					let figureHtml = '';
+
+					if (media) {
+						// Recuperiamo la descrizione (ALT) se presente, altrimenti usiamo un testo generico
+						const altText = media.description || "Immagine da Mastodon";
+						
+						figureHtml = `
+							<figure>
+								<img alt="${altText}" class="img-max-size" src="${media.url}" style="max-width:100%; border-radius:8px; margin-bottom:10px;">
+								<figcaption>${altText}</figcaption>
+							</figure>
+						`;
+					}
+
+					article.innerHTML = `
+						<section>
+							<em>${date}</em>
+							<p class="giustificato">${post.content}</p>
+							${figureHtml}
+						</section>
+						<br/>
+					`;
+					
+					container.appendChild(article);
+				});
+			} catch (error) {
+				document.getElementById('mastodon-feed').innerHTML = '<p>Errore nel caricamento dei post.</p>';
+				console.error(error);
+			}
+		}
+
+		loadMastodon();
+	</script>
