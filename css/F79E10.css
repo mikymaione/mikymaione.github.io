@@ -154,6 +154,17 @@ td {
 
 .bullet {
 	text-align: center; 
-	color: #464453; 
 	margin: 32px 0;
+}
+
+@media (prefers-color-scheme: light) {
+	.bullet {
+		color: #464453;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.bullet {
+		color: #F2F2F2;
+	}
 }
