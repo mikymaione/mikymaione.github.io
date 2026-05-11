@@ -30,6 +30,28 @@ title: Blog - Michele Maione
 					{% endif %}
 				</figure>
 			{% endif %}
+
+			<div class="mastodon_share">
+				<span title="{{ post.replies_count }} Replies">
+					<i class="bi bi-chat{% if post.replies_count > 0 %}-fill{% endif %}"></i> 
+					{{ post.replies_count }}
+				</span>
+
+				<span title="{{ post.reblogs_count }} Reblogs">
+					<i class="bi bi-reply{% if post.reblogs_count > 0 %}-fill{% endif %}"></i> 
+					{{ post.reblogs_count }}
+				</span>
+
+				<span title="{{ post.favourites_count }} Favourites">
+					<i class="bi bi-star{% if post.favourites_count > 0 %}-fill{% endif %}"></i> 
+					{{ post.favourites_count }}
+				</span>
+
+				<span title="{{ post.quotes_count }} Quotes">
+					<i class="bi bi-bookmark{% if post.quotes_count > 0 %}-fill{% endif %}"></i> 
+					{{ post.quotes_count }}
+				</span>
+			</div>
 		</section>
 		<div class="bullet">•</div>
 		{% endfor %}
