@@ -22,9 +22,7 @@ title: Blog - Michele Maione
 			{% if post.media_attachments.size > 0 %}
 				{% assign media = post.media_attachments[0] %}
 				<figure>
-					<img src="{{ media.url }}"
-						alt="{{ media.description | default: 'Image from Mastodon' }}"
-						class="img-max-size">
+					<img class="img-max-size" src="{{ media.url }}" alt="{{ media.description | default: 'Image from Mastodon' }}">
 					{% if media.description %}
 						<figcaption>{{ media.description }}</figcaption>
 					{% endif %}
@@ -32,24 +30,24 @@ title: Blog - Michele Maione
 			{% endif %}
 
 			<div class="mastodon_share">
-				<span title="{{ post.replies_count }} Replies">
-					<i class="bi bi-chat{% if post.replies_count > 0 %}-fill{% endif %}"></i> 
+				<span class="cur_help" title="{{ post.replies_count }} replies">
+					<i class="bi bi-reply{% if post.replies_count > 0 %}-fill{% endif %}"></i> 
 					{{ post.replies_count }}
 				</span>
 
-				<span title="{{ post.reblogs_count }} Reblogs">
-					<i class="bi bi-reply{% if post.reblogs_count > 0 %}-fill{% endif %}"></i> 
+				<span class="cur_help" title="{{ post.reblogs_count }} reblogs">
+					<i class="bi bi-share{% if post.reblogs_count > 0 %}-fill{% endif %}"></i> 
 					{{ post.reblogs_count }}
 				</span>
 
-				<span title="{{ post.favourites_count }} Favourites">
-					<i class="bi bi-star{% if post.favourites_count > 0 %}-fill{% endif %}"></i> 
-					{{ post.favourites_count }}
+				<span class="cur_help" title="{{ post.quotes_count }} quotes">
+					<i class="bi bi-chat-quote{% if post.quotes_count > 0 %}-fill{% endif %}"></i> 
+					{{ post.quotes_count }}
 				</span>
 
-				<span title="{{ post.quotes_count }} Quotes">
-					<i class="bi bi-bookmark{% if post.quotes_count > 0 %}-fill{% endif %}"></i> 
-					{{ post.quotes_count }}
+				<span class="cur_help" title="{{ post.favourites_count }} favourites">
+					<i class="bi bi-star{% if post.favourites_count > 0 %}-fill{% endif %}"></i> 
+					{{ post.favourites_count }}
 				</span>
 			</div>
 		</section>

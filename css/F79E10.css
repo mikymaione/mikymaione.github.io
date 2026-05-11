@@ -173,3 +173,7 @@ td {
     display: flex;
     gap: 24px;
 }
+
+.cur_help {
+	cursor: help;
+}
