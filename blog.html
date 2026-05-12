@@ -20,13 +20,21 @@ title: Blog - Michele Maione
 			</div>
 
 			{% if post.media_attachments.size > 0 %}
-				{% assign media = post.media_attachments[0] %}
+			<div>
+				{% for media in post.media_attachments %}
 				<figure>
-					<img class="img-max-size" src="{{ media.url }}" alt="{{ media.description | default: 'Image from Mastodon' }}">
+					{% if media.type == 'image' %}
+						<img src="{{ media.url }}" class="img-max-size" alt="{{ media.description | default: 'Image from Mastodon' }}" loading="lazy">
+					{% elsif media.type == 'video' or media.type == 'gifv' %}
+						<video src="{{ media.url }}" class="img-max-size" controls loop muted playsinline></video>
+					{% endif %}
+					
 					{% if media.description %}
 						<figcaption>{{ media.description }}</figcaption>
 					{% endif %}
 				</figure>
+				{% endfor %}
+			</div>
 			{% endif %}
 
 			<div class="mastodon_share">
