@@ -22,6 +22,13 @@ body {
 	accent-color: #F79E10;
 }
 
+footer {
+	font-size: small;
+	font-weight: lighter;
+	text-align: right;
+	padding-top: 1em;
+}
+
 .sizeInitial {
 	font-size: initial;
 }
@@ -43,6 +50,14 @@ iframe {
 	text-align: justify;
 	text-justify: inter-character;
 	hyphens: auto;
+}
+
+.giustificato li {
+	margin-bottom: 0.5em;
+}
+
+.giustificato li:last-child {
+	margin-bottom: 0;
 }
 
 em,
@@ -170,8 +185,8 @@ td {
 }
 
 .mastodon_share {
-    display: flex;
-    gap: 24px;
+	display: flex;
+	gap: 24px;
 }
 
 .cur_help {
