@@ -3,7 +3,10 @@ description: Michele Maione's personal website
 baseurl: "" # Lascialo vuoto per mikymaione.github.io
 url: "https://mikymaione.github.io"
 
-# Aggiungi queste righe:
+# Impostazioni per l'orario italiano e la lingua
+timezone: Europe/Rome
+locale: it_IT
+
 exclude:
   - _site/
   - temp.db
