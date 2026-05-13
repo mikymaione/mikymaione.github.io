@@ -10,9 +10,9 @@ title: Blog - Michele Maione
 	{% if site.data.mastodon_posts %}	
 		{% for post in site.data.mastodon_posts %}				
 		<section>
-			<h3>				
+			<h3>
 				<a href="{{ post.url }}" target="_blank" title="View post on Mastodon"><i class="bi bi-mastodon"></i></a>
-				{{ post.created_at | date: "%a %d/%m/%Y" }}
+				{{ post.created_at | date: "%a %d/%m/%Y %H:%M" }}
 			</h3>
 
 			<div class="giustificato">
