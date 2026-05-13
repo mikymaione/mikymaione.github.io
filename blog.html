@@ -11,7 +11,7 @@ title: Blog - Michele Maione
 		{% for post in site.data.mastodon_posts %}				
 		<section>
 			<h3>
-				<a href="{{ post.url }}" target="_blank" title="View post on Mastodon"><i class="bi bi-mastodon"></i></a>
+				<a href="{{ post.url }}" rel="external" target="_blank" title="View post on Mastodon"><i class="bi bi-mastodon"></i></a>
 				<span class="m-date" data-utc="{{ post.created_at }}"></span>
 			</h3>
 
