@@ -1,5 +1,138 @@
 [
     {
+        "id": "116561866758612459",
+        "created_at": "2026-05-12T13:35:37.606Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116561866758612459",
+        "url": "https://mastodon.social/@mikymaione/116561866758612459",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>🚀 Gemma 4: IA locale e apprendimento linguistico</p><p>Il GDG Basilicata organizza un evento dedicato a come rivoluzionare lo studio delle lingue usando l&#39;IA locale. Al centro dell&#39;incontro: privacy, esecuzione offline e le potenzialità di <a href=\"https://mastodon.social/tags/Gemma4\" class=\"mention hashtag\" rel=\"tag\">#<span>Gemma4</span></a> per creare strumenti educativi direttamente sul dispositivo.</p><p>🗓️ 5 Giugno 2026<br />🕕 18:00 - 19:00 CEST<br />🌐 Evento Online</p><p>Info e registrazione: <a href=\"https://gdg.community.dev/events/details/google-gdg-basilicata-presents-gemma-4-rivoluzionare-lapprendimento-linguistico-con-lia-locale/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"ellipsis\">gdg.community.dev/events/detai</span><span class=\"invisible\">ls/google-gdg-basilicata-presents-gemma-4-rivoluzionare-lapprendimento-linguistico-con-lia-locale/</span></a></p><p><a href=\"https://mastodon.social/tags/GDG\" class=\"mention hashtag\" rel=\"tag\">#<span>GDG</span></a> <a href=\"https://mastodon.social/tags/GoogleDevs\" class=\"mention hashtag\" rel=\"tag\">#<span>GoogleDevs</span></a> <a href=\"https://mastodon.social/tags/Gemma4\" class=\"mention hashtag\" rel=\"tag\">#<span>Gemma4</span></a> <a href=\"https://mastodon.social/tags/MachineLearning\" class=\"mention hashtag\" rel=\"tag\">#<span>MachineLearning</span></a> <a href=\"https://mastodon.social/tags/Privacy\" class=\"mention hashtag\" rel=\"tag\">#<span>Privacy</span></a> <a href=\"https://mastodon.social/tags/AI\" class=\"mention hashtag\" rel=\"tag\">#<span>AI</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 148,
+            "following_count": 586,
+            "statuses_count": 755,
+            "last_status_at": "2026-05-12",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [
+            {
+                "name": "gemma4",
+                "url": "https://mastodon.social/tags/gemma4"
+            },
+            {
+                "name": "gdg",
+                "url": "https://mastodon.social/tags/gdg"
+            },
+            {
+                "name": "GoogleDevs",
+                "url": "https://mastodon.social/tags/GoogleDevs"
+            },
+            {
+                "name": "machinelearning",
+                "url": "https://mastodon.social/tags/machinelearning"
+            },
+            {
+                "name": "privacy",
+                "url": "https://mastodon.social/tags/privacy"
+            },
+            {
+                "name": "ai",
+                "url": "https://mastodon.social/tags/ai"
+            }
+        ],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://gdg.community.dev/events/details/google-gdg-basilicata-presents-gemma-4-rivoluzionare-lapprendimento-linguistico-con-lia-locale/",
+            "title": "GEMMA 4 - Rivoluzionare l'Apprendimento Linguistico con l'IA Locale | Google Developer Groups",
+            "description": "Virtual Event - Unisciti a noi per un'esperienza unica con \"GEMMA 4 - Rivoluzionare l'Apprendimento Linguistico con l'IA Locale\". In que...",
+            "language": "en",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "Google Developer Groups",
+            "provider_url": "",
+            "html": "",
+            "width": 480,
+            "height": 480,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/192/589/198/original/00d9c62bce4f1234.png",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UDBX1a-5Ny_N9GS$S#M|DjV^vzQ-XRoyV@WU",
+            "published_at": null,
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116561778304592541",
         "created_at": "2026-05-12T13:13:07.901Z",
         "in_reply_to_id": null,
