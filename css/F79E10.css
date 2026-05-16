@@ -51,6 +51,12 @@ iframe {
 	hyphens: auto;
 }
 
+.giustificato a {
+	text-align: initial;
+	text-justify: initial;
+	hyphens: none;
+}
+
 .giustificato li {
 	margin-bottom: 0.5em;
 }

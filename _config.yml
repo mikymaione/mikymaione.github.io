@@ -8,9 +8,11 @@ timezone: Europe/Rome
 locale: it_IT
 
 exclude:
+  - vendor/
   - _site/
   - temp.db
   - Gemfile
   - Gemfile.lock
   - .jekyll-cache/
   - .sass-cache/
+  - .bundle/
