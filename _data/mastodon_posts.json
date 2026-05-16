@@ -1,5 +1,113 @@
 [
     {
+        "id": "116584913873510000",
+        "created_at": "2026-05-16T15:16:48.668Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116584913873510000",
+        "url": "https://mastodon.social/@mikymaione/116584913873510000",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Il dibattito tv dimostra come l&#39;ipocrisia blocchi la libertà di espressione. La giornalista ha il diritto di parlare e ha ragione: le fantasie intime esistono e non vanno negate. C&#39;è un abisso tra la violenza criminale e il desiderio privato. Come confermano molte relazioni tra giovani, la ricerca di dinamiche intense e sottomissione fa parte della sessualità reale. Se c&#39;è consenso e complicità guidata dalle donne, la sfera privata deve restare libera da tabù.</p><p><a href=\"https://www.repubblica.it/politica/2026/05/15/news/concita_borrelli_porta_a_porta_stupro_delitto_garlasco_pd_rai-425348179\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">repubblica.it/politica/2026/05</span><span class=\"invisible\">/15/news/concita_borrelli_porta_a_porta_stupro_delitto_garlasco_pd_rai-425348179</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 148,
+            "following_count": 586,
+            "statuses_count": 758,
+            "last_status_at": "2026-05-16",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.repubblica.it/politica/2026/05/15/news/concita_borrelli_porta_a_porta_stupro_delitto_garlasco_pd_rai-425348179",
+            "title": "“Ognuno di noi sogna lo stupro”, frase shock a Porta a Porta. Il Pd: “Scandaloso”, Vespa si scusa",
+            "description": "Polemica per le parole della giornalista Concita Borrelli, durante un confronto tra gli ospiti in studio sul caso del delitto di Garlasco e sul profilo psicolo…",
+            "language": "it",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "la Repubblica",
+            "provider_url": "",
+            "html": "",
+            "width": 640,
+            "height": 360,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/193/016/857/original/e6aca9958e245c11.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UA8}P;MHMdI:%No}W?Mw56o~s,nhD*NfxunN",
+            "published_at": "2026-05-15T15:06:49.000Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116582679924463768",
         "created_at": "2026-05-16T05:48:41.314Z",
         "in_reply_to_id": null,
