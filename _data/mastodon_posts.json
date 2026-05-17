@@ -1,5 +1,227 @@
 [
     {
+        "id": "116588661088720835",
+        "created_at": "2026-05-17T07:09:46.645Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116588661088720835",
+        "url": "https://mastodon.social/@mikymaione/116588661088720835",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>L&#39;attentato di Modena, dove un&#39;auto ha causando otto feriti, apre una profonda riflessione sulla reazione delle comunità di fronte alla violenza. I cittadini hanno bloccato l&#39;attentatore consegnandolo alla polizia. Al Sud, in contesti come quello napoletano, la reazione della piazza sarebbe stata probabilmente molto più dura. Non per razzismo, ma per un radicato codice sociale: l&#39;ospitalità è sacra, e tradirla significa subire la reazione viscerale di un&#39;intera comunità.</p><p><a href=\"https://www.rainews.it/maratona/2026/05/modena-auto-falcia-una-decina-di-persone-a-piedi-ci-sono-feriti-alcuni-in-modo-grave-8af9a672-b6a1-4997-92d3-3a68623abf46.html\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">rainews.it/maratona/2026/05/mo</span><span class=\"invisible\">dena-auto-falcia-una-decina-di-persone-a-piedi-ci-sono-feriti-alcuni-in-modo-grave-8af9a672-b6a1-4997-92d3-3a68623abf46.html</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 148,
+            "following_count": 586,
+            "statuses_count": 760,
+            "last_status_at": "2026-05-17",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.rainews.it/maratona/2026/05/modena-auto-falcia-una-decina-di-persone-a-piedi-ci-sono-feriti-alcuni-in-modo-grave-8af9a672-b6a1-4997-92d3-3a68623abf46.html",
+            "title": "Modena, investe alcuni pedoni con l'auto poi colpisce un passante, fermato un 30enne",
+            "description": "L'investimento nei pressi di Porta Bologna, con la vettura proveniente da Largo Garibaldi. Sette persone sono rimaste ferite, alcune in modo grave, una donna rischia di perdere le gambe",
+            "language": "it",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "RaiNews",
+            "provider_url": "",
+            "html": "",
+            "width": 662,
+            "height": 348,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/193/134/182/original/f1e8f4ebb9bf6e4e.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UFEL]F~VRNrp9a$*RPMxt7WCRkRjtRozawoK",
+            "published_at": "2026-05-16T15:49:42.000Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
+        "id": "116588608301423273",
+        "created_at": "2026-05-17T06:56:21.175Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116588608301423273",
+        "url": "https://mastodon.social/@mikymaione/116588608301423273",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>A Palermo una donna è stata sorpresa a guidare una Fiat 500L con a bordo ben 14 ragazzini. Praticamente un intero scuolabus abusivo stipato dentro una sola auto, roba da far impallidire i campioni mondiali di Tetris.</p><p>Ma c&#39;è una spiegazione logica a tutto questo: erano solo 14 perché nel portabagagli purtroppo c&#39;erano gli zainetti! Altrimenti, incastrandoli bene, altri due o tre entravano comodi.</p><p><a href=\"https://www.rainews.it/articoli/2026/05/fiat-500l-trasformata-in-uno-scuolabus-abusivo-a-palermo-14-minorenni-nellauto-f86a1ac5-c0a5-4653-875b-97bf5fa2ac4f.html\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">rainews.it/articoli/2026/05/fi</span><span class=\"invisible\">at-500l-trasformata-in-uno-scuolabus-abusivo-a-palermo-14-minorenni-nellauto-f86a1ac5-c0a5-4653-875b-97bf5fa2ac4f.html</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 148,
+            "following_count": 586,
+            "statuses_count": 760,
+            "last_status_at": "2026-05-17",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.rainews.it/articoli/2026/05/fiat-500l-trasformata-in-uno-scuolabus-abusivo-a-palermo-14-minorenni-nellauto-f86a1ac5-c0a5-4653-875b-97bf5fa2ac4f.html",
+            "title": "A Palermo una Fiat 500L trasformata in uno scuolabus abusivo: nell'auto 14 minorenni",
+            "description": "La donna alla guida è stata sanzionata dalla polizia e sono stati convocati i genitori dei ragazzini, tutti tra i 7 e i 14 anni",
+            "language": "it",
+            "type": "link",
+            "author_name": "Redazione di Rainews",
+            "author_url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+            "provider_name": "RaiNews",
+            "provider_url": "",
+            "html": "",
+            "width": 662,
+            "height": 348,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/193/122/607/original/336bb60c4bd92ea7.jpeg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UGECX%%K~o-;JixaIpr@r=x[MxNaoZVs-=i^",
+            "published_at": "2026-05-16T14:26:00.000Z",
+            "authors": [
+                {
+                    "name": "Redazione di Rainews",
+                    "url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+                    "account": null
+                }
+            ]
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116584913873510000",
         "created_at": "2026-05-16T15:16:48.668Z",
         "in_reply_to_id": null,
