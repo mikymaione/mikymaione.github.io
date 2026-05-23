@@ -1,5 +1,113 @@
 [
     {
+        "id": "116622818173573890",
+        "created_at": "2026-05-23T07:56:22.389Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116622818173573890",
+        "url": "https://mastodon.social/@mikymaione/116622818173573890",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Il crollo demografico è della classe media, che vorrebbe godersi la vita ma ha finito i soldi dopo il mutuo. Fare un figlio oggi richiede il budget di un emiro o l&#39;incoscienza di un supereroe. Tra stipendi al palo e asili che costano come un master, l&#39;unica fuga dei cervelli inarrestabile è quella dei giovani all&#39;estero. Una transumanza che purtroppo non toccherà mai i nostri politici: per migrare serve una materia prima che lì scarseggia da tempo.</p><p><a href=\"https://www.pressenza.com/it/2026/05/rapporto-istat-2026-meno-figli-giovani-via-e-oltre-2-milioni-di-famiglie-in-poverta-assoluta/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">pressenza.com/it/2026/05/rappo</span><span class=\"invisible\">rto-istat-2026-meno-figli-giovani-via-e-oltre-2-milioni-di-famiglie-in-poverta-assoluta/</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 150,
+            "following_count": 589,
+            "statuses_count": 762,
+            "last_status_at": "2026-05-23",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.pressenza.com/it/2026/05/rapporto-istat-2026-meno-figli-giovani-via-e-oltre-2-milioni-di-famiglie-in-poverta-assoluta/",
+            "title": "Rapporto Istat 2026: meno figli, giovani via e oltre 2 milioni di famiglie in povertà assoluta",
+            "description": "Nel nostro Paese le disuguaglianze economiche rimangono marcate, più di un quinto della popolazione dichiara di arrivare a fine mese con difficoltà o con grande difficoltà e circa un quarto ha difficoltà ad affrontare spese impreviste con le proprie risorse",
+            "language": "it",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "Pressenza",
+            "provider_url": "",
+            "html": "",
+            "width": 591,
+            "height": 389,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/193/860/820/original/7e7dbe4c5f98149c.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UIH_A9~3I8%2Mb9y.9Mv?Z%1r;tSS6r=ofNH",
+            "published_at": "2026-05-22T13:40:01.000Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116588661088720835",
         "created_at": "2026-05-17T07:09:46.645Z",
         "in_reply_to_id": null,
