@@ -1,0 +1,46 @@
+name: Fetch Mastodon Posts
+
+on:
+  schedule:
+    # Gira al minuto zero, ogni 2 ore, dalle 06:00 alle 22:00 UTC (08:00-24:00 italiane)
+    # Scatterà alle: 06:00, 08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, 22:00 UTC
+    - cron: '0 6-22/2 * * *'
+  workflow_dispatch: # Ti permette di avviare lo script anche a mano dalla scheda "Actions" su GitHub
+
+permissions:
+  contents: write # Permesso fondamentale per consentire all'Action di fare il push del JSON aggiornato
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Run Python Script
+      run: python fetch_mastodon.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Verifica se ci sono modifiche nel file JSON per evitare commit vuoti che fallirebbero
+        if [ -n "$(git status --porcelain _data/mastodon_posts.json)" ]; then
+          git add _data/mastodon_posts.json
+          git commit -m "chore: auto-update mastodon posts [skip ci]"
+          git push
+        else
+          echo "No new posts found. Skipping commit."
+        fi
