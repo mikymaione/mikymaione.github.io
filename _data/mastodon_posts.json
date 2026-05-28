@@ -1,5 +1,120 @@
 [
     {
+        "id": "116652198757610477",
+        "created_at": "2026-05-28T12:28:14.535Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116652198757610477",
+        "url": "https://mastodon.social/@mikymaione/116652198757610477",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Da due anni frequento lo stesso bar: caffè e Gratta e Vinci, a volte anche in gruppo facendo la colletta. Al momento il mio bilancio matematico è a +1,25€.<br />Significa che sono arrivato al capolinea: posso giocarmi l&#39;ultimo biglietto da 1€, rimanere in positivo di ben 0,25€ e chiuderla definitivamente così. È stato sicuramente divertente.<br />Per chi se lo stesse chiedendo: sì, quel 0,25€ di avanzo è il glorioso frutto di una vincita divisa esattamente in quattro. Un successo strepitoso.</p>",
+        "reblog": null,
+        "application": {
+            "name": "Mastodon for Android",
+            "website": "https://app.joinmastodon.org/android"
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 151,
+            "following_count": 589,
+            "statuses_count": 769,
+            "last_status_at": "2026-05-28",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [
+            {
+                "id": "116652197264375081",
+                "type": "image",
+                "url": "https://files.mastodon.social/media_attachments/files/116/652/197/264/375/081/original/341b6e266373c067.jpg",
+                "preview_url": "https://files.mastodon.social/media_attachments/files/116/652/197/264/375/081/small/341b6e266373c067.jpg",
+                "remote_url": null,
+                "preview_remote_url": null,
+                "text_url": null,
+                "meta": {
+                    "original": {
+                        "width": 2448,
+                        "height": 2448,
+                        "size": "2448x2448",
+                        "aspect": 1.0
+                    },
+                    "small": {
+                        "width": 480,
+                        "height": 480,
+                        "size": "480x480",
+                        "aspect": 1.0
+                    }
+                },
+                "description": "Gratta e vinci da 5€ e caffè amaro",
+                "blurhash": "UKH2D?rC-;x^jqRiV@%g0zXnRjt6_4jIogM{"
+            }
+        ],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": null,
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116634126916787224",
         "created_at": "2026-05-25T07:52:20.124Z",
         "in_reply_to_id": null,
