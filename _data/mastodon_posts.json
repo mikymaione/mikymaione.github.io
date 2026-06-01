@@ -1,5 +1,94 @@
 [
     {
+        "id": "116673152241504536",
+        "created_at": "2026-06-01T05:16:59.321Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116673152241504536",
+        "url": "https://mastodon.social/@mikymaione/116673152241504536",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Apro IG e mi imbatto nella foto di una ragazza del paese vicino, sdraiata sul letto in posa provocante, con tanto di didascalia: &quot;io quando mi sveglio e non sono comunista&quot;. Colto da sacro furore teorico e armato di buone intenzioni, preparo la replica perfetta &quot;Teoricamente, il grande vantaggio del comunismo è l&#39;eliminazione delle disuguaglianze sociali. Abolendo la proprietà privata dei mezzi di produzione...&quot;  e scopro l&#39;amara verità: &quot;commenti disabilitati&quot;. FUCK!</p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 151,
+            "following_count": 589,
+            "statuses_count": 777,
+            "last_status_at": "2026-06-01",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": null,
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116669164465943669",
         "created_at": "2026-05-31T12:22:50.687Z",
         "in_reply_to_id": null,
