@@ -1,5 +1,126 @@
 [
     {
+        "id": "116805198606804428",
+        "created_at": "2026-06-24T12:58:06.991Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116805198606804428",
+        "url": "https://mastodon.social/@mikymaione/116805198606804428",
+        "replies_count": 0,
+        "reblogs_count": 1,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Un tempo internet era un &quot;luogo&quot; in cui andavi: accendevi il PC, ti connettevi, navigavi e poi &quot;uscivi&quot;. Oggi, con gli smartphone e i feed infiniti, siamo online sempre e ovunque.<br />L&#39;ultima newsletter di Medium esplora proprio questo: come siamo passati dalla stanza del computer all&#39;iper-connessione perenne, e perché molte persone stanno iniziando a disconnettersi deliberatamente per riprendersi il proprio tempo.<br />E tu riesci a staccare?</p><p><a href=\"https://mastodon.social/tags/DigitalDetox\" class=\"mention hashtag\" rel=\"tag\">#<span>DigitalDetox</span></a> <a href=\"https://mastodon.social/tags/Medium\" class=\"mention hashtag\" rel=\"tag\">#<span>Medium</span></a> <a href=\"https://mastodon.social/tags/SocialMedia\" class=\"mention hashtag\" rel=\"tag\">#<span>SocialMedia</span></a></p><p><a href=\"https://medium.com/blog/447106e69d43\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">medium.com/blog/447106e69d43</span><span class=\"invisible\"></span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 154,
+            "following_count": 591,
+            "statuses_count": 794,
+            "last_status_at": "2026-06-24",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [
+            {
+                "name": "digitaldetox",
+                "url": "https://mastodon.social/tags/digitaldetox"
+            },
+            {
+                "name": "medium",
+                "url": "https://mastodon.social/tags/medium"
+            },
+            {
+                "name": "socialmedia",
+                "url": "https://mastodon.social/tags/socialmedia"
+            }
+        ],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://medium.com/blog/447106e69d43",
+            "title": "How “online” became “all the time”",
+            "description": "And why some people are deliberately logging off (Issue #434)",
+            "language": "en",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "Medium",
+            "provider_url": "",
+            "html": "",
+            "width": 960,
+            "height": 240,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/197/800/973/original/2f70360dec46ef42.png",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UCFYok-;ALIpM{%MxutR0gRj-4M_MxWCt8n#",
+            "published_at": "2026-06-24T08:31:01.167Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116795371936061291",
         "created_at": "2026-06-22T19:19:03.855Z",
         "in_reply_to_id": null,
