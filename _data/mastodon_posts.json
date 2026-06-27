@@ -1,5 +1,195 @@
 [
     {
+        "id": "116823828856251634",
+        "created_at": "2026-06-27T19:56:01.998Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116823828856251634",
+        "url": "https://mastodon.social/@mikymaione/116823828856251634",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Bellissima esperienza alla DevFest del GDG Basilicata. La location La Majonica è immersa nella natura ed è favolosa, e l&#39;ospitalità è stata eccezionale, con un ottimo pranzo. Durante la giornata abbiamo seguito talk su web, cloud e intelligenza artificiale, per poi metterci alla prova con un build sprint. Abbiamo costruito delle micro serre stampate in 3D per piantine di fragole, capaci di innaffiare, ventilare e monitorare umidità del terreno, temperatura e irradiazione solare.</p>",
+        "reblog": null,
+        "application": {
+            "name": "Mastodon for Android",
+            "website": "https://app.joinmastodon.org/android"
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 155,
+            "following_count": 590,
+            "statuses_count": 796,
+            "last_status_at": "2026-06-27",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [
+            {
+                "id": "116823818651529212",
+                "type": "image",
+                "url": "https://files.mastodon.social/media_attachments/files/116/823/818/651/529/212/original/c662929a4d14fb71.jpg",
+                "preview_url": "https://files.mastodon.social/media_attachments/files/116/823/818/651/529/212/small/c662929a4d14fb71.jpg",
+                "remote_url": null,
+                "preview_remote_url": null,
+                "text_url": null,
+                "meta": {
+                    "original": {
+                        "width": 2448,
+                        "height": 2448,
+                        "size": "2448x2448",
+                        "aspect": 1.0
+                    },
+                    "small": {
+                        "width": 480,
+                        "height": 480,
+                        "size": "480x480",
+                        "aspect": 1.0
+                    }
+                },
+                "description": "La Majonica",
+                "blurhash": "UIC%mr%f4nRkPXNas;xZw]n$kDV@ZxM{M_WD"
+            },
+            {
+                "id": "116823819469384204",
+                "type": "image",
+                "url": "https://files.mastodon.social/media_attachments/files/116/823/819/469/384/204/original/bd50c71693e4d622.jpg",
+                "preview_url": "https://files.mastodon.social/media_attachments/files/116/823/819/469/384/204/small/bd50c71693e4d622.jpg",
+                "remote_url": null,
+                "preview_remote_url": null,
+                "text_url": null,
+                "meta": {
+                    "original": {
+                        "width": 2448,
+                        "height": 2448,
+                        "size": "2448x2448",
+                        "aspect": 1.0
+                    },
+                    "small": {
+                        "width": 480,
+                        "height": 480,
+                        "size": "480x480",
+                        "aspect": 1.0
+                    }
+                },
+                "description": "Micro serre che abbiamo realizzato",
+                "blurhash": "UHEVKVI;0LxGkXjZsSt7?Hofxbt7t7offlRj"
+            },
+            {
+                "id": "116823823706355898",
+                "type": "image",
+                "url": "https://files.mastodon.social/media_attachments/files/116/823/823/706/355/898/original/0bd5d81771d4fab4.jpg",
+                "preview_url": "https://files.mastodon.social/media_attachments/files/116/823/823/706/355/898/small/0bd5d81771d4fab4.jpg",
+                "remote_url": null,
+                "preview_remote_url": null,
+                "text_url": null,
+                "meta": {
+                    "original": {
+                        "width": 2448,
+                        "height": 2448,
+                        "size": "2448x2448",
+                        "aspect": 1.0
+                    },
+                    "small": {
+                        "width": 480,
+                        "height": 480,
+                        "size": "480x480",
+                        "aspect": 1.0
+                    }
+                },
+                "description": "I 4 team: stampa 3d, IoT, Cloud, Web",
+                "blurhash": "UVG8$RogRjog0yV@aefknNRjays:xvWBWBof"
+            },
+            {
+                "id": "116823824987316733",
+                "type": "image",
+                "url": "https://files.mastodon.social/media_attachments/files/116/823/824/987/316/733/original/356c82de950ada8b.jpg",
+                "preview_url": "https://files.mastodon.social/media_attachments/files/116/823/824/987/316/733/small/356c82de950ada8b.jpg",
+                "remote_url": null,
+                "preview_remote_url": null,
+                "text_url": null,
+                "meta": {
+                    "original": {
+                        "width": 2448,
+                        "height": 2448,
+                        "size": "2448x2448",
+                        "aspect": 1.0
+                    },
+                    "small": {
+                        "width": 480,
+                        "height": 480,
+                        "size": "480x480",
+                        "aspect": 1.0
+                    }
+                },
+                "description": "Paesaggio lucano",
+                "blurhash": "U=GSDnt7ayoL?wt7f6j[tnofoLfQt7WVj[fP"
+            }
+        ],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": null,
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116807027641977012",
         "created_at": "2026-06-24T20:43:15.809Z",
         "in_reply_to_id": null,
