@@ -1,5 +1,233 @@
 [
     {
+        "id": "116905673822056709",
+        "created_at": "2026-07-12T06:50:17.085Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116905673822056709",
+        "url": "https://mastodon.social/@mikymaione/116905673822056709",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Il sindaco che risponde al gestore del lido, accusato di amare i pezzenti in spiaggia libera, è il mio nuovo eroe. Quando la politica incontra il realismo più crudo in riva al mare, lo spettacolo è garantito. C’è chi vede degrado e chi vede democrazia, ma lui non le manda a dire. Un uomo, un mito, e una lezione magistrale su come smontare le polemiche da ombrellone con una sola, epica uscita. Applausi scroscianti per questa gestione del dibattito, pura poesia urbana.</p><p><a href=\"https://www.rainews.it/articoli/2026/07/il-sindaco-risponde-al-gestore-del-lido-che-lo-accusa-di-amare-i-pezzenti-si-spiaggia-libera-f1a14c73-5849-4871-b3d8-ed902536c054.html\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">rainews.it/articoli/2026/07/il</span><span class=\"invisible\">-sindaco-risponde-al-gestore-del-lido-che-lo-accusa-di-amare-i-pezzenti-si-spiaggia-libera-f1a14c73-5849-4871-b3d8-ed902536c054.html</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Mastodon for Android",
+            "website": "https://app.joinmastodon.org/android"
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 153,
+            "following_count": 591,
+            "statuses_count": 810,
+            "last_status_at": "2026-07-12",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.rainews.it/articoli/2026/07/il-sindaco-risponde-al-gestore-del-lido-che-lo-accusa-di-amare-i-pezzenti-si-spiaggia-libera-f1a14c73-5849-4871-b3d8-ed902536c054.html",
+            "title": "Il sindaco risponde al gestore del lido che lo accusa di amare i \"pezzenti\": \"Sì, spiaggia libera!\"",
+            "description": "Josi Della Ragione in un lungo post su Facebook: \"Più diritti e tutele a chi lavora in spiaggia e ai cittadini. I pezzenti si riprenderanno ciò che è loro\"",
+            "language": "it",
+            "type": "link",
+            "author_name": "Redazione di Rainews",
+            "author_url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+            "provider_name": "RaiNews",
+            "provider_url": "",
+            "html": "",
+            "width": 662,
+            "height": 348,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/199/831/367/original/4829688c6bc1cbc7.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "U87^=C%0580$I]V@fitSIoxas:RjOEI;$%-A",
+            "published_at": "2026-07-11T15:07:00.000Z",
+            "authors": [
+                {
+                    "name": "Redazione di Rainews",
+                    "url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+                    "account": null
+                }
+            ]
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
+        "id": "116905650135338750",
+        "created_at": "2026-07-12T06:44:15.632Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/116905650135338750",
+        "url": "https://mastodon.social/@mikymaione/116905650135338750",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Guardate il lato positivo di questa terza ondata di caldo estremo: è la soluzione definitiva al surriscaldamento globale. La gente muore di caldo, quindi saremo di meno e di conseguenza scalderemo meno il pianeta. È pura matematica evolutiva. Arriveremo finalmente a un perfetto punto di equilibrio tra calore prodotto e numero di sopravvissuti. Un piano geniale, cinico, ma dannatamente efficiente. Godetevi il panorama mentre il termometro sale e la popolazione scende.</p><p><a href=\"https://www.rainews.it/articoli/2026/07/terza-ondata-di-caldo-anomalo-temperature-estreme-temporali-nord-22df34ab-6dc6-4e20-9e17-4b258755a059.html\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">rainews.it/articoli/2026/07/te</span><span class=\"invisible\">rza-ondata-di-caldo-anomalo-temperature-estreme-temporali-nord-22df34ab-6dc6-4e20-9e17-4b258755a059.html</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Mastodon for Android",
+            "website": "https://app.joinmastodon.org/android"
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 153,
+            "following_count": 591,
+            "statuses_count": 810,
+            "last_status_at": "2026-07-12",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.rainews.it/articoli/2026/07/terza-ondata-di-caldo-anomalo-temperature-estreme-temporali-nord-22df34ab-6dc6-4e20-9e17-4b258755a059.html",
+            "title": "Weekend a due facce tra temperature estreme e temporali al nord",
+            "description": "Terza ondata di caldo anomalo, bollino rosso: iniziano oggi Firenze e Perugia. Previsti 41 gradi nelle zone interne della Sardegna. Protezione civile: allerta gialla per il maltempo in tutto il Veneto e parte dell'Emilia Romagna",
+            "language": "it",
+            "type": "link",
+            "author_name": "Redazione di Rainews",
+            "author_url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+            "provider_name": "RaiNews",
+            "provider_url": "",
+            "html": "",
+            "width": 662,
+            "height": 348,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/199/789/935/original/9fb7b3749cb96f9e.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UGG*.=.S0d-pkP~U%LE1IT-qb{Vr%ME1nh%N",
+            "published_at": "2026-07-11T04:52:00.000Z",
+            "authors": [
+                {
+                    "name": "Redazione di Rainews",
+                    "url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+                    "account": null
+                }
+            ]
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116902137591808191",
         "created_at": "2026-07-11T15:50:58.470Z",
         "in_reply_to_id": null,
