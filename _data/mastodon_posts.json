@@ -1,5 +1,113 @@
 [
     {
+        "id": "117018979498399801",
+        "created_at": "2026-08-01T07:05:24.480Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117018979498399801",
+        "url": "https://mastodon.social/@mikymaione/117018979498399801",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Mare caldo fino a 40 metri di profondità? Praticamente abbiamo trasformato il Mediterraneo in una sous-vide a cielo aperto. Tra un po’ il pesce lo tiriamo su direttamente già cotto a puntino e sfumato al vino bianco. E noi che continuiamo a trattare il cambiamento climatico come l&#39;ennesimo aggiornamento software da rimandare a domani. Tranquilli, l&#39;importante è che il mare mantenga la cottura al dente. 🌊🍝🥵</p><p><a href=\"https://www.pressenza.com/it/2026/07/il-nostro-mare-e-sempre-piu-caldo-ondate-di-calore-anche-a-40-metri-di-profondita/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">pressenza.com/it/2026/07/il-no</span><span class=\"invisible\">stro-mare-e-sempre-piu-caldo-ondate-di-calore-anche-a-40-metri-di-profondita/</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Mastodon for Android",
+            "website": "https://app.joinmastodon.org/android"
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 152,
+            "following_count": 590,
+            "statuses_count": 814,
+            "last_status_at": "2026-08-01",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.pressenza.com/it/2026/07/il-nostro-mare-e-sempre-piu-caldo-ondate-di-calore-anche-a-40-metri-di-profondita/",
+            "title": "Il nostro mare è sempre più caldo: ondate di calore anche a 40 metri di profondità",
+            "description": "Mentre il 2026 ha già segnato il record assoluto di temperatura per i mari e gli oceani a livello globale a causa della crisi climatica, l’ultimo rapporto",
+            "language": "it",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "Pressenza",
+            "provider_url": "",
+            "html": "",
+            "width": 587,
+            "height": 392,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/202/065/688/original/8d6770e62d04cf1e.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UK4D1WRqRQx_Rvp0oyRPWIkCjDadx^V@RhtQ",
+            "published_at": "2026-07-31T15:26:11.000Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "116934736782240424",
         "created_at": "2026-07-17T10:01:22.646Z",
         "in_reply_to_id": null,
