@@ -1,5 +1,113 @@
 [
     {
+        "id": "117026097856180772",
+        "created_at": "2026-08-02T13:15:41.994Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117026097856180772",
+        "url": "https://mastodon.social/@mikymaione/117026097856180772",
+        "replies_count": 1,
+        "reblogs_count": 0,
+        "favourites_count": 1,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Arriva l&#39;RFC 10008: il nuovo metodo HTTP QUERY colma lo storico vuoto tra GET e POST. Unisce la sicurezza e l&#39;idempotenza di GET alla capacità di trasportare payload strutturati nel body tipica di POST.</p><p>Addio a URI chilometrici, log dei server pieni di dati sensibili e workaround sporchi per GraphQL o ricerche complesse. Una svolta per caching, privacy e semantica web, già supportata da Node.js e Go, in attesa dell&#39;adozione totale.</p><p><a href=\"https://www.codemotion.com/magazine/it/backend-it/http-query-il-metodo-che-mancava-tra-get-e-post/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">codemotion.com/magazine/it/bac</span><span class=\"invisible\">kend-it/http-query-il-metodo-che-mancava-tra-get-e-post/</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 152,
+            "following_count": 590,
+            "statuses_count": 815,
+            "last_status_at": "2026-08-02",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.codemotion.com/magazine/it/backend-it/http-query-il-metodo-che-mancava-tra-get-e-post/",
+            "title": "HTTP QUERY: il metodo che mancava tra GET e POST",
+            "description": "Il metodo QUERY non è una semplice aggiunta sintattica. Risolve un'incongruenza strutturale che ci portiamo dietro dagli albori del web.",
+            "language": "it",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "Codemotion Magazine",
+            "provider_url": "",
+            "html": "",
+            "width": 642,
+            "height": 358,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/202/230/569/original/c8004e98c2685b4a.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UE5~%[$+QRX+x^t7nkjrH;R*o~nOMdWAbqWF",
+            "published_at": "2026-07-29T11:35:07.000Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "117018979498399801",
         "created_at": "2026-08-01T07:05:24.480Z",
         "in_reply_to_id": null,
