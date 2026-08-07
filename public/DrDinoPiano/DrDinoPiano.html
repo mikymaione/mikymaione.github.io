@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanti Auguri Dr. Dino! 🎹</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+        }
+
+        h1 {
+            color: #d81b60;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        p.subtitle {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        .status-box {
+            background: #fff3e0;
+            border: 2px dashed #ffb74d;
+            padding: 12px;
+            border-radius: 12px;
+            color: #e65100;
+            font-weight: bold;
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        /* Piano Layout */
+        .piano {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            user-select: none;
+        }
+
+        .key {
+            flex: 1;
+            height: 160px;
+            background: #ffffff;
+            border: 2px solid #e0e0e0;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 5px 0 #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            padding-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.1s ease;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .key:active,
+        .key.pressed {
+            transform: translateY(4px);
+            box-shadow: 0 1px 0 #ccc;
+            background: #f5f5f5;
+        }
+
+        /* Evidenziazione tasto da premere */
+        .key.highlight {
+            background: #ffe0b2;
+            border-color: #ff9800;
+            box-shadow: 0 5px 0 #f57c00;
+            animation: pulse 1s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.03);
+            }
+        }
+
+        .key span {
+            font-size: 0.8rem;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        /* Modal Auguri Finale */
+        .win-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .win-overlay h2 {
+            font-size: 2.2rem;
+            color: #d81b60;
+            margin-bottom: 10px;
+        }
+
+        .win-overlay p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-reset {
+            background: #d81b60;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+            transition: background 0.2s;
+        }
+
+        .btn-reset:hover {
+            background: #ad1457;
+        }
+
+        /* Confetti Canvas */
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 99;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="confetti-canvas"></canvas>
+
+    <div class="container">
+        <h1>🎹 Piano Auguri per Dr. Dino</h1>
+        <p class="subtitle">Suona la melodia seguendo i tasti evidenziati!</p>
+
+        <div class="status-box" id="status">Tocca la nota illuminata per iniziare</div>
+
+        <div class="piano">
+            <div class="key" data-note="DO4" onclick="playNote('DO4')">DO <span>C4</span></div>
+            <div class="key" data-note="RE4" onclick="playNote('RE4')">RE <span>D4</span></div>
+            <div class="key" data-note="MI4" onclick="playNote('MI4')">MI <span>E4</span></div>
+            <div class="key" data-note="FA4" onclick="playNote('FA4')">FA <span>F4</span></div>
+            <div class="key" data-note="SOL4" onclick="playNote('SOL4')">SOL <span>G4</span></div>
+            <div class="key" data-note="LA4" onclick="playNote('LA4')">LA <span>A4</span></div>
+            <div class="key" data-note="SI4" onclick="playNote('SI4')">SI <span>B4</span></div>
+            <div class="key" data-note="DO5" onclick="playNote('DO5')">DO <span>C5</span></div>
+        </div>
+
+        <!-- Schermata Finale -->
+        <div class="win-overlay" id="winScreen">
+            <h2>🎉 Tanti Auguri Dr. Dino! 🎂</h2>
+            <p>Hai suonato la tua canzone alla perfezione!</p>
+            <button class="btn-reset" onclick="resetGame()">Risuona la Canzone</button>
+        </div>
+    </div>
+
+    <script>
+        // Sintetizzatore Audio (Web Audio API - non richiede file esterni)
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        let audioCtx = null;
+
+        const frequencies = {
+            'DO4': 261.63,
+            'RE4': 293.66,
+            'MI4': 329.63,
+            'FA4': 349.23,
+            'SOL4': 392.00,
+            'LA4': 440.00,
+            'SI4': 493.88,
+            'DO5': 523.25
+        };
+
+        // Sequenza di "Tanti Auguri a Te" adattata
+        const melody = [
+            'DO4', 'DO4', 'RE4', 'DO4', 'FA4', 'MI4',
+            'DO4', 'DO4', 'RE4', 'DO4', 'SOL4', 'FA4',
+            'DO4', 'DO4', 'DO5', 'LA4', 'FA4', 'MI4', 'RE4',
+            'DO5', 'DO5', 'LA4', 'FA4', 'SOL4', 'FA4'
+        ];
+
+        let currentStep = 0;
+
+        function initAudio() {
+            if (!audioCtx) {
+                audioCtx = new AudioContext();
+            }
+        }
+
+        function playTone(freq) {
+            initAudio();
+            const osc = audioCtx.createOscillator();
+            const gain = audioCtx.createGain();
+
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+            gain.gain.setValueAtTime(0.5, audioCtx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
+
+            osc.connect(gain);
+            gain.connect(audioCtx.destination);
+
+            osc.start();
+            osc.stop(audioCtx.currentTime + 0.8);
+        }
+
+        function playNote(noteKey) {
+            if (frequencies[noteKey]) {
+                playTone(frequencies[noteKey]);
+            }
+
+            // Feedback visivo tasto
+            const keyEl = document.querySelector(`.key[data-note="${noteKey}"]`);
+            if (keyEl) {
+                keyEl.classList.add('pressed');
+                setTimeout(() => keyEl.classList.remove('pressed'), 150);
+            }
+
+            // Controllo sequenza di gioco
+            checkProgress(noteKey);
+        }
+
+        function checkProgress(noteKey) {
+            const expectedNote = melody[currentStep];
+
+            if (noteKey === expectedNote) {
+                currentStep++;
+                if (currentStep >= melody.length) {
+                    endGame();
+                } else {
+                    updateHighlight();
+                }
+            }
+        }
+
+        function updateHighlight() {
+            document.querySelectorAll('.key').forEach(k => k.classList.remove('highlight'));
+
+            const nextNote = melody[currentStep];
+            const nextKey = document.querySelector(`.key[data-note="${nextNote}"]`);
+            if (nextKey) {
+                nextKey.classList.add('highlight');
+            }
+
+            document.getElementById('status').innerText = `Nota ${currentStep + 1} di ${melody.length}: premi ${nextNote.replace('4', '').replace('5', '')}`;
+        }
+
+        function endGame() {
+            document.querySelectorAll('.key').forEach(k => k.classList.remove('highlight'));
+            document.getElementById('status').innerText = "Brava Laura! 🎉";
+            document.getElementById('winScreen').style.display = 'flex';
+            startConfetti();
+        }
+
+        function resetGame() {
+            currentStep = 0;
+            document.getElementById('winScreen').style.display = 'none';
+            stopConfetti();
+            updateHighlight();
+        }
+
+        // --- Gestione Coriandoli ---
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        let confetti = [];
+        let animationFrame = null;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function startConfetti() {
+            confetti = Array.from({ length: 100 }, () => ({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height - canvas.height,
+                color: `hsl(${Math.random() * 360}, 100%, 60%)`,
+                size: Math.random() * 8 + 4,
+                speedY: Math.random() * 3 + 2,
+                speedX: Math.random() * 2 - 1
+            }));
+            renderConfetti();
+        }
+
+        function renderConfetti() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            confetti.forEach(c => {
+                c.y += c.speedY;
+                c.x += c.speedX;
+                if (c.y > canvas.height) c.y = -10;
+                ctx.fillStyle = c.color;
+                ctx.fillRect(c.x, c.y, c.size, c.size);
+            });
+            animationFrame = requestAnimationFrame(renderConfetti);
+        }
+
+        function stopConfetti() {
+            if (animationFrame) cancelAnimationFrame(animationFrame);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        // Avvio gioco
+        updateHighlight();
+    </script>
+</body>
+
+</html>
