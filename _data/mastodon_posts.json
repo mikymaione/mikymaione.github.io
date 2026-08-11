@@ -1,5 +1,209 @@
 [
     {
+        "id": "117076367359152234",
+        "created_at": "2026-08-11T10:19:53.740Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117076367359152234",
+        "url": "https://mastodon.social/@mikymaione/117076367359152234",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 1,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Per i nati dal 1980 in poi l&#39;economia italiana è diventata un&#39;ereditocrazia spietata: se ti trovi in una grande città, farcela solo con le tue forze e il tuo lavoro è un’illusione totale. </p><p>Le sole eccezioni alla regola? Chi è andato a prostituirsi all&#39;estero con la famosa fuga dei cervelli (per poi finire quasi sempre a tornare da mammà) o chi manda avanti la baracca facendo evasione fiscale sistematica.</p><p>Per tutti gli altri l&#39;unica vera risorsa resta il portafoglio di famiglia.</p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 152,
+            "following_count": 590,
+            "statuses_count": 822,
+            "last_status_at": "2026-08-11",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": null,
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
+        "id": "117076033280210148",
+        "created_at": "2026-08-11T08:54:56.104Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117076033280210148",
+        "url": "https://mastodon.social/@mikymaione/117076033280210148",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Mio padre è un imbecille! Frigo con puzza di marcio: mio padre ha buttato metà melone nell&#39;organico con alluminio e plastica. Oggi una percoca. Gli ho detto di non comprare cibo a vagonate se poi lo sposta nel cestino: ci sono bambini che muoiono di fame nel mondo e io dono a Save the Children! Risposta? Insulti e la perla: «Pago la TARI, lo Stato non mi invoglia a riciclare, butto come voglio». E in lista spesa? Altre percoche! Ignoranza pura, zero differenziata e spreco alimentare.</p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 152,
+            "following_count": 590,
+            "statuses_count": 822,
+            "last_status_at": "2026-08-11",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [
+            {
+                "id": "117075977529653898",
+                "type": "image",
+                "url": "https://files.mastodon.social/media_attachments/files/117/075/977/529/653/898/original/39c541c387384ec8.png",
+                "preview_url": "https://files.mastodon.social/media_attachments/files/117/075/977/529/653/898/small/39c541c387384ec8.png",
+                "remote_url": null,
+                "preview_remote_url": null,
+                "text_url": null,
+                "meta": {
+                    "original": {
+                        "width": 261,
+                        "height": 243,
+                        "size": "261x243",
+                        "aspect": 1.0740740740740742
+                    },
+                    "small": {
+                        "width": 261,
+                        "height": 243,
+                        "size": "261x243",
+                        "aspect": 1.0740740740740742
+                    }
+                },
+                "description": null,
+                "blurhash": "U6QS*X0Kxu^+?aoft7WB4oofxuRk?aWB%Lt6"
+            }
+        ],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": null,
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "117071343854835491",
         "created_at": "2026-08-10T13:02:21.144Z",
         "in_reply_to_id": null,
