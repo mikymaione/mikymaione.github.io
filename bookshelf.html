@@ -14,11 +14,28 @@ title: Bookshelf - Michele Maione
 			</tr>
 		</thead>
 		<tbody>
-			{% for libro in site.data.Bookshelf %}
+			{% assign libri_ordinati = site.data.Bookshelf | sort: 'Title' | sort: 'LastName' %}
+			{% assign gruppi_lettere = libri_ordinati | group_by_exp: "libro", "libro.LastName | slice: 0 | upcase" %}
+			
+			{% for gruppo in gruppi_lettere %}
+			<!-- Riga separatrice con la sola iniziale -->
+			<tr class="letter-header">
+				<td colspan="2">
+					<em>
+						<b>
+							{{ gruppo.name }}
+						</b>
+					</em>
+				</td>
+			</tr>
+			
+			<!-- Righe dei libri che iniziano con questa lettera -->
+			{% for libro in gruppo.items %}
 			<tr>
 				<td>{{ libro.Authors }}</td>
 				<td class="giustificato">{{ libro.Title }}</td>
 			</tr>
 			{% endfor %}
+			{% endfor %}
 		</tbody>
-	</table>	
+	</table>
