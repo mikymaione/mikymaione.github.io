@@ -1,5 +1,119 @@
 [
     {
+        "id": "117137904309701613",
+        "created_at": "2026-08-22T07:09:33.096Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117137904309701613",
+        "url": "https://mastodon.social/@mikymaione/117137904309701613",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Una bimba di 4 anni è morta a Palermo di difterite. Entrambi i genitori avevano scelto di non vaccinarla, negandole l&#39;unica difesa contro una malattia devastante. Quando le condizioni si sono fatte disperate, sono corsi ad affidare proprio a quella medicina che prima rifiutavano, finendo poi per accusare i medici. Perché respingere la scienza preventiva e poi pretenderne i miracoli all&#39;ultimo secondo? Rifiutare i vaccini sulla pelle dei figli non è scelta, è incoerenza.</p><p><a href=\"https://www.rainews.it/articoli/2026/08/la-madre-della-bimba-morta-a-palermo-medici-incompetenti-5340ad58-5f60-47fc-8023-8243d32d0740.html\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">rainews.it/articoli/2026/08/la</span><span class=\"invisible\">-madre-della-bimba-morta-a-palermo-medici-incompetenti-5340ad58-5f60-47fc-8023-8243d32d0740.html</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 151,
+            "following_count": 592,
+            "statuses_count": 835,
+            "last_status_at": "2026-08-22",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.rainews.it/articoli/2026/08/la-madre-della-bimba-morta-a-palermo-medici-incompetenti-5340ad58-5f60-47fc-8023-8243d32d0740.html",
+            "title": "La madre della bimba morta a Palermo per difterite: \"Medici incompetenti\"",
+            "description": "\"Non abbiamo scambiato la difterite per tonsillite\". Il cuginetto sta meglio",
+            "language": "it",
+            "type": "link",
+            "author_name": "Redazione di Rainews",
+            "author_url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+            "provider_name": "RaiNews",
+            "provider_url": "",
+            "html": "",
+            "width": 662,
+            "height": 348,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/204/468/172/original/38af328a332e0d1d.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UCO4SY~8E2?w0LD$?bxt%L9FIUxZm*8wIA%g",
+            "published_at": "2026-08-22T06:34:00.000Z",
+            "authors": [
+                {
+                    "name": "Redazione di Rainews",
+                    "url": "https://www.rainews.it/articoli/2021/12/rainewsit-chi-siamo-da5ac2fd-e338-4a3e-9018-8e05182724aa.html",
+                    "account": null
+                }
+            ]
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "117128066719981092",
         "created_at": "2026-08-20T13:27:43.385Z",
         "in_reply_to_id": null,
