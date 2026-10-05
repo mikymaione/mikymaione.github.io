@@ -1,5 +1,119 @@
 [
     {
+        "id": "117388245579107016",
+        "created_at": "2026-10-05T12:14:37.710Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117388245579107016",
+        "url": "https://mastodon.social/@mikymaione/117388245579107016",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>L&#39;articolo di Tilson e Stein critica uno studio di Harvard che associa le centrali nucleari all&#39;aumento dei tumori negli USA. Applicando la stessa metodologia ad altri luoghi, mostrano risultati paradossali: vivere vicino ai supermercati Costco, alle università private o agli stadi causerebbe milioni di morti per cancro. Il modello e ritenuto inaffidabile perché non misura l&#39;esposizione reale, analizza raggi geografici troppo ampi e manca di test di controllo.</p><p><a href=\"https://www.breakthroughjournal.org/p/things-that-apparently-cause-cancer\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">breakthroughjournal.org/p/thin</span><span class=\"invisible\">gs-that-apparently-cause-cancer</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 152,
+            "following_count": 592,
+            "statuses_count": 847,
+            "last_status_at": "2026-10-05",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.breakthroughjournal.org/p/things-that-apparently-cause-cancer",
+            "title": "Things that Apparently Cause Cancer",
+            "description": "What does this methodology measure anyway?",
+            "language": "en",
+            "type": "link",
+            "author_name": "Deric Tilson",
+            "author_url": "https://substack.com/@derictilson",
+            "provider_name": "The Ecomodernist",
+            "provider_url": "",
+            "html": "",
+            "width": 640,
+            "height": 360,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/209/397/905/original/ae1788a46988bf16.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UfHxB5RPRjTK*0ayWBr?Tzw^oLofp0s.s.Rk",
+            "published_at": "2026-10-02T15:30:39.000Z",
+            "authors": [
+                {
+                    "name": "Deric Tilson",
+                    "url": "https://substack.com/@derictilson",
+                    "account": null
+                }
+            ]
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "117285407351568386",
         "created_at": "2026-09-17T08:21:30.890Z",
         "in_reply_to_id": null,
