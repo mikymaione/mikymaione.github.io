@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Escape From Agrigento - Monkey Island Edition</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .game-frame {
+            width: 100%;
+            max-width: 500px;
+            background-color: #161b22;
+            border: 4px solid #30363d;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-header {
+            background-color: #21262d;
+            padding: 12px 15px;
+            border-bottom: 2px solid #30363d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .game-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #58a6ff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .suspicion-meter {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            color: #8b949e;
+        }
+
+        .bar-container {
+            width: 70px;
+            height: 10px;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            width: 0%;
+            background-color: #3fb950;
+            transition: width 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Container quadrato per le tue immagini 1:1 */
+        .image-container {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid #30363d;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .dialogue-box {
+            padding: 15px;
+            background-color: #161b22;
+            border-bottom: 2px solid #30363d;
+            min-height: 95px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .speaker-name {
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .dialogue-text {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            color: #f0f6fc;
+        }
+
+        .choices-container {
+            padding: 12px;
+            background-color: #0d1117;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .choice-btn {
+            background-color: #21262d;
+            color: #58a6ff;
+            border: 1px solid #30363d;
+            padding: 12px 14px;
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.85rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            line-height: 1.3;
+        }
+
+        .choice-btn:active {
+            background-color: #30363d;
+            color: #ffffff;
+            border-color: #58a6ff;
+            transform: scale(0.98);
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #484f58;
+            padding: 8px;
+            background-color: #161b22;
+            border-top: 1px solid #21262d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="game-frame">
+    <div class="game-header">
+        <div class="game-title">🏛️ AGRIGENTO ESCAPE</div>
+        <div class="suspicion-meter">
+            <span>Sospetto:</span>
+            <div class="bar-container">
+                <div class="bar-fill" id="suspicion-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Immagine di scena 1:1 -->
+    <div class="image-container">
+        <img id="scene-img" src="01_start.png" alt="Scena di gioco">
+    </div>
+
+    <div class="dialogue-box">
+        <div class="speaker-name" id="speaker-name">VOCE NARRANTE</div>
+        <div class="dialogue-text" id="dialogue-text">Caricamento in corso...</div>
+    </div>
+
+    <div class="choices-container" id="choices-box">
+        <!-- I 4 pulsanti verranno generati dinamicamente -->
+    </div>
+
+    <div class="footer-note">
+        Monkey Island: Speciale Agrigento • Prodotto non ufficiale
+    </div>
+</div>
+
+<script>
+    let state = {
+        suspicion: 0
+    };
+
+    const colors = {
+        narrator: "#8b949e",
+        emanuela: "#3fb950",
+        maresciallo: "#58a6ff",
+        mamma: "#e3b341",
+        papa: "#f0883e",
+        barista: "#d2a8ff"
+    };
+
+    const graph = {
+        start: {
+            img: "01_start.jpg",
+            speaker: "VOCE NARRANTE",
+            color: colors.narrator,
+            text: "Sei alla Biglietteria della Valle. Genitori pronti con cappelli da sole, Fratello in perlustrazione.",
+            choices: [
+                { text: "1. Segui Mamma verso la prima colonna", target: "foto", delta: 0 },
+                { text: "2. Cammina a passo marziale accanto al Maresciallo", target: "maresciallo", delta: 10 },
+                { text: "3. Fingi di cercare la mappa tra le bancarelle", target: "souvenir", delta: 0 },
+                { text: "4. Proponi subito una sosta rinfrescante", target: "granita", delta: -10 }
+            ]
+        },
+        foto: {
+            img: "02_foto.jpg",
+            speaker: "MAMMA",
+            color: colors.mamma,
+            text: "\"Emanuela! Pretendo 50 foto con pose da statua greca davanti al Tempio della Concordia!\"",
+            choices: [
+                { text: "1. \"Mamma, mettetevi in posa per un ritratto di gruppo!\"", target: "foto", delta: 0 },
+                { text: "2. Scappi mentre papà controlla la macchina fotografica", target: "maresciallo", delta: 15 },
+                { text: "3. Ti nascondi dietro una comitiva di turisti", target: "souvenir", delta: 0 },
+                { text: "4. Ti avvii verso l'unico punto d'ombra visibile", target: "granita", delta: -10 }
+            ]
+        },
+        maresciallo: {
+            img: "03_maresciallo.jpg",
+            speaker: "IL MARESCIALLO",
+            color: colors.maresciallo,
+            text: "\"Posto di blocco! Notifica sospetta sul telefono. Dichiarare immediatamente l'identità del mittente!\"",
+            choices: [
+                { text: "1. \"Maresciallo! C'è un'infrazione nel parcheggio!\"", target: "auto", delta: -10 },
+                { text: "2. \"È un messaggio di lavoro da Formez PA!\"", target: "foto", delta: 10 },
+                { text: "3. \"Mamma ti sta chiamando per fare una foto insieme!\"", target: "foto", delta: -10 },
+                { text: "4. \"Ti offro un caffè al bar per chiudere la pratica\"", target: "granita", delta: 10 }
+            ]
+        },
+        souvenir: {
+            img: "04_souvenir.jpg",
+            speaker: "VOCE NARRANTE",
+            color: colors.narrator,
+            text: "Sei incastrata nel Labirinto dei Souvenir tra bancarelle infinite di carretti siciliani e ceramiche.",
+            choices: [
+                { text: "1. Compri una calamita a forma di tamburello", target: "souvenir", delta: 0 },
+                { text: "2. Chiedi indicazioni al venditore", target: "granita", delta: 0 },
+                { text: "3. Ti perdi tra i carretti decorati", target: "start", delta: 0 },
+                { text: "4. Noti un passaggio pedonale verso il parcheggio", target: "auto", delta: 10 }
+            ]
+        },
+        granita: {
+            img: "05_granita.jpg",
+            speaker: "VOCE NARRANTE",
+            color: colors.narrator,
+            text: "Sosta tattica al Bar 'La Brioche d'Oro' per recuperare le energie.",
+            choices: [
+                { text: "1. Mangi la granita e chiedi la password del Wi-Fi", target: "arancino", delta: 0 },
+                { text: "2. Ti distrai guardando i dolci in vetrina", target: "souvenir", delta: 0 },
+                { text: "3. Il Maresciallo entra e pretende di pagare lui", target: "maresciallo", delta: 20 },
+                { text: "4. Esci dal bar rinfrancata e cerchi campo", target: "wifi", delta: 0 }
+            ]
+        },
+        arancino: {
+            img: "06_arancino.jpg",
+            speaker: "DON SALVO",
+            color: colors.barista,
+            text: "\"Il codice Wi-Fi è secretato. Prima rispondi al dilemma sacro della Sicilia Occidentale!\"",
+            choices: [
+                { text: "1. Ordini un 'Arancino' (Accento siculo occidentale)", target: "wifi", delta: -20 },
+                { text: "2. Ordini un 'Arancina' (Scoppia una discussione al bar)", target: "granita", delta: 15 },
+                { text: "3. Chiedi al Maresciallo di mostrare il tesserino", target: "maresciallo", delta: 25 },
+                { text: "4. Rinunci al Wi-Fi e cerchi le chiavi dell'auto", target: "auto", delta: 0 }
+            ]
+        },
+        auto: {
+            img: "07_auto.jpg",
+            speaker: "PAPÀ",
+            color: colors.papa,
+            text: "Abitacolo a 50°C nel parcheggio al sole! Papà ha perso il telecomando dell'auto!",
+            choices: [
+                { text: "1. Aiuti papà a cercare le chiavi nella borsa", target: "start", delta: 10 },
+                { text: "2. Chiedi al Maresciallo di sbloccare la portiera", target: "maresciallo", delta: 20 },
+                { text: "3. Ti rifugi all'ombra dell'albero di fronte", target: "wifi", delta: 0 },
+                { text: "4. Tornate al bar per dimenticare il caldo", target: "granita", delta: -10 }
+            ]
+        },
+        wifi: {
+            img: "08_wifi.jpg",
+            speaker: "EMANUELA",
+            color: colors.emanuela,
+            text: "Angolo 5G dietro il Tempio di Giunone! Segnale perfetto, ma bisogna agire nell'ombra.",
+            choices: [
+                { text: "1. Digiti la password e mandi il messaggio a Michele", target: "win", delta: 0 },
+                { text: "2. Ti scatti un selfie di nascosto da inviare", target: "win", delta: 0 },
+                { text: "3. Esiti troppo e Mamma ti becca col telefono", target: "foto", delta: 15 },
+                { text: "4. Il Maresciallo si avvicina da tergo", target: "maresciallo", delta: 30 }
+            ]
+        },
+        interrogatorio: {
+            img: "03_maresciallo.jpg",
+            speaker: "IL MARESCIALLO",
+            color: colors.maresciallo,
+            text: "SOSPETTO AL 100%! \"Fermo amministrativo! Ora verifichiamo tutte le chat di questo Michele prima di proseguire la gita!\"",
+            choices: [
+                { text: "1. Invoci la protezione diplomatica dei templi.", target: "start", delta: -50 },
+                { text: "2. Distrai il Maresciallo urlando \"Un'infrazione nel parcheggio!\"", target: "auto", delta: -50 },
+                { text: "3. Gli offri una granita alla mandorla per azzerare il verbale.", target: "granita", delta: -60 },
+                { text: "4. Mamma ti salva chiedendogli di fare una foto a lei.", target: "foto", delta: -50 }
+            ]
+        },
+        win: {
+            img: "09_win.jpg",
+            speaker: "MISSIONE COMPIUTA!",
+            color: colors.emanuela,
+            text: "Messaggio inviato a Michele! Verbale annullato, evasione riuscita. Serata sbloccata a Napoli!",
+            choices: [
+                { text: "🔄 Gioca ancora da capo", target: "start", delta: -100 },
+                { text: "💖 Invia un bacio al programmatore napoletano", target: "win", delta: 0 }
+            ]
+        }
+    };
+
+    function updateSuspicion(delta) {
+        state.suspicion = Math.max(0, Math.min(100, state.suspicion + delta));
+        const bar = document.getElementById('suspicion-bar');
+        bar.style.width = state.suspicion + '%';
+        
+        if (state.suspicion < 40) {
+            bar.style.backgroundColor = '#3fb950';
+        } else if (state.suspicion < 80) {
+            bar.style.backgroundColor = '#d29922';
+        } else {
+            bar.style.backgroundColor = '#f85149';
+        }
+    }
+
+    function renderNode(nodeKey) {
+        let node = graph[nodeKey];
+
+        // Se il sospetto supera il 100%, forza l'interrogatorio
+        if (state.suspicion >= 100 && nodeKey !== 'win' && nodeKey !== 'interrogatorio') {
+            nodeKey = 'interrogatorio';
+            node = graph[nodeKey];
+        }
+
+        const imgEl = document.getElementById('scene-img');
+        imgEl.style.opacity = '0.3';
+        setTimeout(() => {
+            imgEl.src = node.img;
+            imgEl.style.opacity = '1';
+        }, 150);
+
+        const speakerEl = document.getElementById('speaker-name');
+        speakerEl.innerText = node.speaker;
+        speakerEl.style.color = node.color;
+
+        document.getElementById('dialogue-text').innerText = node.text;
+
+        const choicesBox = document.getElementById('choices-box');
+        choicesBox.innerHTML = '';
+
+        node.choices.forEach(c => {
+            const btn = document.createElement('button');
+            btn.className = 'choice-btn';
+            btn.innerText = c.text;
+            btn.onclick = () => {
+                if (c.delta) updateSuspicion(c.delta);
+                renderNode(c.target);
+            };
+            choicesBox.appendChild(btn);
+        });
+    }
+
+    window.onload = () => {
+        renderNode('start');
+    };
+</script>
+
+</body>
+</html>
