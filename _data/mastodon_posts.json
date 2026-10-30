@@ -1,5 +1,119 @@
 [
     {
+        "id": "117529706787877279",
+        "created_at": "2026-10-30T11:50:04.455Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117529706787877279",
+        "url": "https://mastodon.social/@mikymaione/117529706787877279",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>Dopo un lungo rallentamento dei progressi dovuto ai limiti della mente umana, l&#39;IA sta avviando una nuova era d&#39;oro della scienza. L&#39;intelligenza artificiale elimina i vincoli sul numero di ricercatori, riduce i tempi di elaborazione teorica e analizza istantaneamente sterminate letterature scientifiche. Inoltre, gestendo schemi complessi preclusi all&#39;uomo (&quot;cloud laws&quot;), l&#39;IA accelera scoperte in medicina e fisica, rivoluzionando la ricerca scientifica.</p><p><a href=\"https://www.noahpinion.blog/p/a-golden-age-of-science-is-coming\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">noahpinion.blog/p/a-golden-age</span><span class=\"invisible\">-of-science-is-coming</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Web",
+            "website": null
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 154,
+            "following_count": 592,
+            "statuses_count": 852,
+            "last_status_at": "2026-10-30",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.noahpinion.blog/p/a-golden-age-of-science-is-coming",
+            "title": "A golden age of science is coming",
+            "description": "AI can do things humans researchers can’t, even in groups.",
+            "language": "en",
+            "type": "link",
+            "author_name": "Noah Smith",
+            "author_url": "https://substack.com/@noahpinion",
+            "provider_name": "Noahpinion",
+            "provider_url": "",
+            "html": "",
+            "width": 593,
+            "height": 389,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/212/684/116/original/c0f147d1dd00b186.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "U8Crv8~q%h-;?v~W_2%MES%M-:-pxuEN9bxa",
+            "published_at": "2026-10-29T09:55:51.000Z",
+            "authors": [
+                {
+                    "name": "Noah Smith",
+                    "url": "https://substack.com/@noahpinion",
+                    "account": null
+                }
+            ]
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "117488791441106528",
         "created_at": "2026-10-23T06:24:45.808Z",
         "in_reply_to_id": null,
