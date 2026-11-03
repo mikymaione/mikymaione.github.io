@@ -1,5 +1,113 @@
 [
     {
+        "id": "117551253876366197",
+        "created_at": "2026-11-03T07:09:46.945Z",
+        "in_reply_to_id": null,
+        "in_reply_to_account_id": null,
+        "sensitive": false,
+        "spoiler_text": "",
+        "visibility": "public",
+        "language": "it",
+        "uri": "https://mastodon.social/users/mikymaione/statuses/117551253876366197",
+        "url": "https://mastodon.social/@mikymaione/117551253876366197",
+        "replies_count": 0,
+        "reblogs_count": 0,
+        "favourites_count": 0,
+        "quotes_count": 0,
+        "edited_at": null,
+        "content": "<p>In una sola generazione, il termine &quot;nerd&quot; ha cambiato totalmente significato. Negli anni &#39;80 e &#39;90 indicava la passione viscerale per informatica, matematica e tecnologia: un&#39;attitudine basata su codice, sperimentazione e ingegno. Con i media e i social, la parola è diventata una moda pop legata a cosplay, fandom e gadget. Lo spirito tecnico e scientifico originario non è però scomparso: si è solo trasferito in nuove figure come dev, maker e coder.</p><p><a href=\"https://www.codemotion.com/magazine/it/dev-life-it/da-hacker-di-garage-a-trend-tiktok-come-il-termine-nerd-e-cambiato-in-una-sola-generazione/\" target=\"_blank\" rel=\"nofollow noopener\" translate=\"no\"><span class=\"invisible\">https://www.</span><span class=\"ellipsis\">codemotion.com/magazine/it/dev</span><span class=\"invisible\">-life-it/da-hacker-di-garage-a-trend-tiktok-come-il-termine-nerd-e-cambiato-in-una-sola-generazione/</span></a></p>",
+        "reblog": null,
+        "application": {
+            "name": "Mastodon for Android",
+            "website": "https://app.joinmastodon.org/android"
+        },
+        "account": {
+            "id": "111868368356423372",
+            "username": "mikymaione",
+            "acct": "mikymaione",
+            "display_name": "[Ψ]",
+            "locked": false,
+            "bot": false,
+            "discoverable": true,
+            "indexable": true,
+            "group": false,
+            "created_at": "2024-02-03T00:00:00.000Z",
+            "note": "<p>a young computer scientist not so young.</p>",
+            "url": "https://mastodon.social/@mikymaione",
+            "uri": "https://mastodon.social/users/mikymaione",
+            "avatar": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_static": "https://files.mastodon.social/accounts/avatars/111/868/368/356/423/372/original/533728cdefbccd8f.jpg",
+            "avatar_description": "",
+            "header": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_static": "https://files.mastodon.social/accounts/headers/111/868/368/356/423/372/original/d723ac7ebeab3d8c.png",
+            "header_description": "",
+            "followers_count": 154,
+            "following_count": 592,
+            "statuses_count": 853,
+            "last_status_at": "2026-11-03",
+            "hide_collections": false,
+            "show_media": true,
+            "show_media_replies": true,
+            "show_featured": true,
+            "noindex": false,
+            "feature_approval": {
+                "automatic": [
+                    "public"
+                ],
+                "manual": [],
+                "current_user": "denied"
+            },
+            "emojis": [],
+            "roles": [],
+            "fields": [
+                {
+                    "name": "Personal website",
+                    "value": "<a href=\"https://mikymaione.github.io\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">mikymaione.github.io</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:54:30.667+00:00"
+                },
+                {
+                    "name": "GitHub",
+                    "value": "<a href=\"https://github.com/mikymaione\" target=\"_blank\" rel=\"nofollow noopener me\" translate=\"no\"><span class=\"invisible\">https://</span><span class=\"\">github.com/mikymaione</span><span class=\"invisible\"></span></a>",
+                    "verified_at": "2026-02-15T14:26:28.319+00:00"
+                }
+            ]
+        },
+        "media_attachments": [],
+        "mentions": [],
+        "tags": [],
+        "emojis": [],
+        "tagged_collections": [],
+        "quote": null,
+        "card": {
+            "url": "https://www.codemotion.com/magazine/it/dev-life-it/da-hacker-di-garage-a-trend-tiktok-come-il-termine-nerd-e-cambiato-in-una-sola-generazione/",
+            "title": "Da hacker di garage a trend TikTok: come il termine nerd è cambiato in una sola generazione",
+            "description": "L'evoluzione della parola \"nerd\" in un'unica generazione è un caso di studio linguistico e sociale straordinario. Non abbiamo perso una cultura: semplicemente, una parola è migrata dal concetto classico legato all'ingegno, alla scienza, alla matematica, ai computer e alla programmazione, a quello di consumo e intrattenimento pop.",
+            "language": "it",
+            "type": "link",
+            "author_name": "",
+            "author_url": "",
+            "provider_name": "Codemotion Magazine",
+            "provider_url": "",
+            "html": "",
+            "width": 642,
+            "height": 358,
+            "image": "https://files.mastodon.social/cache/preview_cards/images/213/280/850/original/73af8691c6efa51e.jpg",
+            "image_description": "",
+            "embed_url": "",
+            "blurhash": "UIC5^+10IV=tNKxtj[nOIUn~kCSONZi_s:bv",
+            "published_at": "2026-10-08T12:28:08.000Z",
+            "authors": []
+        },
+        "poll": null,
+        "quote_approval": {
+            "automatic": [
+                "public"
+            ],
+            "manual": [],
+            "current_user": "denied"
+        }
+    },
+    {
         "id": "117535771863256569",
         "created_at": "2026-10-31T13:32:30.160Z",
         "in_reply_to_id": null,
