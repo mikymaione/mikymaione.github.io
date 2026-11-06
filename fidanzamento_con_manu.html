@@ -103,8 +103,7 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
     document.getElementById('quiz-title').innerText = data.titolo;
     document.getElementById('quiz-subtitle').innerText = data.sottotitolo;
     questionsData = data.domande;
-    //renderStep(questionsData[0].id);
-    renderStep('q19_proposta_finale');
+    renderStep(questionsData[0].id);
 
     // 2. Rendering dinamico dello step per ID
     function renderStep(id) {
