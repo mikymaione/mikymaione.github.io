@@ -1,0 +1,234 @@
+---
+layout: default
+title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regni
+---
+
+<style>
+    /* Stili aggiuntivi specifici per i componenti dinamici */
+    .quiz-card {
+        border: 1px solid #F79E10;
+        border-radius: 8px;
+        padding: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .quiz-option {
+        display: block;
+        padding: 10px 14px;
+        margin: 8px 0;
+        border: 1px solid #464453;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .quiz-option:hover {
+        border-color: #F79E10;
+        background-color: rgba(247, 158, 16, 0.1);
+    }
+
+    .quiz-option input[type="radio"] {
+        margin-right: 10px;
+    }
+
+    .quiz-btn {
+        background-color: #F79E10;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        border-radius: 4px;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .quiz-btn:hover {
+        background-color: black;
+        color: #F79E10;
+    }
+
+    .quiz-progress {
+        font-size: 0.85rem;
+        margin-bottom: 1em;
+        color: #F79E10;
+    }
+</style>
+
+<h2 id="quiz-title">Caricamento protocollo...</h2>
+<p class="giustificato" id="quiz-subtitle"></p>
+
+<!-- Contenitore della Single Page Application -->
+<div id="quiz-app">
+    <div class="quiz-card">
+        <div id="quiz-step-content">Inizializzazione in corso...</div>
+    </div>
+</div>
+
+<!-- Link Mappa Soluzione -->
+<a href="{{ site.baseurl }}/images/fidanzamento_con_manu.png" target="_blank">
+    🗺️ Ti sei persa tra i labirinti o ti arrendi? Clicca qui per consultare la mappa segreta della soluzione!
+</a>
+
+<!-- Firebase SDK Modular -->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-app.js";
+    import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/13.2.0/firebase-firestore.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyB37xRaJUv5fpF_7IZLK3bYM2MP49xWFQk",
+        authDomain: "manu-fidanzamento.firebaseapp.com",
+        projectId: "manu-fidanzamento",
+        storageBucket: "manu-fidanzamento.firebasestorage.app",
+        messagingSenderId: "1071195574272",
+        appId: "1:1071195574272:web:857719a9c587e1b114c8e5"
+    };
+
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    let currentStep = 0;
+    let questionsData = [];
+    const responses = {};
+
+    // 1. Iniezione diretta dei dati tramite Liquid da _data/domande_fidanzamento_manu.json
+    const data = {{ site.data.domande_fidanzamento_manu | jsonify }};
+
+    document.getElementById('quiz-title').innerText = data.titolo;
+    document.getElementById('quiz-subtitle').innerText = data.sottotitolo;
+    questionsData = data.domande;
+    //renderStep(questionsData[0].id);
+    renderStep('q19_proposta_finale');
+
+    // 2. Rendering dinamico dello step per ID
+    function renderStep(id) {
+        const container = document.getElementById('quiz-step-content');
+        const item = questionsData.find(q => q.id === id);
+
+        if (!item)
+            return;
+
+        const total = questionsData.length;
+        const currentIndex = questionsData.findIndex(q => q.id === id);
+
+        let html = `<div class="quiz-progress">CAPITOLO ${currentIndex + 1} DI ${total}</div>`;
+        html += `<h3>${item.titolo}</h3>`;
+        html += `<p class="giustificato">${item.descrizione}</p>`;
+
+        if (item.tipo === "radio") {
+            html += `<div class="options-group">`;
+            item.opzioni.forEach((opt, idx) => {
+                const testo = typeof opt === 'object' ? opt.testo : opt;
+                const checked = responses[item.id] === testo ? 'checked' : '';
+                html += `
+                    <label class="quiz-option">
+                        <input type="radio" name="${item.id}" value="${idx}" ${checked}>
+                        ${testo}
+                    </label>
+                `;
+            });
+            html += `</div>`;
+        } else if (item.tipo === "textarea") {
+            const val = responses[item.id] || '';
+            html += `
+                <textarea id="${item.id}" style="width: 100%; font-family: 'Roboto Mono'; padding: 10px; box-sizing: border-box;" rows="4" placeholder="${item.placeholder || ''}">${val}</textarea>
+            `;
+        }
+
+        const isLast = !item.opzioni || item.tipo === "textarea" || (typeof item.opzioni[0] === 'object' && !item.opzioni[0].next_id);
+        const btnText = isLast ? "CONFERMA E PROTOCOLLA!" : "AVANTI &gt;&gt;";
+        html += `<button type="button" class="quiz-btn" id="quiz-next-btn">${btnText}</button>`;
+
+        container.innerHTML = html;
+
+        document.getElementById('quiz-next-btn').onclick = () => handleNext(id);
+    }
+
+    // 3. Gestione passaggio allo step successivo tramite next_id
+    async function handleNext(currentId) {
+        const item = questionsData.find(q => q.id === currentId);
+
+        if (item.tipo === "radio") {
+            const selectedInput = document.querySelector(`input[name="${item.id}"]:checked`);
+            if (!selectedInput) {
+                alert("Seleziona un'opzione per proseguire!");
+                return;
+            }
+
+            const optIndex = parseInt(selectedInput.value, 10);
+            const selectedOpt = item.opzioni[optIndex];
+
+            if (typeof selectedOpt === 'object') {
+                responses[item.id] = selectedOpt.testo;
+
+                if (selectedOpt.risposta_npc) {
+                    alert("💬 " + selectedOpt.risposta_npc);
+                }
+
+                if (selectedOpt.next_id && questionsData.some(q => q.id === selectedOpt.next_id)) {
+                    renderStep(selectedOpt.next_id);
+                    window.scrollTo(0, 0);
+                    return;
+                }
+            } else {
+                responses[item.id] = selectedOpt;
+            }
+        } else if (item.tipo === "textarea") {
+            responses[item.id] = document.getElementById(item.id).value;
+        }
+
+        // Se siamo su una domanda finale (textarea o senza next_id), invia a Firestore
+        const isLast = !item.opzioni || item.tipo === "textarea" || (typeof item.opzioni[0] === 'object' && !item.opzioni[0].next_id);
+
+        if (isLast) {
+            await submitToFirestore();
+        } else {
+            const currentIndex = questionsData.findIndex(q => q.id === currentId);
+            if (currentIndex < questionsData.length - 1) {
+                renderStep(questionsData[currentIndex + 1].id);
+                window.scrollTo(0, 0);
+            }
+        }
+    }
+
+    // 4. Salvataggio su Firestore
+    async function submitToFirestore() {
+        const btn = document.getElementById('quiz-next-btn');
+        btn.disabled = true;
+        btn.innerText = "SALVATAGGIO IN CORSO...";
+
+        try {
+            const payload = {
+                ...responses,
+                timestamp: serverTimestamp(),
+                userAgent: navigator.userAgent
+            };
+
+            await addDoc(collection(db, "risposte"), payload);
+
+            document.getElementById('quiz-app').innerHTML = `
+                <div class="quiz-card" style="text-align: center;">
+                <h3 style="color: #F79E10;">PROTOCOLLO REGISTRATO CON SUCCESSO!</h3>
+                <p class="giustificato">
+                    Stato relazionale selezionato: <strong>${responses['q19_proposta_finale'] || 'Confermato'}</strong>.
+                </p>
+                <div class="bullet">• • •</div>
+                <p class="giustificato">
+                    L'istanza è stata sincronizzata su Firestore.
+                </p>
+                </div>
+            `;
+        } catch (e) {
+            console.error("Errore Firestore:", e);
+            alert("Errore durante la protocollazione: " + e.message);
+            btn.disabled = false;
+            btn.innerText = "RIPROVA INVIO";
+        }
+    }
+</script>
