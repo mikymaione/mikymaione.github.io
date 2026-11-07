@@ -122,12 +122,18 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
 
         if (item.tipo === "radio") {
             html += `<div class="options-group">`;
-            item.opzioni.forEach((opt, idx) => {
+            
+            // Mappiamo le opzioni conservando l'indice originale e le mescoliamo a caso
+            const shuffledOptions = item.opzioni
+                .map((opt, originalIdx) => ({ opt, originalIdx }))
+                .sort(() => Math.random() - 0.5);
+
+            shuffledOptions.forEach(({ opt, originalIdx }) => {
                 const testo = typeof opt === 'object' ? opt.testo : opt;
                 const checked = responses[item.id] === testo ? 'checked' : '';
                 html += `
                     <label class="quiz-option">
-                        <input type="radio" name="${item.id}" value="${idx}" ${checked}>
+                        <input type="radio" name="${item.id}" value="${originalIdx}" ${checked}>
                         ${testo}
                     </label>
                 `;
