@@ -1,16 +1,16 @@
 {
     "titolo": "🛡️ La Cerca della Perla di Gaeta: Rune, Algoritmi e il Destino dei Due Regni 🗡️",
-    "sottotitolo": "Un'epica avventura D&D interattiva tra Napoli e Gaeta per una potente Chierica Nana maestra in Russo e Francese e un brillante Ladro Umano informatico.",
+    "sottotitolo": "Un'epica avventura tra Napoli e Gaeta per una potente Chierica Nana, maestra in Russo e Francese, e un brillante Ladro Umano, informatico.",
     "domande": [
         {
             "id": "q1_partenza_napoli",
             "titolo": "📍 Tappa 1: La Taverna a Mergellina (Napoli)",
-            "descrizione": "Siete seduti in una taverna affacciata sul Golfo di Napoli. Tu sei una valorosa Chierica Nana, armata di martello da guerra, scudo sacrato e profonda conoscenza delle lingue antiche (specializzata nei testi di corte Russi e nei manoscritti Francesi). Al tuo fianco c'è il tuo fidato compagno: un Ladro Umano informatico, esperto nell'analizzare algoritmi complessi, ottimizzare percorsi e scassinare sistemi cifrati. Sul tavolo c'è una mappa diretta verso Gaeta. Come volete iniziare il viaggio?",
+            "descrizione": "Siete seduti in una taverna affacciata sul Golfo di Napoli. Tu sei una valorosa Chierica Nana, armata di martello da guerra, scudo sacrato e profonda conoscenza delle lingue antiche (specializzata nei testi di corte Russi e nei manoscritti Francesi). Al tuo fianco c'è il tuo fidato compagno: un Ladro Umano, esperto nell'analizzare algoritmi complessi, ottimizzare percorsi e scassinare sistemi cifrati. Sul tavolo c'è una mappa diretta verso Gaeta. Come volete iniziare il viaggio?",
             "tipo": "radio",
             "opzioni": [
                 {
                     "testo": "📜 Traduci la mappa dal Francese antico mentre il Ladro calcola l'algoritmo di rotta ottimale.",
-                    "risposta_npc": "La tua dizione impeccabile e i suoi grafi informatici tracciano la rotta perfetta verso Spaccanapoli!",
+                    "risposta_npc": "La tua dizione impeccabile e i suoi grafi orientati tracciano la rotta perfetta verso Spaccanapoli!",
                     "next_id": "q2_spaccanapoli"
                 },
                 {
@@ -25,7 +25,7 @@
                 },
                 {
                     "testo": "💻 Il Ladro tenta una SQL Injection sulla cassa del pub per non pagare il conto.",
-                    "risposta_npc": "Error 404: Connessione WiFi non presente nel XV secolo! Il locandiere vi guarda male. Riprova!",
+                    "risposta_npc": "Error 404: Connessione WiFi debole! Il locandiere vi guarda male.",
                     "next_id": "q1_partenza_napoli"
                 }
             ]
@@ -48,12 +48,12 @@
                 },
                 {
                     "testo": "🎭 Chiedi indicazioni a Pulcinella che vaga nel vicolo.",
-                    "risposta_npc": "Pulcinella vi regala una pizza a portafoglio ma vi fa perdere 2 ore a raccontare aneddoti! Riprova la rotta...",
+                    "risposta_npc": "Pulcinella vi regala una pizza a portafoglio ma vi fa perdere 2 ore a raccontare aneddoti!",
                     "next_id": "q2_spaccanapoli"
                 },
                 {
                     "testo": "✨ Casti 'Luce' sul vicolo buio per leggere meglio.",
-                    "risposta_npc": "La luce improvvisa attira un branco di gatti randagi spaventati che vi fanno cadere le mappe! Riprova...",
+                    "risposta_npc": "La luce improvvisa attira un branco di gatti randagi spaventati che vi fanno cadere le mappe!",
                     "next_id": "q2_spaccanapoli"
                 }
             ]
@@ -65,7 +65,7 @@
             "tipo": "radio",
             "opzioni": [
                 {
-                    "testo": "🔨 Impugni il Martello da Guerra da nana e apri un varco tra le rocce vulcaniche!",
+                    "testo": "🔨 Impugni il Martello da Guerra e apri un varco tra le rocce vulcaniche!",
                     "risposta_npc": "Un colpo devastante! Frantumi i macigni e aprite il passaggio verso l'Anfiteatro!",
                     "next_id": "q4_anfiteatro"
                 },
@@ -76,12 +76,12 @@
                 },
                 {
                     "testo": "🧪 Provi a bere l'acqua termale bollente per recuperar salute.",
-                    "risposta_npc": "Tiro di Salvezza su Costituzione fallito! Puzza terribilmente di uova marce e perdi 5 HP. Riprova!",
+                    "risposta_npc": "Tiro di Salvezza su Costituzione fallito! Puzza terribilmente di uova marce.",
                     "next_id": "q3_solfatara"
                 },
                 {
                     "testo": "⚙️ Il Ladro applica un overclock magico agli zoccoli dei cavalli.",
-                    "risposta_npc": "I cavalli vanno in Kernel Panic e si siedono a terra rifiutandosi di muoversi! Meglio cambiare tattica...",
+                    "risposta_npc": "I cavalli vanno in Kernel Panic e si siedono a terra rifiutandosi di muoversi!",
                     "next_id": "q3_solfatara"
                 }
             ]
@@ -98,18 +98,18 @@
                     "next_id": "q5_cuma"
                 },
                 {
-                    "testo": "💻 Il Ladro usa grimaldelli e uno script Python per scassinare la serratura a carrucola.",
-                    "risposta_npc": "Lo script esegue il bypass del sistema di blocco in 0.04 secondi! Vi direzionate verso Baia!",
+                    "testo": "💻 Il Ladro usa grimaldelli per scassinare la serratura a carrucola.",
+                    "risposta_npc": "Serratura aperta in 0.04 secondi! Vi direzionate verso Baia!",
                     "next_id": "q6_baia"
                 },
                 {
                     "testo": "🗣️ Reciti poesie tragiche in Russo ai fantasmi dei gladiatori.",
-                    "risposta_npc": "I fantasmi dei gladiatori non conoscono il Cirillico e continuano a combattere ignorandovi! Riprova...",
+                    "risposta_npc": "I fantasmi dei gladiatori non conoscono il Cirillico e continuano a combattere ignorandovi!",
                     "next_id": "q4_anfiteatro"
                 },
                 {
                     "testo": "🧭 Orientati nei cunicoli usando una vecchia bussola arrugginita.",
-                    "risposta_npc": "Il ferro dell'anfiteatro sballa il campo magnetico e girate in tondo per un'ora! Riprova...",
+                    "risposta_npc": "Il ferro dell'anfiteatro sballa il campo magnetico e girate in tondo per un'ora!",
                     "next_id": "q4_anfiteatro"
                 }
             ]
@@ -117,7 +117,7 @@
         {
             "id": "q5_cuma",
             "titolo": "🔮 Tappa 5: La Grotta della Sibilla a Cuma",
-            "descrizione": "Entrate nella maestosa antro trapezoidale della Sibilla Cumana. Un vento arcano risuona tra le pareti portando con sé un oracolo inciso su foglie d'alloro in codici arcaici.",
+            "descrizione": "Entrate nel maestoso antro trapezoidale della Sibilla Cumana. Un vento arcano risuona tra le pareti portando con sé un oracolo inciso su foglie d'alloro in codici arcaici.",
             "tipo": "radio",
             "opzioni": [
                 {
@@ -132,12 +132,12 @@
                 },
                 {
                     "testo": "☁️ Chiedi alla Sibilla se nel weekend a Gaeta ci sarà bel tempo per uscire.",
-                    "risposta_npc": "La Sibilla alza gli occhi al cielo indispettita e soffia via le foglie dell'oracolo! Riprova...",
+                    "risposta_npc": "La Sibilla alza gli occhi al cielo indispettita e soffia via le foglie dell'oracolo!",
                     "next_id": "q5_cuma"
                 },
                 {
                     "testo": "🧝 Invochi una divinità elfica scambiandola per la Sibilla.",
-                    "risposta_npc": "Il tuo Simbolo Sacro da Nana sfrigola indispettito per l'errore! Correggi la tua preghiera...",
+                    "risposta_npc": "Il tuo Simbolo Sacro da Nana sfrigola indispettito per l'errore!",
                     "next_id": "q5_cuma"
                 }
             ]
@@ -160,12 +160,12 @@
                 },
                 {
                     "testo": "🏊 Ti tuffi in mare per esplorare le rovine subacquee con l'armatura pesante.",
-                    "risposta_npc": "Con l'armatura da nana affondi come un incudine! Il Ladro deve ripescarti a stento. Riprova!",
+                    "risposta_npc": "Con l'armatura da nana affondi come un incudine! Il Ladro deve ripescarti a stento.",
                     "next_id": "q6_baia"
                 },
                 {
                     "testo": "📻 Il Ladro attiva un sonar a manovella autocostruito.",
-                    "risposta_npc": "Il rumore del sonar sveglia un polpo gigante che spruzza inchiostro sul party! Cambia piano...",
+                    "risposta_npc": "Il rumore del sonar sveglia un polpo gigante che spruzza inchiostro sul party!",
                     "next_id": "q6_baia"
                 }
             ]
@@ -188,12 +188,12 @@
                 },
                 {
                     "testo": "🥐 Offri alle guardie dei dolci napoletani per corromperle.",
-                    "risposta_npc": "Le guardie divorano le sfogliatella e poi vi chiedono pure il babà prima di farvi passare! Riprova...",
+                    "risposta_npc": "Le guardie divorano le sfogliatella e poi vi chiedono pure il babà prima di darvi l'ALT!",
                     "next_id": "q7_torre_frontiera"
                 },
                 {
-                    "testo": "🇫🇷 Saluti i briganti dicendo: 'Bonjour messieurs, comment ça va?'.",
-                    "risposta_npc": "I briganti vi guardano straniti senza capire una parola e raddoppiano la tariffa del pedaggio! Riprova...",
+                    "testo": "🇫🇷 Saluti le guardi dicendo: 'Bonjour messieurs, comment ça va?'.",
+                    "risposta_npc": "Le guardie vi guardano straniti senza capire una parola e raddoppiano la tariffa del pedaggio!",
                     "next_id": "q7_torre_frontiera"
                 }
             ]
@@ -216,12 +216,12 @@
                 },
                 {
                     "testo": "🗡️ Il Ladro tenta di recidere la corda d'ormeggio con un colpo di pugnale.",
-                    "risposta_npc": "La lama rimbalza sul ferro arrugginito facendo fare una figuraccia al Ladro! Riprova...",
+                    "risposta_npc": "La lama rimbalza sul ferro arrugginito facendo fare una figuraccia al Ladro!",
                     "next_id": "q8_garigliano_ponte"
                 },
                 {
                     "testo": "🤸 Tenti un salto acrobatico sulle travi bagnate.",
-                    "risposta_npc": "Scivoli sulle alghe e rimani appesa per la cintura! Il Ladro si trattiene dal ridere e ti tira su. Riprova!",
+                    "risposta_npc": "Scivoli sulle alghe e rimani appesa per la cintura! Il Ladro si trattiene dal ridere e ti tira su.",
                     "next_id": "q8_garigliano_ponte"
                 }
             ]
@@ -244,12 +244,12 @@
                 },
                 {
                     "testo": "🌊 Tenti di guadare il fiume a piedi sostenendo lo scudo sacrato.",
-                    "risposta_npc": "La corrente bagnata è troppo forte e ti trascina indietro! Il nocchiero vi ripesca col retino. Riprova...",
+                    "risposta_npc": "La corrente bagnata è troppo forte e ti trascina indietro! Il nocchiero vi ripesca col retino.",
                     "next_id": "q9_garigliano_nocchiero"
                 },
                 {
                     "testo": "🪙 Paghi il nocchiero con antiche monete di platino czariste fuori corso.",
-                    "risposta_npc": "Il nocchiero le morde, capisce che sono fuori corso da secoli e rifiuta la corsa! Usa un altro metodo...",
+                    "risposta_npc": "Il nocchiero le morde, capisce che sono fuori corso da secoli e rifiuta la corsa!",
                     "next_id": "q9_garigliano_nocchiero"
                 }
             ]
@@ -272,12 +272,12 @@
                 },
                 {
                     "testo": "🚰 Bevi un sorso d'acqua direttamente dalla cisterna romana.",
-                    "risposta_npc": "Sapore di muffa imperiale del I secolo d.C.! Prendi -2 a Saggezza per i prossimi 10 minuti. Riprova!",
+                    "risposta_npc": "Sapore di muffa imperiale del I secolo d.C.!",
                     "next_id": "q10_cisternoni"
                 },
                 {
                     "testo": "💥 Il Ladro inietta codice SQL dannoso sulle pareti della fontana.",
-                    "risposta_npc": "La fontana risponde spruzzando uno zampillo d'acqua dritto in faccia al Ladro! Riprova...",
+                    "risposta_npc": "La fontana risponde spruzzando uno zampillo d'acqua dritto in faccia al Ladro!",
                     "next_id": "q10_cisternoni"
                 }
             ]
@@ -300,12 +300,12 @@
                 },
                 {
                     "testo": "🗣️ Declini verbi latini a caso inventando le desinenze.",
-                    "risposta_npc": "Lo spirito di Cicerone appare e corregge la tua grammatica con severità! Riprova con più classe...",
+                    "risposta_npc": "Lo spirito di Cicerone appare e corregge la tua grammatica con severità!",
                     "next_id": "q11_tomba_cicerone"
                 },
                 {
                     "testo": "⚡ Tenti il debugging hardware toccando i circuiti arcanici a mani nude.",
-                    "risposta_npc": "Ti prendi una scossa elettrica di 220V magici che ti rizza i capelli! Riprova con cautela...",
+                    "risposta_npc": "Ti prendi una scossa elettrica di 220V magici che ti rizza i capelli!",
                     "next_id": "q11_tomba_cicerone"
                 }
             ]
@@ -328,12 +328,12 @@
                 },
                 {
                     "testo": "📢 Bussi forte al portone urlando in Francese: 'Sésame, ouvre-toi!'.",
-                    "risposta_npc": "La guardia dalla torre alto sbadiglia e vi dice che serve la parola d'ordine reale. Riprova!",
+                    "risposta_npc": "La guardia dalla torre alto sbadiglia e vi dice che serve la parola d'ordine reale.",
                     "next_id": "q12_porta_carlo_v"
                 },
                 {
                     "testo": "🥧 Vi fermate a mangiare una tiella polpo e scarola prima di entrare.",
-                    "risposta_npc": "Troppo saporita! Vi viene una sonnolenza post-prandiale di un'ora. Ripartite concentrati!",
+                    "risposta_npc": "Troppo saporita! Vi viene una sonnolenza post-prandiale di un'ora.",
                     "next_id": "q12_porta_carlo_v"
                 }
             ]
@@ -389,7 +389,7 @@
                 },
                 {
                     "testo": "📶 Cerchi di connetterti alla rete WiFi gratuita del Santuario.",
-                    "risposta_npc": "Password errata! Tentativo fallito: la chiave non era 'PerlaDelTirreno123'. Riprova!",
+                    "risposta_npc": "Password errata! Tentativo fallito: la chiave non era 'PerlaDelTirreno123'.",
                     "next_id": "q14_montagna_spaccata"
                 }
             ]
@@ -417,7 +417,7 @@
                 },
                 {
                     "testo": "💃 Tenti un passo di danza sui marmi lucidi del piazzale.",
-                    "risposta_npc": "Scivoli sul marmo levigato e fai una figura rimediata davanti ai bardi di passaggio! Riprova!",
+                    "risposta_npc": "Scivoli sul marmo levigato e fai una figura rimediata davanti ai bardi di passaggio!",
                     "next_id": "q15_tempio_san_francesco"
                 }
             ]
@@ -440,7 +440,7 @@
                 },
                 {
                     "testo": "🇷🇺 Conti i 300 gradini in Russo per allenare la pronuncia e perdi il conto.",
-                    "risposta_npc": "Ti fermi al 142 per discutere le eccezioni dei verbi di moto e vi perdete! Concentrati sulla meta...",
+                    "risposta_npc": "Ti fermi al 142 per discutere le eccezioni dei verbi di moto e vi perdete!",
                     "next_id": "q16_grotta_turco"
                 },
                 {
@@ -468,12 +468,12 @@
                 },
                 {
                     "testo": "🗡️ Provi a scassinare la serratura sforzando la lama di un pugnale.",
-                    "risposta_npc": "La lama si piega! Fortuna che il Ladro ne ha una riserva piena nel borsello. Riprova!",
+                    "risposta_npc": "La lama si piega! Fortuna che il Ladro ne ha una riserva piena nel borsello.",
                     "next_id": "q17_castello_aragonese"
                 },
                 {
                     "testo": "📜 Declami un discorso di resa in Francese verso il castellano.",
-                    "risposta_npc": "Il castellano non c'è, è in pausa pranzo ed ha lasciato la fortezza incustodita! Sforza il portone...",
+                    "risposta_npc": "Il castellano non c'è, è in pausa pranzo ed ha lasciato la fortezza incustodita!",
                     "next_id": "q17_castello_aragonese"
                 }
             ]
@@ -485,7 +485,7 @@
             "tipo": "radio",
             "opzioni": [
                 {
-                    "testo": "✨ Casti 'Guida Divina' sui pugnali del Ladro e lui esegue 'git commit --force' sul Boss!",
+                    "testo": "✨ Casti 'Guida Divina' sui pugnali del Ladro e lui esegue 'git push --force' sul Boss!",
                     "risposta_npc": "I pugnali scintillano di luce consacrata! Il comando forza l'override del firmware ed il Boss si spegne all'istante!",
                     "next_id": "q19_proposta_finale"
                 },
@@ -509,7 +509,7 @@
         {
             "id": "q19_proposta_finale",
             "titolo": "💍 Tappa 19: La Terrazza delle Stelle & Il Tesoro del Cuore",
-            "descrizione": "Sconfitta l'ultima difesa, uscite sulla terrazza più alta del Castello di Gaeta, sotto un cielo stellato meraviglioso. Il mare risuona dolce sotto di voi. Il Ladro si gira verso di te, estrae uno scrigno finemente intagliato con incisioni cirilliche dorate e ti guarda negli occhi con il sorriso più sincero del mondo. Ti prende le mani e ti sussurra: 'Tutti dicono che Gaeta è la Perla del Tirreno... ma per me, la vera Perla di Gaeta sei solo tu!'. Apre lo scrigno rivelando l'Anello del Fidanzamento (+100 Felicità, +∞ Amore). Accetti la Quest Finale per fidanzarvi?",
+            "descrizione": "Sconfitta l'ultima difesa, uscite sulla terrazza più alta del Castello di Gaeta, sotto un cielo stellato meraviglioso. Il mare risuona dolce sotto di voi. Il Ladro si gira verso di te, estrae uno scrigno finemente intagliato con incisioni cirilliche dorate e ti guarda negli occhi con il sorriso più sincero del mondo. Ti prende le mani e ti sussurra: 'Tutti dicono che Gaeta è la Perla del Tirreno... ma per me, la vera Perla di Gaeta sei solo tu!'. Apre lo scrigno rivelando l'Anello del Fidanzamento. Accetti la Quest Finale per fidanzarvi?",
             "tipo": "radio",
             "opzioni": [
                 {
@@ -524,7 +524,7 @@
                 },
                 {
                     "testo": "🔍 Chiedo prima se l'Anello ha la licenza open-source ed il supporto a vita...",
-                    "risposta_npc": "Il Ladro sorride ed esclama: 'Licenza MIT completa, zero clausole nascoste e supporto di coppia garantito a vita!'. Ora scegli!",
+                    "risposta_npc": "Il Ladro sorride ed esclama: 'Licenza GNU completa, zero clausole nascoste e supporto di coppia garantito a vita!'. Ora scegli!",
                     "next_id": "q19_proposta_finale"
                 },
                 {
@@ -536,14 +536,14 @@
         },
         {
             "id": "q20_note_fidanzamento_si",
-            "titolo": "📝 Tappa 20: Registro di Bordo dell'Alleanza (Modalità SÌ! 💖)",
+            "titolo": "📝 Tappa 20: Registro di Bordo dell'Alleanza",
             "descrizione": "Hai detto SÌ! La quest è stata completata con un successo critico leggendario. Ora, mia adorata Perla di Gaeta, scrivi qui sotto le tue idee per festeggiare: quali posti ti andrebbe di esplorare insieme nella nostra prima uscita da fidanzati, che cene reali organizzare o qualsiasi nota speciale per il tuo Ladro del cuore!",
             "tipo": "textarea",
             "placeholder": "Scrivi qui i tuoi desideri, idee per festeggiare insieme o note speciali per il tuo Ladro... 🥂✨"
         },
         {
             "id": "q20_note_fidanzamento_no",
-            "titolo": "📝 Tappa 20: Registro della Gilda (Modalità Motivazione / Valutazione 🧐)",
+            "titolo": "📝 Tappa 20: Registro della Gilda",
             "descrizione": "Hai scelto di fare una prova di Saggezza prima di accettare la quest finale! Motiva qui la tua risposta, oppure lascia una nota per spiegare al tuo Ladro quali sotto-quest o requisiti deve ancora soddisfare per ottenere la tua benedizione finale!",
             "tipo": "textarea",
             "placeholder": "Motiva qui la tua risposta o lascia un suggerimento per il tuo Ladro... 📜⚔️"
