@@ -12,6 +12,26 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
         margin-bottom: 1.5em;
     }
 
+    /* HUD Punti Vita e Mana */
+    .hud-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid #F79E10;
+        border-radius: 6px;
+        padding: 10px 14px;
+        margin-bottom: 1.2em;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: bold;
+    }
+
+    .hud-stat {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
     .quiz-option {
         display: block;
         padding: 10px 14px;
@@ -88,7 +108,6 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
         appId: "1:1071195574272:web:857719a9c587e1b114c8e5"
     };
 
-
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
@@ -96,6 +115,10 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
     let currentStep = 0;
     let questionsData = [];
     const responses = {};
+
+    // Sistema di Statistiche RPG (Salute & Mana)
+    let playerHP = 100;
+    let playerMP = 100;
 
     // 1. Iniezione diretta dei dati tramite Liquid da _data/domande_fidanzamento_manu.json
     const data = {{ site.data.domande_fidanzamento_manu | jsonify }};
@@ -107,7 +130,13 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
 
     // 2. Rendering dinamico dello step per ID
     function renderStep(id) {
-        const container = document.getElementById('quiz-step-content');
+        let container = document.getElementById('quiz-step-content');
+
+        if (!container) {
+            document.getElementById('quiz-app').innerHTML = '<div class="quiz-card"><div id="quiz-step-content"></div></div>';
+            container = document.getElementById('quiz-step-content');
+        }
+
         const item = questionsData.find(q => q.id === id);
 
         if (!item)
@@ -116,7 +145,15 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
         const total = questionsData.length;
         const currentIndex = questionsData.findIndex(q => q.id === id);
 
-        let html = `<div class="quiz-progress">CAPITOLO ${currentIndex + 1} DI ${total}</div>`;
+        // Rendering HUD Statistiche
+        let html = `
+            <div class="hud-container">
+                <div class="hud-stat">❤️ HP: ${playerHP}/100</div>
+                <div class="hud-stat">✨ MP: ${playerMP}/100</div>
+            </div>
+        `;
+
+        html += `<div class="quiz-progress">CAPITOLO ${currentIndex + 1} DI ${total}</div>`;
         html += `<h3>${item.titolo}</h3>`;
         html += `<p class="giustificato">${item.descrizione}</p>`;
 
@@ -155,7 +192,7 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
         document.getElementById('quiz-next-btn').onclick = () => handleNext(id);
     }
 
-    // 3. Gestione passaggio allo step successivo tramite next_id
+    // 3. Gestione passaggio allo step successivo tramite next_id, HP e MP
     async function handleNext(currentId) {
         const item = questionsData.find(q => q.id === currentId);
 
@@ -171,6 +208,26 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
 
             if (typeof selectedOpt === 'object') {
                 responses[item.id] = selectedOpt.testo;
+
+                const hpChange = selectedOpt.hp_change || 0;
+                const manaChange = selectedOpt.mana_change || 0;
+
+                // Gestione Fumble se prova ad usare magia senza Mana sufficiente
+                if (manaChange < 0 && (playerMP + manaChange < 0)) {
+                    playerMP = 0;
+                    playerHP = Math.max(0, playerHP - 20);
+                    alert("⚠️ MANA INSUFFICIENTE! Provi a invocare il potere del Vulcano ma hai finito il Mana! Dal Simbolo Sacro esce solo un po' di fumo. Subisci 20 danni da Fumble!");
+                } else {
+                    // Modifica regolare di HP e MP (con clamping tra 0 e 100)
+                    playerHP = Math.min(100, Math.max(0, playerHP + hpChange));
+                    playerMP = Math.min(100, Math.max(0, playerMP + manaChange));
+                }
+
+                // Verifica Game Over (PARTY WIPEOUT)
+                if (playerHP <= 0) {
+                    showGameOver(currentId);
+                    return;
+                }
 
                 if (selectedOpt.risposta_npc) {
                     alert("💬 " + selectedOpt.risposta_npc);
@@ -202,6 +259,28 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
         }
     }
 
+    // Gestione Schermata Retro GAME OVER / PARTY WIPEOUT
+    function showGameOver(retryStepId) {
+        document.getElementById('quiz-app').innerHTML = `
+            <div class="quiz-card" style="text-align: center; border-color: #d9534f;">
+                <h2 style="color: #d9534f; margin-top: 0;">💀 PARTY WIPEOUT! 💀</h2>
+                <p class="giustificato">
+                    La Nana Chierica è caduta senza HP... Ma un vero Ladro non lascia mai indietro la sua compagna di avventura!
+                </p>
+                <div class="bullet">• • •</div>
+                <button type="button" class="quiz-btn" id="btn-revive">
+                    🧪 USA POZIONE DI GUARIGIONE
+                </button>
+            </div>
+        `;
+        document.getElementById('btn-revive').onclick = () => {
+            playerHP = 100;
+            playerMP = 100;
+            renderStep(retryStepId);
+            window.scrollTo(0, 0);
+        };
+    }
+
     // 4. Salvataggio su Firestore
     async function submitToFirestore() {
         const btn = document.getElementById('quiz-next-btn');
@@ -211,6 +290,8 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
         try {
             const payload = {
                 ...responses,
+                final_hp: playerHP,
+                final_mp: playerMP,
                 timestamp: serverTimestamp(),
                 userAgent: navigator.userAgent
             };
