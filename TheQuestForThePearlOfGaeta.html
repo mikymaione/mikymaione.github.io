@@ -1,6 +1,8 @@
 ---
 layout: default
 title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regni
+parent: projects
+project_name: The Quest for the Pearl of Gaeta
 ---
 
 <style>
@@ -88,7 +90,7 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
 </div>
 
 <!-- Link Mappa Soluzione -->
-<a href="{{ site.baseurl }}/images/fidanzamento_con_manu.png" target="_blank">
+<a href="public/TheQuestForThePearlOfGaeta/GameGraph.png" target="_blank">
     🗺️ Ti sei persa tra i labirinti o ti arrendi? Clicca qui per consultare la mappa segreta della soluzione!
 </a>
 
@@ -120,8 +122,8 @@ title: La Cerca della Perla di Gaeta - Rune, Algoritmi e il Destino dei Due Regn
     let playerHP = 100;
     let playerMP = 100;
 
-    // 1. Iniezione diretta dei dati tramite Liquid da _data/LaCercaDellaPerlaDiGaeta.json
-    const data = {{ site.data.LaCercaDellaPerlaDiGaeta | jsonify }};
+    // 1. Iniezione diretta dei dati tramite Liquid da _data/TheQuestForThePearlOfGaeta.json
+    const data = {{ site.data.TheQuestForThePearlOfGaeta | jsonify }};
 
     document.getElementById('quiz-title').innerText = data.titolo;
     document.getElementById('quiz-subtitle').innerText = data.sottotitolo;
