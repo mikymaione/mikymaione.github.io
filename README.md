@@ -19,7 +19,12 @@ gem install jekyll bundler
 bundle install
 ```
 
-3. Start the local server:
+3. Update project gems:
+```bash
+bundle update
+```
+
+4. Start the local server:
 ```bash
 bundle exec jekyll serve
 ```
