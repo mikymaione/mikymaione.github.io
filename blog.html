@@ -15,7 +15,7 @@ title: Blog - Michele Maione
 				<span class="m-date" data-utc="{{ post.created_at }}"></span>
 			</h3>
 
-			<div class="giustificato">
+			<div class="giustificato"{% if post.language %} lang="{{ post.language }}"{% endif %}>
 				{{ post.content }}
 			</div>
 
@@ -28,9 +28,9 @@ title: Blog - Michele Maione
 					{% elsif media.type == 'video' or media.type == 'gifv' %}
 						<video src="{{ media.url }}" class="img-max-size" controls loop muted playsinline></video>
 					{% endif %}
-					
+
 					{% if media.description %}
-						<figcaption>{{ media.description }}</figcaption>
+						<figcaption{% if post.language %} lang="{{ post.language }}"{% endif %}>{{ media.description }}</figcaption>
 					{% endif %}
 				</figure>
 				{% endfor %}
