@@ -14,9 +14,6 @@ body {
 	padding-right: 1em;
 	padding-left: 1em;
 
-	overflow-x: hidden;
-	overflow-y: scroll;
-
 	font-family: 'Roboto Mono';
 
 	accent-color: #F79E10;

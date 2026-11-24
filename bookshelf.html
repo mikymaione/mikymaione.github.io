@@ -6,20 +6,26 @@ title: Bookshelf - Michele Maione
 
 	<p>Currently housing <strong>{{ site.data.Bookshelf.size }}</strong> books in my personal library:</p>
 
+	{% assign libri_ordinati = site.data.Bookshelf | sort: 'Title' | sort: 'LastName' %}
+	{% assign gruppi_lettere = libri_ordinati | group_by_exp: "libro", "libro.LastName | slice: 0 | upcase" %}
+
+	<p>
+		{% for gruppo in gruppi_lettere %}
+		<a href="#letter-{{ gruppo.name }}">{{ gruppo.name }}</a>{% unless forloop.last %} | {% endunless %}
+		{% endfor %}
+	</p>
+
 	<table>
 		<thead>
-			<tr>
+            <tr>
 				<th><strong>Author</strong></th>
 				<th><strong>Title</strong></th>
 			</tr>
 		</thead>
 		<tbody>
-			{% assign libri_ordinati = site.data.Bookshelf | sort: 'Title' | sort: 'LastName' %}
-			{% assign gruppi_lettere = libri_ordinati | group_by_exp: "libro", "libro.LastName | slice: 0 | upcase" %}
-			
 			{% for gruppo in gruppi_lettere %}
 			<!-- Riga separatrice con la sola iniziale -->
-			<tr class="letter-header">
+			<tr id="letter-{{ gruppo.name }}" class="letter-header">
 				<td colspan="2">
 					<em>
 						<b>
