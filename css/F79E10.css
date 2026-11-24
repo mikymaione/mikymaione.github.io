@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     scrollbar-color: #F79E10 Canvas;
     overflow-x: hidden;
 }
